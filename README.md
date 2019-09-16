@@ -29,5 +29,5 @@ Follow these steps to get your development environment set up:
 
 **1e.** Using SSH, *cd* to the path you copied the driver component package to and run the following commands:  
 
-**tar xvzf iodriver_v3.tar.gz --overwrite -C /** (Extract the driver component package)  
-**/etc/init.d/plcnext restart** (Restart the PLCnext runtime)  
+------> **tar xvzf iodriver_v3.tar.gz --overwrite -C /** (Extract the driver component package)  
+------> **/etc/init.d/plcnext restart** (Restart the PLCnext runtime)  
