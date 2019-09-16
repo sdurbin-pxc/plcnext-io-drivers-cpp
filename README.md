@@ -46,7 +46,7 @@ With the SDK, you are not limited to one development environment. You may choose
 
 **3a.1** Download and install the latest version of CMake from https://cmake.org/download  
 
-**3a.2** In your local copy of the repository, navigate to and open the *examples/SimpleApplication/PreLoad.cmake* file. This file contains all of the needed compiler paths and flags that CMake needs to generate a Makefile for the application.
+**3a.2** In your local copy of the repository, navigate to and open the *examples/SimpleApplication/PreLoad.cmake* file. This file contains all of the compiler paths and flags that CMake needs to generate a Makefile for the application.
 
 **3a.3** Change line 4 to containing *set(AXC2152_SYSROOT "**{SYSROOT_FOLDER**")*, where *SYSROOT_FOLDER* is the location of the sysroots folder that was noted in *2b*.  For example:  set(AXC2152_SYSROOT "c:\Path\To\SDK\sysroots").
 
