@@ -37,3 +37,33 @@ Follow these steps to get your development environment set up:
 **2a.** Visit the www.phoenixcontact.com webpage and search for the AXC F 2152 device. On the products page, click the "Downloads" tab and scroll down to find your corresponding Windows SDK.  If there is not an SDK that corresponds to your firmware version, you will need to update the firmware on your device before continuing.
 
 **2b.** Extract the SDK to any directory on the local drive. Note that the *sysroots* folder in this directory is your "AXC 2152 SYSROOT" folder.
+
+## 3. Compiling an example program from the repo:
+
+With the SDK, you are not limited to one development environment. You may choose to integrate the needed compilation flags and sysroots path into many different environments (Visual Studio, VSCode, Eclipse, etc).  In this README, we will go over CMAKE and Visual Studio 2017+ Open Folder compilations.
+
+## 3a. CMAKE
+
+**3a.1** Download and install the latest version of CMake from https://cmake.org/download  
+
+**3a.2** In your local copy of the repository, navigate to and open the *examples/SimpleApplication/PreLoad.cmake* file. This file contains all of the needed compiler paths and flags that CMake needs to generate a Makefile for the application.
+
+**3a.3** Change line 4 to containing *set(AXC2152_SYSROOT "**{SYSROOT_FOLDER**")*, where *SYSROOT_FOLDER* is the location of the sysroots folder that was noted in *2b*.  For example:  set(AXC2152_SYSROOT "c:\Path\To\SDK\sysroots").
+
+**3a.4** For a simple compilation without an IDE, you can open the command line editor in Windows, change directory (cd) to your *examples/SimpleApplication*, make a build folder, and run Cmake in the build folder as follows:
+
+-----> cd c:\Path\To\examples\SimpleApplication  
+-----> mkdir build
+-----> cd build
+-----> cmake ../
+
+Note that *cmake ../* the cmake command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt
+
+**3a.5** Compile the program based on the Cmake-generated Makefile by running the following command:
+
+-----> make
+
+The program should compile, and in the case of the SimpleApplication example, the axcSimpleApp binary will be located in the build folder.
+
+**3a.6**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.
+
