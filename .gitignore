@@ -1,4 +1,3 @@
 **/.vs/
-**/build/CMakeFiles/*
-**/build/*[Cc]make*
+**/build/[Cc]make*
 **/build/Makefile

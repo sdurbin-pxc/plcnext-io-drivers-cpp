@@ -14,9 +14,9 @@ link_directories(
 )
 
 add_executable(
-	axcSimpleApp main.cpp
+	axcSimpleApp.o main.cpp
 )
 
-target_link_libraries (axcSimpleApp Axio2152)
+target_link_libraries (axcSimpleApp.o Axio2152)
 
-install (TARGETS axcSimpleApp DESTINATION bin)
+install (TARGETS axcSimpleApp.o DESTINATION bin)
