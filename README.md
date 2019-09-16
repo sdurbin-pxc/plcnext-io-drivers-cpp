@@ -53,9 +53,9 @@ With the SDK, you are not limited to one development environment. You may choose
 **3a.4** For a simple compilation without an IDE, you can open the command line editor in Windows, change directory (cd) to your *examples/SimpleApplication*, make a build folder, and run Cmake in the build folder as follows:
 
 -----> cd c:\Path\To\examples\SimpleApplication  
------> mkdir build
------> cd build
------> cmake ../
+-----> mkdir build  
+-----> cd build  
+-----> cmake ../  
 
 Note that *cmake ../* the cmake command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt
 
