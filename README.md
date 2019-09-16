@@ -46,13 +46,13 @@ With the SDK, you are not limited to one development environment. You may choose
 
 The following steps are to show how to compile the example project "SimpleApplication" that is in the examples directory of this repository.  The CMakeLists.txt is the main configuration file for building the project via CMake and has already been created for you. You can use this file as a base to further develop your custom application using CMake.
 
-**3a.1** Download and install the latest version of CMake from https://cmake.org/download  
+**3a-1.** Download and install the latest version of CMake from https://cmake.org/download  
 
-**3a.2** In your local copy of the repository, navigate to and open the *examples/SimpleApplication/PreLoad.cmake* file. This file contains all of the compiler paths and flags that CMake needs to generate a Makefile for the application.  Note that the actual paths and flags can be referenced to create a development environment in any IDE.
+**3a-2.** In your local copy of the repository, navigate to and open the *examples/SimpleApplication/PreLoad.cmake* file. This file contains all of the compiler paths and flags that CMake needs to generate a Makefile for the application.  Note that the actual paths and flags can be referenced to create a development environment in any IDE.
 
-**3a.3** Change line 4 to containing *set(AXC2152_SYSROOT "**{SYSROOT_FOLDER**")*, where *SYSROOT_FOLDER* is the location of the sysroots folder that was noted in *2b*.  For example:  set(AXC2152_SYSROOT "c:\Path\To\SDK\sysroots").
+**3a-3.** Change line 4 to containing *set(AXC2152_SYSROOT "**{SYSROOT_FOLDER**")*, where *SYSROOT_FOLDER* is the location of the sysroots folder that was noted in *2b*.  For example:  set(AXC2152_SYSROOT "c:\Path\To\SDK\sysroots").
 
-**3a.4** For a simple compilation without an IDE, you can open the command line editor in Windows, change directory (cd) to your *examples/SimpleApplication*, make a build folder, and run Cmake in the build folder as follows:
+**3a-4.** For a simple compilation without an IDE, you can open the command line editor in Windows, change directory (cd) to your *examples/SimpleApplication*, make a build folder, and run Cmake in the build folder as follows:
 
 -----> cd c:\Path\To\examples\SimpleApplication  
 -----> mkdir build  
@@ -61,11 +61,11 @@ The following steps are to show how to compile the example project "SimpleApplic
 
 Note that *cmake ../* the cmake command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt
 
-**3a.5** Compile the program based on the Cmake-generated Makefile by running the following command:
+**3a-5.** Compile the program based on the Cmake-generated Makefile by running the following command:
 
 -----> make
 
 The program should compile, and in the case of the SimpleApplication example, the axcSimpleApp binary will be located in the build folder.
 
-**3a.6**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.
+**3a-6.**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.
 
