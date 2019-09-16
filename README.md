@@ -69,6 +69,6 @@ The program should compile, and in the case of the SimpleApplication example, th
 
 # C++ Class Driver Documentation
 
-Reading through the sample application code and comments may be enough to get you going using the drivers. All of the I/O module classes follow a similar use pattern.  To supplement this, more robust documentation will be added to the wiki page associated with this repository: https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki
+Reading through the sample application code and comments may be enough to get you going using the drivers. All of the I/O module classes follow a similar use pattern.  To supplement this, more robust documentation will be available at the wiki page associated with this repository: https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki
 
 
