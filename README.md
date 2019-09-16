@@ -38,7 +38,7 @@ Follow these steps to get your development environment set up:
 
 **2b.** Extract the SDK to any directory on the local drive. Note that the *sysroots* folder in this directory is your "AXC 2152 SYSROOT" folder.
 
-## 3. Compiling an example program from the repo:
+## 3. Compiling an example program from the repository:
 
 With the SDK, you are not limited to one development environment. You may choose to integrate the needed compilation flags and sysroots path into many different environments (Visual Studio, VSCode, Eclipse, etc).  In this README, we will go over CMAKE and Visual Studio 2017+ Open Folder compilations.
 
