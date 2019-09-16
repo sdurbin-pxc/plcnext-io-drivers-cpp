@@ -31,3 +31,9 @@ Follow these steps to get your development environment set up:
 
 ------> **tar xvzf iodriver_v3.tar.gz --overwrite -C /** (Extract the driver component package)  
 ------> **/etc/init.d/plcnext restart** (Restart the PLCnext runtime)  
+
+## 2. Download the SDK/SYSROOTS for cross-compiling from Windows or Linux:
+
+**2a.** Visit the www.phoenixcontact.com webpage and search for the AXC F 2152 device. On the products page, click the "Downloads" tab and scroll down to find your corresponding Windows/Linux SDK.  If there is not an SDK that corresponds to your firmware version, you will need to update the firmware on your device before continuing.
+
+**2b.** Extract the SDK to any directory on the local drive. Note that the *sysroots* folder in this directory is your "AXC 2152 SYSROOT" folder.
