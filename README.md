@@ -1,4 +1,4 @@
-<p align="right"><a href="https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki">Click for Documentation Wiki</a></p>  
+<p align="right"><a href="https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki">Go to Wiki for code documentation</a></p>  
 
 # Overview
 
