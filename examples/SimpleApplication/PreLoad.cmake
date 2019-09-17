@@ -6,7 +6,7 @@
 #	Note, these sysroots can be downloaded from the "Downloads" section of the		#
 #	AXL F 2152 product page at https://www.phoenixcontact.com						#
 #																					#
-	set(AXC2152_SYSROOT "C:/2152sdk193/sysroots")									#
+	set(AXC2152_SYSROOT "C:/2152sdk2019.6.3/sysroots")									#
 #																					#
 # __________________________________________________________________________________#
 

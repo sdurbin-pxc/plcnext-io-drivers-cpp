@@ -11,7 +11,7 @@
       //  Note, these sysroots can be downloaded from the "Downloads" section of the
       //  AXL F 2152 product page at https://www.phoenixcontact.com
 
-      "sysroots": "c:/2152sdk193/sysroots"
+      "sysroots": "c:/2152sdk2019.6.3/sysroots"
     }
   ],
   "configurations": [
@@ -20,12 +20,12 @@
       "compilerSwitches": "-std=c++11 /O1",
       "includePath": [
         "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include",
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/7.3.0",
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/7.3.0/arm-pxc-linux-gnueabi",
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/7.3.0/backward",
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/lib/gcc/arm-pxc-linux-gnueabi/7.3.0/include",
-        "${env.sysroots}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/7.3.0/include",
-        "${env.sysroots}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/7.3.0/include-fixed",
+        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/8.2.0",
+        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/8.2.0/arm-pxc-linux-gnueabi",
+        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/8.2.0/backward",
+        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/lib/gcc/arm-pxc-linux-gnueabi/8.2.0/include",
+        "${env.sysroots}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/8.2.0/include",
+        "${env.sysroots}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/8.2.0/include-fixed",
 
         "${workspaceRoot}/../../**" // Axioline driver root directory. (two paths up relative to this example)
       ],

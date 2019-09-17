@@ -20,8 +20,8 @@ using namespace std;
 
 namespace PLCnext {
 
-	const ushort AXLF_MODULE_RTD4 = 0xA4;
-	const ushort AXLF_MODULE_RTD8 = 0xA1;
+	const uint AXLF_MODULE_RTD4 = 0xA4;
+	const uint AXLF_MODULE_RTD8 = 0xA1;
 
 	class AXC2152;
 

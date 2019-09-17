@@ -20,7 +20,7 @@ using namespace std;
 
 namespace PLCnext {
 
-	const ushort AXLF_MODULE_CNT = 0xF1;
+	const uint AXLF_MODULE_CNT = 0xF1;
 
 	class AXC2152;
 

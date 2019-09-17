@@ -21,7 +21,7 @@ using namespace std;
 
 namespace PLCnext {
 
-	const ushort AXLF_MODULE_AI2AO2 = 0xA9;
+	const uint AXLF_MODULE_AI2AO2 = 0xA9;
 
 	class AXC2152;
 

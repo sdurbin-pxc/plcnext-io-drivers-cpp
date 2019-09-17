@@ -22,7 +22,8 @@ using namespace std;
 
 namespace PLCnext {
 
-	const ushort AXLF_MODULE_DI8DO8 = 0xDD;
+	const uint AXLF_MODULE_DI8DO8 = 0xDD;
+	const uint AXLF_MODULE_DI8DO8_3 = 0xD02;
 
 	class AXLF_DI8DO8 : public AXLModule
 	{
