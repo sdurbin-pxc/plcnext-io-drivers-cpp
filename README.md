@@ -1,5 +1,3 @@
-# RTL bah
-
 # Overview
 
 C++ driver classes to read and write I/O data from PLCnext Axioline modules. This library currently only supports the Axioline 2152 controller (AXC F 2152, Part Number 2404267), and is currently offered as a static library (.a) with associated header files.
