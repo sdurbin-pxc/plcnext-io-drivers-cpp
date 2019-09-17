@@ -44,7 +44,7 @@ With the SDK, you are not limited to one development environment. You may choose
 
 ## 3a. CMAKE
 
-The following steps are to show how to compile the example project "SimpleApplication" that is in the examples directory of this repository.  The CMakeLists.txt is the main configuration file for building the project via CMake and has already been created for you. You can use this file as a base to further develop your custom application using CMake.
+The following steps are to show how to compile the example project "SimpleApplication" located in the examples directory of this repository.  The CMakeLists.txt is the main configuration file for building the project via CMake and has already been created for you. You can use this file as a base to further develop your custom application using CMake.
 
 **3a-1.** Download and install the latest version of CMake from https://cmake.org/download  
 
