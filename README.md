@@ -52,20 +52,23 @@ The following steps are to show how to compile the example project "SimpleApplic
 
 **3a-3.** Change line 4 to containing *set(AXC2152_SYSROOT "**{SYSROOT_FOLDER**")*, where *{SYSROOT_FOLDER}* is the location of the sysroots folder that was noted in *2b*.  For example:  set(AXC2152_SYSROOT "c:\Path\To\SDK\sysroots").
 
-**3a-4.** For a simple compilation without an IDE, you can open the command line editor in Windows, change directory (cd) to your *examples/SimpleApplication*, make a build folder, and run Cmake in the build folder as follows:
+**3a-4.** For a simple compilation without an IDE, you can open the command line editor in Windows, change directory (cd) to your *examples/SimpleApplication/build* folder, and run Cmake as follows:
 
------> cd c:\Path\To\examples\SimpleApplication  
------> mkdir build  
------> cd build  
+-----> cd c:\Path\To\examples\SimpleApplication\build  
 -----> cmake ../  
 
-Note that *cmake ../* the cmake command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt
+Note that *cmake ../* the cmake command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt  
 
-**3a-5.** Compile the program based on the Cmake-generated Makefile by running the following command:
+**3a-5.** Compile the program based on the Cmake-generated Makefile by running the following command:  
 
------> make
+-----> make  
 
-The program should compile, and in the case of the SimpleApplication example, the axcSimpleApp binary will be located in the build folder.
+The program should compile, and in the case of the SimpleApplication example, the axcSimpleApp binary will be located in the build folder.  
 
-**3a-6.**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.
+**3a-6.**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.  
+
+# C++ Class Driver Documentation
+
+Reading through the sample application code and comments may be enough to get you going using the drivers. All of the I/O module classes follow a similar use pattern.  To supplement this, more robust documentation will be available at the wiki page associated with this repository: https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki
+
 
