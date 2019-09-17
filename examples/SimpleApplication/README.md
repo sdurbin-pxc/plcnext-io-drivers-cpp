@@ -11,9 +11,12 @@ It performs the following actions:
 
 And loops the following actions:
 
+* Reads the current bus diagnostics. Exit if not in run state.
 * Reads the AI2 Channel 1 input.
 * Checks for error.
 * Converts the AI2 Channel 1 input value (0-10V) into 4-20mA signal.
 * Puts that calculated value to the AO2 Channel 1 output.
 * Reads the DI8 input bits.
 * If the AI2 Channel 1 input is over 5V, sets the DO8 to the DI8 input's inverse, otherwise reflect the DI8 onto the DO8 outputs.
+
+The console should be continuously updated with the AI2 Channel 1 value or error, and the current system bus diagnostics.
