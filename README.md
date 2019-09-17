@@ -57,7 +57,7 @@ The following steps are to show how to compile the example project "SimpleApplic
 -----> cd c:\Path\To\examples\SimpleApplication\build  
 -----> cmake ../  
 
-Note that *cmake ../* the cmake command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt  
+Note that the *cmake ../* command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt  
 
 **3a-5.** Compile the program based on the Cmake-generated Makefile by running the following command:  
 
