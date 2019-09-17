@@ -40,7 +40,7 @@ Follow these steps to get your development environment set up:
 
 ## 3. Compiling an example program from the repository:
 
-With the SDK, you are not limited to one development environment. You may choose to integrate the needed compilation flags and sysroots path into many different environments (Visual Studio, VSCode, Eclipse, etc).  In this README, we will go over CMAKE and Visual Studio 2017+ Open Folder compilations.
+With the SDK, you are not limited to one development environment. You may choose to integrate the needed compilation flags and sysroots path into many different environments (Visual Studio, VSCode, Eclipse, etc).  In this README, we will go over a simple Cmake compilation. In the future, examples will be created to show how to compile directly from Visual Studio and other IDEs.
 
 ## 3a. CMAKE
 
@@ -69,6 +69,4 @@ The program should compile, and in the case of the SimpleApplication example, th
 
 # C++ Class Driver Documentation
 
-Reading through the sample application code and comments may be enough to get you going using the drivers. All of the I/O module classes follow a similar use pattern.  To supplement this, more robust documentation will be available at the wiki page associated with this repository: https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki
-
-
+Reading through the sample application code and comments may be enough to get you going using the drivers. All of the I/O module classes follow a similar use pattern.  To supplement this, more robust documentation will be available at the wiki page associated with this repository: https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki.
