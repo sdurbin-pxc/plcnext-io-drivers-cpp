@@ -50,7 +50,7 @@ The following steps are to show how to compile the example project "SimpleApplic
 
 **3a-2.** In your local copy of the repository, navigate to and open the *examples/SimpleApplication/PreLoad.cmake* file. This file contains all of the compiler paths and flags that CMake needs to generate a Makefile for the application.  Note that the actual paths and flags can be referenced to create a development environment in any IDE.
 
-**3a-3.** Change line 4 to containing *set(AXC2152_SYSROOT "**{SYSROOT_FOLDER**")*, where *{SYSROOT_FOLDER}* is the location of the sysroots folder that was noted in *2b*.  For example:  set(AXC2152_SYSROOT "c:\Path\To\SDK\sysroots").
+**3a-3.** Change line 4 to *set(AXC2152_SYSROOT "**{SYSROOT_FOLDER**")*, where *{SYSROOT_FOLDER}* is the location of the sysroots folder that was noted in *2b*.  For example:  set(AXC2152_SYSROOT "c:\Path\To\SDK\sysroots").
 
 **3a-4.** For a simple compilation without an IDE, you can open the command line editor in Windows, change directory (cd) to your *examples/SimpleApplication/build* folder, and run Cmake as follows:
 
@@ -69,4 +69,6 @@ The program should compile, and in the case of the SimpleApplication example, th
 
 # C++ Class Driver Documentation
 
-Reading through the sample application code and comments may be enough to get you going using the drivers. All of the I/O module classes follow a similar use pattern.  To supplement this, more robust documentation will be available at the wiki page associated with this repository: https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki.
+Reading through the sample application code and comments may be enough to get you going using the drivers. All of the I/O module classes follow a similar use pattern.  To supplement this, more robust documentation will be available at the wiki page associated with this repository: 
+
+### [Class Driver Documentation Wiki](https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki)
