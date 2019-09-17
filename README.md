@@ -1,4 +1,4 @@
-<p align="right">### [Class Driver Wiki Link](https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki)</p>  
+<p align="right"><a href="https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki">Click for Documentation Wiki</a></p>  
 # Overview
 
 C++ driver classes to read and write I/O data from PLCnext Axioline modules. This library currently only supports the Axioline 2152 controller (AXC F 2152, Part Number 2404267), and is currently offered as a static library (.a) with associated header files.
