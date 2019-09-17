@@ -58,11 +58,11 @@ namespace PLCnext {
 		};
 
 		AXC2152();
-		void initialize();
-		bool initialized;
-		uint initError;
-		const vector<AXLModule*>& getModules() const { return modules; }
+		bool initialize();
+		const vector<AXLModule*>& getModules() const;
 		DiagnosticsInfo getDiagnosticsInfo();
+		uint getInitializationError();
+		bool isInitialized();
 		~AXC2152();
 
 	private:
@@ -80,6 +80,7 @@ namespace PLCnext {
 			uint8_t data[128];
 		};
 
+		bool m_initialized;
 		int fd;
 		char* map;
 		size_t mapSize;
@@ -87,6 +88,7 @@ namespace PLCnext {
 		void scanModules();
 		double timeSpecToSeconds(struct timespec* ts);
 		vector<AXLModule*> modules;
+		uint m_initError;
 	protected:
 		bool pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
 		bool pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);

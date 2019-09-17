@@ -11,7 +11,7 @@ int main()
 	AXC2152 axio = AXC2152();
 
 	// Check to see if the class successfully attached to the driver.
-	if (!axio.initialized)
+	if (!axio.isInitialized())
 	{
 		printf("AXC2152 class initialization failed.\n");
 		return 1;
@@ -35,7 +35,7 @@ int main()
 	// Check to make sure we have the right modules in the right slots:
 	// In this example:  [DI8/DO8, AI2/AO2]
 
-	if (modules[0]->type != AXLF_MODULE_DI8DO8 || modules[1]->type != AXLF_MODULE_AI2AO2)
+	if (modules[0]->getType() != AXLF_MODULE_DI8DO8 || modules[1]->getType() != AXLF_MODULE_AI2AO2)
 	{
 		printf("Incorrect modules, or module order detected.\n");
 		return 3;

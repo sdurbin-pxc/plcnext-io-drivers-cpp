@@ -27,17 +27,19 @@ namespace PLCnext {
 	public:
 		AXLModule(AXC2152* axc, ushort slot, uint type);
 		AXLModule();
-		ushort slot;
-		uint type;
 		virtual const string name()=0;
 		const vector<AXLChannel*>& getChannels();
 		uint getSerialNumber();
 		uint getOrderNumber();
+		uint getType();
+		uint getSlotNumber();
 	private:
 		AXC2152* axc=0;
 		uint m_serialNumber;
 		uint m_orderNumber;
+		uint m_slot;
 	protected:
+		uint m_type;
 		uint inOffset;
 		uint outOffset;
 		bool pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
