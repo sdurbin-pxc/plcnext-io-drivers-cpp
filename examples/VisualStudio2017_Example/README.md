@@ -1,6 +1,6 @@
 
 ### Visual Studio 2017 Open Folder Project:  
-#### Build, Move to remote, and Debug.  
+#### Build, Move to Remote, and Debug.  
 
 This project shows configuration settings needed to use the AXC2152 SDK in conjunction with Visual Studio 2017.  
 
