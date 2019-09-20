@@ -6,7 +6,7 @@ C++ driver classes to read and write I/O data from PLCnext Axioline modules. Thi
 
 This method of accessing the I/O is not intended to be used in conjunction with PLCnext Engineer IEC 61131 development environment, but rather a means to utilize the I/O from a Linux/C++ application. Please visit the PLCnext Community tutorials at the following link if you are looking to integrate C++ code into an IEC 61131 application:  https://www.plcnext-community.net
 
-This method of utilizing the controller and I/O requires experience in C++ and the Linux O/S.
+This method of utilizing the controller and I/O requires experience in C++ and the Linux OS.
 
 # Repository Overview
 
