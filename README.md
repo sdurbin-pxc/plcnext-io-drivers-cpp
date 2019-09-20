@@ -69,6 +69,10 @@ The program should compile, and in the case of the SimpleApplication example, th
 
 **3a-6.**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.  
 
+# Visual Studio - Open Folder
+
+Check the [Visual Studio 2017 Example](https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/blob/master/examples/VisualStudio2017_Example). It has the configuration (json) files needed to compile, deploy, and debug in an "Open Folder" project. It has its own README that explains the files.  
+
 # C++ Class Driver Documentation
 
 Reading through the sample application code and comments may be enough to get you going using the drivers. All of the I/O module classes follow a similar use pattern.  To supplement this, more robust documentation will be available at the wiki page associated with this repository: 
