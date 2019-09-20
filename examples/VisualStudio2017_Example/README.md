@@ -7,8 +7,10 @@ This project shows configuration settings needed to use the AXC2152 SDK in conju
 #### CppProperties.json  
   This file sets the environment variables (sysroot location, output name, build path), as well as information such as include paths to help Intellisense understand your references to get the full IDE experience.  
   
-#### /.vs/tasks.vs.json 
+#### /.vs/tasks.vs.json  
+
   This file has two tasks in it.  They are accessible by right clicking the main solution folder in the "Solution Explorer" pane:  
+  
     * **AXC2152 Build**  
        This task uses the environment variables in CppProperties.json and compiles the code by executing the SDK's GCC with needed flags. Note, as you add references and code, flags may need to be included here.  This task will show up in the right-click context menu as "Build".  
     * **Move To Remote**  
