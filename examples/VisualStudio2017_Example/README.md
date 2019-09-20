@@ -17,5 +17,5 @@ This file has two tasks in it.  They are accessible by right clicking the main s
 * Move To Remote  
   This task uses PuTTy command line services to move the compiled output to the AXC2152. Note that you may need to change login/pw and remote folder settings to fit your system.  This task will show up in the right-click context menu as "Move to Remote".  
        
-#### /.vs/tasks.vs.json  
+#### /.vs/launch.vs.json  
   This file has all of the remote debugger settings in it. Note that you may need to modify user/pw and path names to fit your application.  This can also be accessed by right clicking the main solution folder.  It will show up in the context menu as "Debug". Be sure to have your breakpoints in place before running the debug.  
