@@ -1,3 +1,5 @@
+<p align="right"><a href="https://github.com/sdurbin-pxc/plcnext-io-drivers-cpp/wiki">Go to Wiki for code documentation</a></p>  
+
 # Overview
 
 C++ driver classes to read and write I/O data from PLCnext Axioline modules. This library currently only supports the Axioline 2152 controller (AXC F 2152, Part Number 2404267), and is currently offered as a static library (.a) with associated header files.
@@ -44,7 +46,7 @@ With the SDK, you are not limited to one development environment. You may choose
 
 ## 3a. CMAKE
 
-The following steps are to show how to compile the example project "SimpleApplication" that is in the examples directory of this repository.  The CMakeLists.txt is the main configuration file for building the project via CMake and has already been created for you. You can use this file as a base to further develop your custom application using CMake.
+The following steps are to show how to compile the example project "SimpleApplication" located in the examples directory of this repository.  The CMakeLists.txt is the main configuration file for building the project via CMake and has already been created for you. You can use this file as a base to further develop your custom application using CMake.
 
 **3a-1.** Download and install the latest version of CMake from https://cmake.org/download  
 
@@ -57,7 +59,7 @@ The following steps are to show how to compile the example project "SimpleApplic
 -----> cd c:\Path\To\examples\SimpleApplication\build  
 -----> cmake ../  
 
-Note that *cmake ../* the cmake command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt  
+Note that the *cmake ../* command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt  
 
 **3a-5.** Compile the program based on the Cmake-generated Makefile by running the following command:  
 
