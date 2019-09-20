@@ -82,6 +82,9 @@ namespace PLCnext {
 
 		bool m_initialized;
 		int fd;
+		int pdiMutexFd;
+		pthread_mutex_t* pdiWriteMutex;
+		pthread_mutex_t* pdiReadMutex;
 		char* map;
 		size_t mapSize;
 		AXLModule* moduleFromType(AXC2152* axc, ushort slot, uint type, uint &pdInOffset, uint &pdOutOffset);

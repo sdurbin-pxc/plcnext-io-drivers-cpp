@@ -17,7 +17,7 @@
 set(CMAKE_GENERATOR "MinGW Makefiles" CACHE INTERNAL "" FORCE)
 set(CMAKE_SYSTEM_NAME "Linux" CACHE INTERNAL "" FORCE)
 set(CMAKE_BUILD_TYPE RELEASE CACHE INTERNAL "" FORCE)
-set(CMAKE_CXX_FLAGS "-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -fomit-frame-pointer" CACHE INTERNAL "" FORCE)
+set(CMAKE_CXX_FLAGS "-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -fomit-frame-pointer -pthread" CACHE INTERNAL "" FORCE)
 set(CMAKE_C_FLAGS "-march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -fomit-frame-pointer" CACHE INTERNAL "" FORCE)
 set(CMAKE_CXX_COMPILER "${AXC2152_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/arm-pxc-linux-gnueabi/arm-pxc-linux-gnueabi-g++.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_C_COMPILER "${AXC2152_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/arm-pxc-linux-gnueabi/arm-pxc-linux-gnueabi-gcc.exe" CACHE INTERNAL "" FORCE)

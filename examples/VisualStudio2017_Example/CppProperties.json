@@ -1,0 +1,32 @@
+{
+  "environments": [
+    {
+      // Path to your Axioline sysroots:
+      "sysroots": "c:/2152sdk2019.6.3/sysroots",
+      "buildPath": "./build",
+      "outputName":  "vsExample.o",
+
+      // Path to the AXC Driver root folder, this is two levels up from this example in the repo:
+      "axcDriver": "${workspaceRoot}/../../"
+    }
+  ],
+  "configurations": [
+    {
+      "name": "AXC2152_FW2019.6.3",
+      "compilerSwitches": "-std=c++11 /O1",
+      "inheritEnvironments": ["linux_x86"],
+      "includePath": [
+        "${env.sysroots}/**",//cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include",
+        //"${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/8.2.0",
+        //"${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/8.2.0/arm-pxc-linux-gnueabi",
+        //"${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/8.2.0/backward",
+        //"${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/lib/gcc/arm-pxc-linux-gnueabi/8.2.0/include",
+        //"${env.sysroots}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/8.2.0/include",
+        //"${env.sysroots}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/8.2.0/include-fixed",
+        "${workspaceRoot}/**",
+        "${env.axcDriver}include/**"
+      ],
+      "intelliSenseMode": "linux-gcc-arm"
+    }
+  ]
+}

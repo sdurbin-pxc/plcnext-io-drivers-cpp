@@ -1,3 +1,6 @@
-**/.vs/
+**/.vs/*
+!**/VisualStudio2017_Example/.vs/launch.vs.json
+!**/VisualStudio2017_Example/.vs/tasks.vs.json
+!**/VisualStudio2017_Example/.vs/ProjectSettings.json
 **/build/[Cc]make*
 **/build/Makefile

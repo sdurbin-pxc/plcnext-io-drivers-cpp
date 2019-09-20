@@ -1,0 +1,32 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+   {
+      "type": "cppdbg",
+      "name": "Remote Debug",
+      "project": "",
+      "cwd": "/tmp",
+      "program": "/tmp/${env.outputName}",
+      "MIMode": "gdb",
+      "externalConsole": true,
+      "remoteMachineName": "192.168.1.10",
+      "pipeTransport": {
+        "pipeProgram": "plink",
+        "pipeArgs": [
+          "-pw",
+          "phoenix",
+          "root@192.168.1.10"
+        ],
+        "debuggerPath": "/usr/bin/gdb"
+      },
+      "setupCommands": [
+        {
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "showDisplayString": true
+    }
+  ]
+}

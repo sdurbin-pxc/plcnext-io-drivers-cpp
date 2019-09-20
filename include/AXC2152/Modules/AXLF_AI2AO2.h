@@ -38,7 +38,7 @@ namespace PLCnext {
 			uint setValue(double value);
 			uint getValue(double &value);
 
-			enum OutputRange
+			enum OutputRange : ushort
 			{
 				V_0_P10		 = 0,
 				V_N10_P10	 = 1,
@@ -92,27 +92,30 @@ namespace PLCnext {
 			ushort getFilter();
 			ushort getMeanValue();
 
-			enum MeasuringRange {
-				V_0_P10 = 0,
-				V_N10_P10 = 1,
-				V_0_P5 = 2,
-				V_N5_P5 = 3,
-				mA_0_P20 = 4,
-				mA_N20_P20 = 5,
-				mA_P4_P20 = 6,
-				INACTIVE = 15
+			enum MeasuringRange
+			{
+				V_0_P10 = 0,    // 0 to +10 Volts
+				V_N10_P10 = 1,  // -10 to +10 Volts
+				V_0_P5 = 2,     // 0 to +5 Volts
+				V_N5_P5 = 3,    // -5 to +5 Volts
+				mA_0_P20 = 4,   // 0 to +24 milliamps
+				mA_N20_P20 = 5, // -20 to +20 milliamps
+				mA_P4_P20 = 6,  // +4 to +20 milliamps
+				INACTIVE = 15   // Deactivate channel
 			};
 
-			enum MeanValue {
-				Sample16 = 0,
-				NoMean = 1,
-				Sample4 = 2,
-				Sample32 = 3
+			enum MeanValue
+			{
+				Sample16 = 0, // 16 samples averaged
+				NoMean = 1,   // Instantaneous value returned
+				Sample4 = 2,  // 4 samples averaged
+				Sample32 = 3  // 32 samples averaged
 			};
 
-			enum Filter {
-				Hz_30 = 0,
-				kHz_12 = 1
+			enum Filter
+			{
+				Hz_30 = 0,   // 30 Hz Filter
+				kHz_12 = 1   // 12 kHz Filter
 			};
 
 			enum Error {

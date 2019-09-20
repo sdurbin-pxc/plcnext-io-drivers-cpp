@@ -1,0 +1,53 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "AXC2152 Build",
+      "taskName": "AXC2152 Build",
+      "appliesTo": "/",
+      "type": "launch",
+      "contextType": "build",
+      "command": "${env.sysroots}/x86_64-pokysdk-mingw32/usr/bin/arm-pxc-linux-gnueabi/arm-pxc-linux-gnueabi-g++.exe",
+      "args": [
+        "--sysroot=${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi",
+        "-std=c++11",
+        "-fPIC",
+        "-fno-gnu-unique",
+        "-mfloat-abi=hard",
+        "-march=armv7-a",
+        "-mthumb",
+        "-mfpu=neon",
+        "-mcpu=cortex-a9",
+        "-pthread",
+        "-O1",
+        "-v",
+        "-I ${env.axcDriver}include",
+        "-o ${env.buildPath}/${env.outputName}",
+        "-g main.cpp ${env.axcDriver}/lib/libAxio2152.a"
+      ]
+    },
+    {
+      "taskName": "Move To Remote",
+      "appliesTo": "/",
+      "type": "launch",
+      "commands": [
+        {
+          "command": "pscp",
+          "args": [
+            "-pw phoenix",
+            "${workspaceRoot}/${env.buildPath}/${env.outputName}",
+            "root@192.168.1.10:/tmp/${env.outputName}"
+          ]
+        },
+        {
+          "command": "plink",
+          "args": [
+            "root@192.168.1.10",
+            "-pw phoenix",
+            "chmod +x /tmp/${env.outputName}"
+          ]
+        }
+      ]
+    }
+  ]
+}
