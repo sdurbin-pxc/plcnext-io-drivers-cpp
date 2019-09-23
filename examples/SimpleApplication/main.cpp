@@ -43,6 +43,9 @@ int main()
 
 	printf("Axioline bus initialized.\n\n");
 	
+	// Get the device temperature (not processor temp):
+	printf("Device temp: %f C\n\n", axio.deviceTemperature());
+
 	// Cast the base AXLModule classes into their derived classes:
 
 	AXLF_DI8DO8* di8do8	= dynamic_cast<AXLF_DI8DO8*>(modules[0]);

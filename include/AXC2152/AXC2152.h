@@ -52,19 +52,31 @@ namespace PLCnext {
 
 		struct DiagnosticsInfo
 		{
-			ushort status;
-			ushort param1;
-			ushort param2;
+			ushort status;  // Bus status flags
+			ushort param1;  // Error code
+			ushort param2;  // Error Location (slot number, 1 based index);
 		};
 
 		AXC2152();
 		bool initialize();
 		const vector<AXLModule*>& getModules() const;
 		DiagnosticsInfo getDiagnosticsInfo();
+
 		uint getInitializationError();
 		bool isInitialized();
 		~AXC2152();
 
+		// Functions to interpret diagnostic flags:
+		bool ioWarning();
+		bool ioError();
+		bool busError();
+		bool controllerError();
+		bool busOperational();
+
+		// Device functions
+
+		double deviceTemperature();
+		
 	private:
 
 		struct PDIPipe {
