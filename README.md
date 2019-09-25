@@ -36,7 +36,7 @@ Follow these steps to get your development environment set up:
 
 ## 2. Download the SDK/SYSROOTS for cross-compiling from Windows:
 
-**2a.** Visit the www.phoenixcontact.com webpage and search for the AXC F 2152 device. On the products page, click the "Downloads" tab and scroll down to find your corresponding Windows SDK.  If there is not an SDK that corresponds to your firmware version, you will need to update the firmware on your device before continuing.
+**2a.** Visit the [AXC F 2152 Downloads](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2404267&library=usen&tab=5) page and scroll down to find and download your corresponding Windows/Linux SDK.  If there is not an SDK that corresponds to your firmware version, you will need to update the firmware on your device before continuing.
 
 **2b.** Extract the SDK to any directory on the local drive. Note that the *sysroots* folder in this directory is your "AXC 2152 SYSROOT" folder.
 
