@@ -68,6 +68,9 @@ namespace PLCnext {
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
+			// Function enum pointers
+			AXLEnumParameter* m_rangeEnum;
+
 		private:
 			uint channelNum;
 			char* pdIn;
@@ -75,6 +78,8 @@ namespace PLCnext {
 			char outputRange;
 			AXLF_AO4* ao4;
 			string errorToString(uint);
+
+
 
 		};
 

@@ -32,8 +32,13 @@
 #include "../AXC2152/Modules/AXLF_AO4.h"
 #include "../AXC2152/Modules/AXLF_CNT.h"
 #include "../AXC2152/Modules/AXLF_DO8.h"
+#include "../AXC2152/Modules/AXLF_DO16.h"
+#include "../AXC2152/Modules/AXLF_DO32.h"
+#include "../AXC2152/Modules/AXLF_DO64.h"
 #include "../AXC2152/Modules/AXLF_DI8.h"
 #include "../AXC2152/Modules/AXLF_DI16.h"
+#include "../AXC2152/Modules/AXLF_DI32.h"
+#include "../AXC2152/Modules/AXLF_DI64.h"
 #include "../AXC2152/Modules/AXLF_DI8DO8.h"
 #include "../AXC2152/Modules/AXLF_AI2AO2.h"
 #include "../AXC2152/Modules/AXLF_UTH.h"
@@ -74,6 +79,9 @@ namespace PLCnext {
 		bool busOperational();
 
 		// Device functions
+
+		void setAxioSampleRate(uint);
+		void setPdiRequestRate(uint);
 
 		double deviceTemperature();
 		

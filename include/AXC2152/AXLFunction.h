@@ -50,10 +50,14 @@ namespace PLCnext
 		Type getType() { return ENUM;  }
 		void addItem(string text, int value);
 		int getValue(string);
+		void setCurrentValue(int);
+		int getCurrentValue();
+		string getString(int);
 		const vector<string>& getStrings();
 	private:
 		unordered_map<string, int> values;
 		vector<string> strings;
+		int m_currentValue;
 
 	};
 

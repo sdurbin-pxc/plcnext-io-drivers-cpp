@@ -76,6 +76,9 @@ namespace PLCnext {
 			char outputRange;
 			AXLF_AI2AO2* ai2ao2;
 			string errorToString(uint);
+			
+			// Function enum pointers
+			AXLEnumParameter* m_rangeEnum;
 
 		};
 
@@ -145,6 +148,11 @@ namespace PLCnext {
 			bool filter;
 			string errorToString(uint);
 			ushort getCfgWord(ushort measuringRange, ushort filter, ushort meanValue);
+
+			// Function enum pointers
+			AXLEnumParameter* m_rangeEnum;
+			AXLEnumParameter* m_meanEnum;
+			AXLEnumParameter* m_filterEnum;
 		};
 
 		struct AXLF_AO2

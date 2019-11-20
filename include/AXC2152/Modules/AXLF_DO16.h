@@ -3,9 +3,9 @@
 *  Copyright (c) Phoenix Contact GmbH & Co. KG. All rights reserved.
 *	Licensed under the MIT. See LICENSE file in the project root for full license information.
 *
-*  AXLF_DI8.h
+*  AXLF_DO16.h
 *
-*  Created on: July 11, 2019
+*  Created on: November 18, 2019
 *      Author: Steven Durbin
 *
 ******************************************************************************/
@@ -15,43 +15,47 @@
 #include <sys/types.h>
 #include <string>
 #include "../AXLModule.h"
-#include "../AXLInput.h"
+#include "../AXLOutput.h"
 
 using namespace std;
 
 namespace PLCnext {
 
-	const uint AXLF_MODULE_DI8 = 0xD0D03;
-	const uint AXLF_MODULE_DI8_110_220 = 0xD01;
-	const uint AXLF_MODULE_DI8_48_60 = 0xD0D02;
+	const uint AXLF_MODULE_DO16_FLK = 0x0DC;
+	const uint AXLF_MODULE_DO16 = 0x0D7;
+	const uint AXLF_MODULE_DO16_2H = 0xD07;
+	const uint AXLF_MODULE_DO16_2F = 0x0D1;
 
-	class AXLF_DI8 : public AXLModule
+	class AXLF_DO16 : public AXLModule
 	{
 	public:
-		class DI8_Channel : public AXLInput
+		class DO16_Channel : public AXLOutput
 		{
 		public:
-			DI8_Channel(char* _pdIn, uint channel);
+			DO16_Channel(char* _pdOut, uint channel);
+			void setValue(bool value);
 			bool getValue();
 
-			// AXLInput Overrides
+			// AXLOutput Overrides
 
 			Variant getVariantValue();
+			string setValueString(string);
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params) { return false; }
-
 		private:
 			uint channel;
-			char* pdIn;
+			char* pdOut;
 		};
 
 		virtual const string name();
-		DI8_Channel* channel[8];
-		AXLF_DI8(AXC2152* axc, ushort _slot, uint pdInOffset);
-		char getValue();
+		DO16_Channel* channel[16];
+		AXLF_DO16(AXC2152* axc, ushort _slot, uint pdOutOffset);
+		void setValue(ushort value);
+		ushort getValue();
 	private:
 		char* pd;
 	};
+
 }
 
 

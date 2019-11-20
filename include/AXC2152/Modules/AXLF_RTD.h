@@ -135,6 +135,13 @@ namespace PLCnext {
 			char connectionMethod;
 			string errorToString(uint);
 			ushort getCfgWord(ushort sensorType, ushort resolution, ushort r0, ushort filter, ushort connectionMethod);
+
+			// Function enum pointers
+			AXLEnumParameter* m_connectionEnum;
+			AXLEnumParameter* m_sensorEnum;
+			AXLEnumParameter* m_resolutionEnum;
+			AXLEnumParameter* m_filterEnum;
+			AXLEnumParameter* m_r0Enum;
 		};
 
 		AXLF_RTD(AXC2152* _axc, ushort _slot, uint pdInOffset, int numChannels);

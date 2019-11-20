@@ -86,8 +86,12 @@ namespace PLCnext {
 			char meanValue;
 			bool filter;
 			string errorToString(uint);
-
 			ushort getCfgWord(ushort measuringRange, ushort filter, ushort meanValue);
+
+			// Function enum pointers
+			AXLEnumParameter* m_rangeEnum;
+			AXLEnumParameter* m_meanEnum;
+			AXLEnumParameter* m_filterEnum;
 		};
 
 		AXLF_AI4_I(AXC2152* _axc, ushort _slot, uint pdInOffset);

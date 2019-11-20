@@ -11,7 +11,9 @@
       //  Note, these sysroots can be downloaded from the "Downloads" section of the
       //  AXL F 2152 product page at https://www.phoenixcontact.com
 
-      "sysroots": "c:/2152sdk2019.6.3/sysroots"
+      // The includePaths below may change depending on the C++ version that is in the SDK
+
+      "sysroots": "c:/2152sdk2019.9/sysroots"
     }
   ],
   "configurations": [

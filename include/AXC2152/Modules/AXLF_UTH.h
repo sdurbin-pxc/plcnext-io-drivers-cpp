@@ -128,6 +128,12 @@ namespace PLCnext {
 			char filter;
 			string errorToString(uint);
 			ushort getCfgWord(ushort sensorType, ushort resolution, ushort coldJunction, ushort filter);
+
+			// Function enum pointers
+			AXLEnumParameter* m_filterEnum;
+			AXLEnumParameter* m_sensorEnum;
+			AXLEnumParameter* m_coldJunctionEnum;
+			AXLEnumParameter* m_resolutionEnum;
 		};
 
 		AXLF_UTH(AXC2152* _axc, ushort _slot, uint pdInOffset, uint pdOutOffset, int numChannels);
