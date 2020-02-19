@@ -21,9 +21,9 @@
         "-pthread",
         "-O1",
         "-v",
-        "-I ${env.axcDriver}include",
-        "-o ${env.buildPath}/${env.outputName}",
-        "-g main.cpp ${env.axcDriver}/lib/libAxio2152.a"
+        "-I \"${env.axcDriver}include\"",
+        "-o \"${env.buildPath}/${env.outputName}\"",
+        "-g main.cpp \"${env.axcDriver}/lib/libAxio2152.a\""
       ]
     },
     {
@@ -35,7 +35,7 @@
           "command": "pscp",
           "args": [
             "-pw phoenix",
-            "${workspaceRoot}/${env.buildPath}/${env.outputName}",
+            "\"${workspaceRoot}/${env.buildPath}/${env.outputName}\"",
             "root@192.168.1.10:/tmp/${env.outputName}"
           ]
         },
