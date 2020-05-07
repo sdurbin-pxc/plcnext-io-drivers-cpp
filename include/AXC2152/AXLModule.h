@@ -10,6 +10,17 @@
 *
 ******************************************************************************/
 
+
+/* Smart Element Types:
+
+slot: 1: type: 1a0d - ai4/u
+slot: 2: type: 1d19 - do16/1
+slot: 3: type: 1d18 - di16/1
+slot: 4: type: 1a10 - ao4/u
+slot: 5: type: 1a0c - ai4/i
+slot: 6: type: 1a0f - ao4/i
+
+*/
 #pragma once
 
 #include <sys/types.h>

@@ -30,7 +30,6 @@
 #include "../AXC2152/Modules/AXLF_AI4_U.h"
 #include "../AXC2152/Modules/AXLF_AI8.h"
 #include "../AXC2152/Modules/AXLF_AO4.h"
-#include "../AXC2152/Modules/AXLF_CNT.h"
 #include "../AXC2152/Modules/AXLF_DO8.h"
 #include "../AXC2152/Modules/AXLF_DO16.h"
 #include "../AXC2152/Modules/AXLF_DO32.h"
@@ -43,6 +42,13 @@
 #include "../AXC2152/Modules/AXLF_AI2AO2.h"
 #include "../AXC2152/Modules/AXLF_UTH.h"
 #include "../AXC2152/Modules/AXLF_RTD.h"
+#include "../AXC2152/Modules/SmartElements/AXLF_SE_AI4_I.h"
+#include "../AXC2152/Modules/SmartElements/AXLF_SE_AI4_U.h"
+#include "../AXC2152/Modules/SmartElements/AXLF_SE_AO4_I.h"
+#include "../AXC2152/Modules/SmartElements/AXLF_SE_AO4_U.h"
+#include "../AXC2152/Modules/SmartElements/AXLF_SE_DI16.h"
+#include "../AXC2152/Modules/SmartElements/AXLF_SE_DO16.h"
+#include "../AXC2152/Modules/Function/AXLF_CNT.h"
 
 #define PROCESS_DATA_SIZE 512
 
