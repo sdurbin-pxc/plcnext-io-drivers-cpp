@@ -15,6 +15,8 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include "../../AXLModule.h"
+#include "../../AXLVariant.h"
+#include "../../AXLInput.h"
 
 using namespace std;
 
@@ -28,7 +30,7 @@ namespace PLCnext {
 	{
 	public:
 
-		class CNT_Channel
+		class CNT_Channel : public AXLInput
 		{
 		public:
 
@@ -105,12 +107,13 @@ namespace PLCnext {
 				UpperCountLimit = 2 << 4,
 				BothLimits		= 3 << 4
 			};
-			bool executeFunction(int id, vector<Variant> params) { return false; }
+			Variant getVariantValue();
+			string getUnitsString();
+			bool executeFunction(int id, vector<Variant> params);
 		private:
 			char* pdIn;
 			char* pdOut;
 			CounterConfiguration counterConfiguration;
-			AXLF_CNT* cnt;
 			uint channelNum;
 			void bitClear(int wordNum, int bit);
 			void bitSet(int wordNum, int bit);
@@ -140,9 +143,8 @@ namespace PLCnext {
 		AXLF_CNT();
 		CNT_Channel* channel[2];
 		virtual const string name();
-	private:
-		bool _pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		bool _pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
+	
+
 	};
 
 }

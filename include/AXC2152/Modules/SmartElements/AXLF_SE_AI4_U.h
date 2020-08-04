@@ -53,7 +53,6 @@ namespace PLCnext {
 
 		private:
 			char* pd;
-			AXLF_SE_AI4_U* ai4u;
 			uint channelNum;
 			string errorToString(uint);
 		};
@@ -62,9 +61,6 @@ namespace PLCnext {
 		AXLF_SE_AI4_U();
 		AI4_Channel* channel[4];
 		virtual const string name();
-	private:
-		bool _pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		bool _pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
 	};
 
 }

@@ -148,9 +148,6 @@ namespace PLCnext {
 		AXLF_RTD();
 		RTD_Channel** channel;
 		virtual const string name();
-	private:
-		bool _pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		bool _pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
 	};
 
 	class AXLF_RTD8 : public AXLF_RTD

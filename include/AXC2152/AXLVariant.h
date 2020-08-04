@@ -40,6 +40,15 @@ public:
 		data.type = STRING;
 		data.strVal = new std::string(v);
 	}
+	Variant(unsigned int v) {
+		data.type = INT;
+		data.intVal = v;
+	}
+
+	Variant(long long v) {
+		data.type = INT;
+		data.intVal = v;
+	}
 	//the missing copy constructor
 	Variant(Variant const& other)
 	{
@@ -112,6 +121,24 @@ public:
 		throw std::runtime_error("bad cast");
 	}
 
+	operator unsigned int() const {
+		if (INT == data.type)
+		{
+			return data.intVal;
+		}
+		//do type conversion if you like
+		throw std::runtime_error("bad cast");
+	}
+
+	operator long long() const {
+		if (INT == data.type)
+		{
+			return data.intVal;
+		}
+		//do type conversion if you like
+		throw std::runtime_error("bad cast");
+	}
+
 	operator double() const {
 		if (DOUBLE == data.type) {
 			return data.realVal;
@@ -146,7 +173,7 @@ private:
 		Type type;
 		union
 		{
-			int intVal;
+			long long intVal;
 			double realVal;
 			std::string* strVal;
 		};

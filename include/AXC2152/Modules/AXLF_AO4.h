@@ -86,11 +86,6 @@ namespace PLCnext {
 		AXLF_AO4(AXC2152* axc, ushort _slot, uint pdInOffset, uint pdOutOffset);
 		AO4_Channel* channel[4];
 		virtual const string name();
-
-
-	private:
-		bool _pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		bool _pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
 	};
 
 }

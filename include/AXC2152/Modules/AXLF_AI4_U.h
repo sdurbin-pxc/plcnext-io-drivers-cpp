@@ -81,7 +81,6 @@ namespace PLCnext {
 
 		private:
 			char* pd;
-			AXLF_AI4_U* ai4u;
 			uint channelNum;
 			char measuringRange;
 			char meanValue;
@@ -99,9 +98,6 @@ namespace PLCnext {
 		AXLF_AI4_U();
 		AI4_U_Channel* channel[4];
 		virtual const string name();
-	private:
-		bool _pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		bool _pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
 	};
 
 }

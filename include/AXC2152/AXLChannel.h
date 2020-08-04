@@ -15,6 +15,7 @@
 #include <string>
 #include "AXLVariant.h"
 #include "AXLFunction.h"
+#include "AXLModule.h"
 
 using namespace std;
 
@@ -36,6 +37,7 @@ namespace PLCnext
 	protected:
 		ChannelType channelType;
 		vector<AXLFunction*> functions;
+		AXLModule* m_module;
 	};
 
 }

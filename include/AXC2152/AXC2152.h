@@ -71,8 +71,13 @@ namespace PLCnext {
 		AXC2152();
 		bool initialize();
 		const vector<AXLModule*>& getModules() const;
+		void scanModules();
 		DiagnosticsInfo getDiagnosticsInfo();
-
+		int saveConfiguration(string filePath);
+		bool loadConfiguration(string filePath, string &error);
+		uint getBaseModuleType(uint type);
+		string getBaseModuleName(uint baseType);
+		uint moduleTypeFromName(string name);
 		uint getInitializationError();
 		bool isInitialized();
 		~AXC2152();
@@ -113,15 +118,15 @@ namespace PLCnext {
 		pthread_mutex_t* pdiReadMutex;
 		char* map;
 		size_t mapSize;
-		AXLModule* moduleFromType(AXC2152* axc, ushort slot, uint type, uint &pdInOffset, uint &pdOutOffset);
-		void scanModules();
+		AXLModule* moduleFromType(ushort slot, uint type, uint &pdInOffset, uint &pdOutOffset, bool missing);
 		double timeSpecToSeconds(struct timespec* ts);
 		vector<AXLModule*> modules;
 		uint m_initError;
 	protected:
 		bool pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
 		bool pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);
-
+	private:
+		pair<uint, uint> getProcessDataSize(ushort type, char data[]);
 	};
 
 }

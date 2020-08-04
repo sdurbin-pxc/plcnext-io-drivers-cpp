@@ -16,6 +16,7 @@
 #include <unordered_map>
 #include <vector>
 #include <cstdarg>
+#include "AXLVariant.h"
 
 
 using namespace std;
@@ -30,10 +31,11 @@ namespace PLCnext
 	public:
 		enum Type
 		{
-			NUMBER,
+			INT,
 			ENUM
 		};
 		virtual Type getType() = 0;
+		virtual Variant getCurrentValue() = 0;
 		string name;
 	};
 
@@ -50,8 +52,8 @@ namespace PLCnext
 		Type getType() { return ENUM;  }
 		void addItem(string text, int value);
 		int getValue(string);
-		void setCurrentValue(int);
-		int getCurrentValue();
+		void setCurrentValue(Variant);
+		Variant getCurrentValue();
 		string getString(int);
 		const vector<string>& getStrings();
 	private:
@@ -59,6 +61,21 @@ namespace PLCnext
 		vector<string> strings;
 		int m_currentValue;
 
+	};
+
+	class AXLIntegerParameter : public AXLParameter
+	{
+	public:
+		Type getType() { return INT; }
+		AXLIntegerParameter(string, long long, long long, long long);
+		long long getMax();
+		long long getMin();
+		void setCurrentValue(Variant);
+		Variant getCurrentValue();
+	private:
+		long long m_currentValue;
+		long long m_min;
+		long long m_max;
 	};
 
 	/*
@@ -84,11 +101,13 @@ namespace PLCnext
 		string name;
 		string description;
 		vector<AXLParameter*> params;
-		AXLFunction(int _id, string _name, string _description, vector<AXLParameter*> params, AXLChannel* _owner);
-		int getId() { return id; };
+		AXLFunction(int _id, string _name, string _description, vector<AXLParameter*> params, AXLChannel* _owner, bool isConfiguration);
+		int getId();
+		bool isConfiguration();
+		string getCamelCaseName();
 	protected:
 		int id;
-	private:
+		bool m_isConfig;
 
 	};
 }

@@ -74,7 +74,6 @@ namespace PLCnext {
 			uint channelNum;
 			char* pdOut;
 			char outputRange;
-			AXLF_AI2AO2* ai2ao2;
 			string errorToString(uint);
 			
 			// Function enum pointers
@@ -141,7 +140,6 @@ namespace PLCnext {
 
 		private:
 			char* pd;
-			AXLF_AI2AO2* ai2ao2;
 			uint channelNum;
 			char measuringRange;
 			char meanValue;
@@ -171,9 +169,6 @@ namespace PLCnext {
 
 		virtual const string name();
 
-	private:
-		bool _pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		bool _pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
 	};
 }
 
