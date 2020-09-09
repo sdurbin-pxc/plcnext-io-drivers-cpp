@@ -31,7 +31,7 @@ Follow these steps to get your development environment set up:
 
 **1e.** Using SSH as the root user, *cd* to the path you copied the driver component package to and run the following commands. Note: change *{fwVersion}* to the firmware version of the driver you downloaded from this repository.
 
-       NOTE:  SSH login via root is disabled for security reasons.  You need to login as admin, and then switch to root  'su root'.  If you have not created a root password on the device, you can do so from the admin user via 'sudo passwd root'.
+**NOTE:  SSH login via root is disabled for security reasons.  You need to login as admin, and then switch to root  'su root'.  If you have not created a root password on the device, you can do so from the admin user via 'sudo passwd root'.**
 
 ------> **tar xvzf plcnext-iodriver-*{fwVersion}*.tar.gz --overwrite -C /** (Extract the driver component package)  
 ------> **/etc/init.d/plcnext restart** (Restart the PLCnext runtime)  
