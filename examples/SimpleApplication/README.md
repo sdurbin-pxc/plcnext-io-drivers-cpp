@@ -8,6 +8,7 @@ It performs the following actions:
 * Checks to make sure the DI8/DO8 module is in the first slot, and the AI2/AO2 is in the second slot.
 * Sets the AI2 Channel 1 input mode to 0-10V.
 * Sets the AO2 Channel 1 output mode to 4-20mA.
+* Enables process outputs
 
 And loops the following actions:
 

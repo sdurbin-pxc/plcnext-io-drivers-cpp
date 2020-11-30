@@ -2,7 +2,7 @@
   "environments": [
     {
       // Path to your Axioline sysroots:
-      "sysroots": "c:/2152sdk2019.9/sysroots",
+      "sysroots": "c:/2152sdk2020.6.1/sysroots",
       "buildPath": "./build",
       "outputName":  "vsExample.o",
 

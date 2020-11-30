@@ -1,5 +1,5 @@
 #include <math.h>
-#include <AXC2152/AXC2152.h>
+#include <Axiobus/Axiobus.h>
 
 using namespace PLCnext;
 
@@ -7,13 +7,13 @@ int main()
 {
 	printf("\nInitializing Axioline bus system... ");
 
-	// Initialize the main Axioline 2152 class.
-	AXC2152 axio = AXC2152();
+	// Initialize the main Axioline bus class.
+	Axiobus axio = Axiobus();
 
 	// Check to see if the class successfully attached to the driver.
 	if (!axio.isInitialized())
 	{
-		printf("AXC2152 class initialization failed.\n");
+		printf("Axiobus class initialization failed.\n");
 		return 1;
 	}
 
@@ -68,12 +68,18 @@ int main()
 		return 5;
 	}
 
+	// Tell the Axioline I/O driver that we will be handling the process outputs.
+
+	axio.enableOutputs();
+
+	axio.saveConfiguration("testConfig.json");
+
 	printf("\nEntering program loop. PRESS CTRL+C to end\n\n\n");
 	// Loop forever
 	for (;;)
 	{
 		// Get the bus diagnostics information
-		AXC2152::DiagnosticsInfo diag = axio.getDiagnosticsInfo();
+		Axiobus::DiagnosticsInfo diag = axio.getDiagnosticsInfo();
 
 		// Check if we are in the desired controller state (Bus ready, bus active, and controller in run state)
 		// The diag.status, diag.param1 and diag.param2 will give detailed information of the system and I/O state.

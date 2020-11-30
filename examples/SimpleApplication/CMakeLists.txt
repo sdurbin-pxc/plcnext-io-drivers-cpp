@@ -10,13 +10,13 @@ include_directories(
 )
 
 link_directories(
-	"${AXL_DRIVER_CLASSES}/lib"
+	"${AXL_DRIVER_CLASSES}/lib/${LIBARCH}"
 )
 
 add_executable(
 	axcSimpleApp.o main.cpp
 )
 
-target_link_libraries (axcSimpleApp.o Axio2152)
+target_link_libraries (axcSimpleApp.o Axiobus)
 
 install (TARGETS axcSimpleApp.o DESTINATION bin)
