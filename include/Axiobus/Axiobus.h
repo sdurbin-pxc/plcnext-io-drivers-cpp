@@ -49,6 +49,7 @@
 #include "Modules/SmartElements/AXLF_SE_DI16.h"
 #include "Modules/SmartElements/AXLF_SE_DO16.h"
 #include "Modules/Function/AXLF_CNT.h"
+#include "PDIResponseStatus.h"
 
 #define PROCESS_DATA_SIZE 512
 
@@ -71,7 +72,7 @@ namespace PLCnext {
 		Axiobus();
 		bool initialize();
 		const vector<AXLModule*>& getModules() const;
-		void scanModules();
+		bool scanModules();
 		DiagnosticsInfo getDiagnosticsInfo();
 		int saveConfiguration(string filePath);
 		bool loadConfiguration(string filePath, string &error);
@@ -128,8 +129,8 @@ namespace PLCnext {
 		uint* m_pOutputEnabled;
 		pair<uint, uint> getProcessDataSize(ushort type, char data[]);
 	protected:
-		bool pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		bool pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);
+		PDIResponseStatus pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
+		PDIResponseStatus pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);
 
 	};
 

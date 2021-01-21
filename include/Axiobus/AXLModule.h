@@ -26,7 +26,7 @@ slot: 6: type: 1a0f - ao4/i
 #include <sys/types.h>
 #include <vector>
 #include <string>
-
+#include "PDIResponseStatus.h"
 
 using namespace std;
 
@@ -45,8 +45,8 @@ namespace PLCnext {
 		uint getOrderNumber();
 		uint getType();
 		uint getSlotNumber();
-		bool pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		bool pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
+		PDIResponseStatus pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
+		PDIResponseStatus pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
 		bool isMissing();
 
 		enum Error
