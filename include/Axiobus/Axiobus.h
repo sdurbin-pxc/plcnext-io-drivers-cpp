@@ -128,6 +128,7 @@ namespace PLCnext {
 		uint m_initError;
 		uint* m_pOutputEnabled;
 		pair<uint, uint> getProcessDataSize(ushort type, char data[]);
+		bool CreatePdiMutexes();
 	protected:
 		PDIResponseStatus pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
 		PDIResponseStatus pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);
