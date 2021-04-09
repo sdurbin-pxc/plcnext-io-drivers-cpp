@@ -10,7 +10,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/plcnext"
   "../../../include"
   )
 

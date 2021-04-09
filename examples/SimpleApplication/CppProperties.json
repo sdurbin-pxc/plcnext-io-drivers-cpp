@@ -1,10 +1,10 @@
+
 // This file is for a Visual Studio "Open Folder" project.
 // It will help the IDE configure IntelliSense.
 
 {
   "environments": [
     {
-
       //  Set the directory of your AXC F 2152 SYSROOTS that correspond
       //  to the firmware version on your controller.
 
@@ -13,25 +13,41 @@
 
       // The includePaths below may change depending on the C++ version that is in the SDK
 
-      "sysroots": "c:/2152sdk2020.6.1/sysroots"
+
+      "sysroots_arm": "c:/2152sdk2021/sysroots",
+      "sysroots_x64": "c:/3152sdk2021.0.3/sysroots"
     }
   ],
   "configurations": [
     {
-      "name": "AXC2152",
+      "name": "Axiobus_ARM",
       "compilerSwitches": "-std=c++11 /O1",
       "includePath": [
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include",
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0",
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0/arm-pxc-linux-gnueabi",
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0/backward",
-        "${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/lib/gcc/arm-pxc-linux-gnueabi/9.3.0/include",
-        "${env.sysroots}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/9.3.0/include",
-        "${env.sysroots}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/9.3.0/include-fixed",
-
+        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include",
+        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0",
+        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0/arm-pxc-linux-gnueabi",
+        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0/backward",
+        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/lib/gcc/arm-pxc-linux-gnueabi/9.3.0/include",
+        "${env.sysroots_arm}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/9.3.0/include",
+        "${env.sysroots_arm}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/9.3.0/include-fixed",
         "${workspaceRoot}/../../**" // Axioline driver root directory. (two paths up relative to this example)
       ],
       "intelliSenseMode": "linux-gcc-arm"
+    },
+    {
+      "name": "Axiobus_x64",
+      "compilerSwitches": "-std=c++11 /O1",
+      "includePath": [
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include",
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/9.3.0",
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux",
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward",
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/lib/gcc/x86_64-pxc-linux/9.3.0/include",
+        "${env.sysroots_x64}/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include",
+        "${env.sysroots_x64}/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed",
+        "${workspaceRoot}/../../**" // Axioline driver root directory. (two paths up relative to this example)
+      ],
+      "intelliSenseMode": "linux-gcc-x64"
     }
   ]
 }

@@ -6,7 +6,7 @@
 #	Note, these sysroots can be downloaded from the "Downloads" section of the		#
 #	AXL F 3152 product page at https://www.phoenixcontact.com						#
 #																					#
-	set(AXC_SYSROOT "C:/3152sdk2020.6.2/sysroots")								#
+	set(AXC_SYSROOT "C:/3152sdk2021.0.3/sysroots")								#
 #																					#
 # __________________________________________________________________________________#
 
