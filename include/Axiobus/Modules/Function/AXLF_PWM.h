@@ -74,7 +74,7 @@ namespace PLCnext {
 
 		private:
 			char* pdOut;
-			uint channelNum;
+			//uint channelNum;
 			uint m_mode;
 			ushort m_divider;
 			ushort m_pulseWidth;

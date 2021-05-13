@@ -114,7 +114,7 @@ namespace PLCnext {
 			char* pdIn;
 			char* pdOut;
 			CounterConfiguration counterConfiguration;
-			uint channelNum;
+			//uint channelNum;
 			void bitClear(int wordNum, int bit);
 			void bitSet(int wordNum, int bit);
 			bool getBit(int wordNum, int bit);

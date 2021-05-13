@@ -53,7 +53,7 @@ namespace PLCnext {
 
 		private:
 			char* pd;
-			uint channelNum;
+			//uint channelNum;
 			string errorToString(uint);
 		};
 

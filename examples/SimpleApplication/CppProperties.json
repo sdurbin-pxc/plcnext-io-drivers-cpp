@@ -33,8 +33,8 @@
         "${workspaceRoot}/../../**" // Axioline driver root directory. (two paths up relative to this example)
       ],
       "intelliSenseMode": "linux-gcc-arm"
-    },
-    {
+    }, 
+    { 
       "name": "Axiobus_x64",
       "compilerSwitches": "-std=c++11 /O1",
       "includePath": [
@@ -45,7 +45,7 @@
         "${env.sysroots_x64}/corei7-64-pxc-linux/usr/lib/gcc/x86_64-pxc-linux/9.3.0/include",
         "${env.sysroots_x64}/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include",
         "${env.sysroots_x64}/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed",
-        "${workspaceRoot}/../../**" // Axioline driver root directory. (two paths up relative to this example)
+        "${workspaceRoot}/../../**" // Axioline driver root directory. (two paths up relative to this example) 
       ],
       "intelliSenseMode": "linux-gcc-x64"
     }

@@ -45,6 +45,7 @@ namespace PLCnext {
 		uint getOrderNumber();
 		uint getType();
 		uint getSlotNumber();
+		Axiobus* getAxioMaster();
 		PDIResponseStatus pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
 		PDIResponseStatus pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
 		bool isMissing();

@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../../../include/Axiobus/AXLAnalogOutput.h
+string
+-
+AXLOutput.h
+../../../include/Axiobus/AXLOutput.h
+
 ../../../include/Axiobus/AXLChannel.h
 string
 -
@@ -13,6 +19,12 @@ AXLVariant.h
 ../../../include/Axiobus/AXLVariant.h
 AXLFunction.h
 ../../../include/Axiobus/AXLFunction.h
+AXLModule.h
+../../../include/Axiobus/AXLModule.h
+
+../../../include/Axiobus/AXLDigitalOutputModule.h
+string
+-
 AXLModule.h
 ../../../include/Axiobus/AXLModule.h
 
@@ -125,14 +137,18 @@ Modules/Function/AXLF_CNT.h
 ../../../include/Axiobus/Modules/Function/AXLF_CNT.h
 PDIResponseStatus.h
 ../../../include/Axiobus/PDIResponseStatus.h
+../Hardware/AxioServiceExecuter.hpp
+../../../include/Hardware/AxioServiceExecuter.hpp
+thread
+-
 
 ../../../include/Axiobus/Modules/AXLF_AI2AO2.h
 sys/types.h
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../AXLAnalogOutput.h
+../../../include/Axiobus/AXLAnalogOutput.h
 ../AXLInput.h
 ../../../include/Axiobus/AXLInput.h
 
@@ -165,8 +181,8 @@ sys/types.h
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../AXLAnalogOutput.h
+../../../include/Axiobus/AXLAnalogOutput.h
 
 ../../../include/Axiobus/Modules/AXLF_DI16.h
 sys/types.h
@@ -213,8 +229,8 @@ sys/types.h
 -
 string
 -
-../AXLModule.h
-../../../include/Axiobus/AXLModule.h
+../AXLDigitalOutputModule.h
+../../../include/Axiobus/AXLDigitalOutputModule.h
 AXLF_DI8.h
 ../../../include/Axiobus/Modules/AXLF_DI8.h
 AXLF_DO8.h
@@ -225,8 +241,8 @@ sys/types.h
 -
 string
 -
-../AXLModule.h
-../../../include/Axiobus/AXLModule.h
+../AXLDigitalOutputModule.h
+../../../include/Axiobus/AXLDigitalOutputModule.h
 ../AXLOutput.h
 ../../../include/Axiobus/AXLOutput.h
 
@@ -235,8 +251,8 @@ sys/types.h
 -
 string
 -
-../AXLModule.h
-../../../include/Axiobus/AXLModule.h
+../AXLDigitalOutputModule.h
+../../../include/Axiobus/AXLDigitalOutputModule.h
 ../AXLOutput.h
 ../../../include/Axiobus/AXLOutput.h
 
@@ -245,8 +261,8 @@ sys/types.h
 -
 string
 -
-../AXLModule.h
-../../../include/Axiobus/AXLModule.h
+../AXLDigitalOutputModule.h
+../../../include/Axiobus/AXLDigitalOutputModule.h
 ../AXLOutput.h
 ../../../include/Axiobus/AXLOutput.h
 
@@ -255,8 +271,8 @@ sys/types.h
 -
 string
 -
-../AXLModule.h
-../../../include/Axiobus/AXLModule.h
+../AXLDigitalOutputModule.h
+../../../include/Axiobus/AXLDigitalOutputModule.h
 ../AXLOutput.h
 ../../../include/Axiobus/AXLOutput.h
 
@@ -335,12 +351,78 @@ sys/types.h
 -
 string
 -
-../../AXLModule.h
-../../../include/Axiobus/AXLModule.h
+../../AXLDigitalOutputModule.h
+../../../include/Axiobus/AXLDigitalOutputModule.h
 ../../AXLOutput.h
 ../../../include/Axiobus/AXLOutput.h
 
 ../../../include/Axiobus/PDIResponseStatus.h
+
+../../../include/Hardware/AxioDeviceConfiguration.hpp
+stdint.h
+-
+
+../../../include/Hardware/AxioDrvAcc.h
+mutex
+-
+string
+-
+axio_xfer.h
+../../../include/Hardware/axio_xfer.h
+
+../../../include/Hardware/AxioResult.hpp
+stdint.h
+-
+
+../../../include/Hardware/AxioService.hpp
+ddi_macr.h
+../../../include/Hardware/ddi_macr.h
+fibo_msg_codes.h
+../../../include/Hardware/fibo_msg_codes.h
+vector
+-
+stdint.h
+-
+AxioDeviceConfiguration.hpp
+../../../include/Hardware/AxioDeviceConfiguration.hpp
+PdiResult.hpp
+../../../include/Hardware/PdiResult.hpp
+
+../../../include/Hardware/AxioServiceExecuter.hpp
+AxioService.hpp
+../../../include/Hardware/AxioService.hpp
+AxioDrvAcc.h
+../../../include/Hardware/AxioDrvAcc.h
+AxioResult.hpp
+../../../include/Hardware/AxioResult.hpp
+AxioDeviceConfiguration.hpp
+../../../include/Hardware/AxioDeviceConfiguration.hpp
+PdiResult.hpp
+../../../include/Hardware/PdiResult.hpp
+PdiParam.hpp
+../../../include/Hardware/PdiParam.hpp
+vector
+-
+map
+-
+
+../../../include/Hardware/PdiParam.hpp
+stdint.h
+-
+
+../../../include/Hardware/PdiResult.hpp
+stdint.h
+-
+
+../../../include/Hardware/axio_xfer.h
+
+../../../include/Hardware/ddi_macr.h
+stdtypes.h
+../../../include/Hardware/stdtypes.h
+
+../../../include/Hardware/fibo_msg_codes.h
+
+../../../include/Hardware/stdtypes.h
 
 C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/main.cpp
 math.h

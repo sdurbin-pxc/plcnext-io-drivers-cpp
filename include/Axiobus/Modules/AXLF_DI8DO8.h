@@ -14,7 +14,7 @@
 
 #include <sys/types.h>
 #include <string>
-#include "../AXLModule.h"
+#include "../AXLDigitalOutputModule.h"
 #include "AXLF_DI8.h"
 #include "AXLF_DO8.h"
 
@@ -25,14 +25,14 @@ namespace PLCnext {
 	const uint AXLF_MODULE_DI8DO8 = 0xDD;
 	const uint AXLF_MODULE_DI8DO8_3 = 0xD02;
 
-	class AXLF_DI8DO8 : public AXLModule
+	class AXLF_DI8DO8 : public AXLDigitalOutputModule
 	{
 	public:
 		virtual const string name();
 		AXLF_DO8* do8;
 		AXLF_DI8* di8;
 		AXLF_DI8DO8(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
-		AXLF_DI8DO8() {}
+		//AXLF_DI8DO8() {}
 	};
 
 }

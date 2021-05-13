@@ -55,7 +55,7 @@ namespace PLCnext {
 			bool executeFunction(int id, vector<Variant> params);
 
 		private:
-			uint channelNum;
+			//uint channelNum;
 			char* pdIn;
 			char* pdOut;
 			string errorToString(uint);

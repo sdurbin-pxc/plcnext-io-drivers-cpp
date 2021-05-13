@@ -14,7 +14,7 @@
 
 #include <sys/types.h>
 #include "../AXLModule.h"
-#include "../AXLOutput.h"
+#include "../AXLAnalogOutput.h"
 #include "../AXLInput.h"
 
 using namespace std;
@@ -29,7 +29,7 @@ namespace PLCnext {
 	{
 	public:
 
-		class AO2_Channel : public AXLOutput
+		class AO2_Channel : public AXLAnalogOutput
 		{
 		public:
 			AO2_Channel(char* _pdOut, AXLF_AI2AO2* ai2ao2, uint _channelNum);
@@ -71,7 +71,7 @@ namespace PLCnext {
 			bool executeFunction(int id, vector<Variant> params);
 
 		private:
-			uint channelNum;
+			//uint channelNum;
 			char* pdOut;
 			char outputRange;
 			string errorToString(uint);
@@ -79,6 +79,9 @@ namespace PLCnext {
 			// Function enum pointers
 			AXLEnumParameter* m_rangeEnum;
 
+		protected:
+
+			uint32_t convertValueToRaw(double value, uint16_t& converted);
 		};
 
 		class AI2_Channel : public AXLInput
@@ -140,7 +143,7 @@ namespace PLCnext {
 
 		private:
 			char* pd;
-			uint channelNum;
+			//uint channelNum;
 			char measuringRange;
 			char meanValue;
 			bool filter;

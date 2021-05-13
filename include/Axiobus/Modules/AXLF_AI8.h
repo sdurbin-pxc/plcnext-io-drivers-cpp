@@ -85,7 +85,7 @@ namespace PLCnext {
 		private:
 			char* pd;
 			AXLF_AI8* ai8;
-			uint channelNum;
+			//uint channelNum;
 			char measuringRange;
 			char meanValue;
 			bool filter;

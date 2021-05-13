@@ -14,7 +14,7 @@
 
 #include <sys/types.h>
 #include <string>
-#include "../../AXLModule.h"
+#include "../../AXLDigitalOutputModule.h"
 #include "../../AXLOutput.h"
 
 using namespace std;
@@ -24,7 +24,7 @@ namespace PLCnext {
 
 	const uint AXLF_MODULE_SE_DO16 = 0x1d19;
 
-	class AXLF_SE_DO16 : public AXLModule
+	class AXLF_SE_DO16 : public AXLDigitalOutputModule
 	{
 	public:
 		class DO16_Channel : public AXLOutput

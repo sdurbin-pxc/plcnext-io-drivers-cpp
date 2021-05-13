@@ -80,7 +80,7 @@ namespace PLCnext {
 
 		private:
 			char* pd;
-			uint channelNum;
+			//uint channelNum;
 			char measuringRange;
 			char meanValue;
 			bool filter;

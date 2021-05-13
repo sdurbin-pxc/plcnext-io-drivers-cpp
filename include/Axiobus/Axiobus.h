@@ -50,6 +50,8 @@
 #include "Modules/SmartElements/AXLF_SE_DO16.h"
 #include "Modules/Function/AXLF_CNT.h"
 #include "PDIResponseStatus.h"
+#include "../Hardware/AxioServiceExecuter.hpp"
+#include <thread>
 
 #define PROCESS_DATA_SIZE 512
 
@@ -62,14 +64,42 @@ namespace PLCnext {
 		friend class AXLModule;
 	public:
 
-		struct DiagnosticsInfo
+		// Select the process data interface.
+		// To work in conjunction with PLCnext Engineer, PLCNEXT must be chosen.
+		enum DataInterface
 		{
-			ushort status;  // Bus status flags
-			ushort param1;  // Error code
-			ushort param2;  // Error Location (slot number, 1 based index);
+			DIRECT,		// Access I/O hardware directly
+			PLCNEXT		// Access I/O process data via PLCnext Runtime
 		};
 
-		Axiobus();
+		// Determine how the process data is read/write.
+		enum BusMode
+		{
+			CYCLIC,		// Creates thread that writes/reads process data on a cycle.
+			EXPLICIT	// Reads bus and writes process data on command only.
+		};
+
+		// Structure that holds diagnostic information about the bus
+		struct DiagnosticsInfo	
+		{
+			ushort status;		// Bus status flags
+			ushort param1;		// Error code
+			ushort param2;		// Error Location (slot number, 1 based index);
+		};
+
+		// Default constructor defaults to "PLCnext Mode - CYCLIC"
+		Axiobus();	
+
+		// DataInterface:
+		//	PLCNEXT -> If using PLCNext Runtime
+		//	DIRECT  -> If PLCnext Runtime is not running.
+
+		// BusMode:
+		//	CYCLIC -> Data reads/writes update on a cycle.
+		//	EXPLICIT -> Data immediately reads/writes on command.
+		//				Use if process data must not change mid-code execution.
+
+		Axiobus(DataInterface, BusMode);
 		bool initialize();
 		const vector<AXLModule*>& getModules() const;
 		bool scanModules();
@@ -81,10 +111,19 @@ namespace PLCnext {
 		uint moduleTypeFromName(string name);
 		uint getInitializationError();
 		bool isInitialized();
-		void enableOutputs();
-		void disableOutputs();
+
+		// Explicit Mode functions:
+		bool readInputs();
+		bool writeOutputs();
+
+
+		// PLCnext Interface Functionality
+		void enablePLCnextOutputs();
+		void disablePLCnextOutputs();
+
 		bool isOutputEnabled();
 		~Axiobus();
+
 
 		// Functions to interpret diagnostic flags:
 		bool ioWarning();
@@ -93,7 +132,7 @@ namespace PLCnext {
 		bool controllerError();
 		bool busOperational();
 
-		// Device functions
+		// PLCnext Runtime Interop Parameters
 
 		void setAxioSampleRate(uint);
 		void setPdiRequestRate(uint);
@@ -129,6 +168,17 @@ namespace PLCnext {
 		uint* m_pOutputEnabled;
 		pair<uint, uint> getProcessDataSize(ushort type, char data[]);
 		bool CreatePdiMutexes();
+		AxioServiceExecuter* m_axioServiceExecuter;
+		uint m_inDataSize;
+		uint m_outDataSize;
+		thread* m_cyclicThread;
+		void cyclicExecution();
+		bool m_doCyclicExecution;
+		uintptr_t m_OutputPtr;
+		T_AXM_DIAG_EX m_directDiag;
+
+		BusMode m_busMode;
+		DataInterface m_dataInterface;
 	protected:
 		PDIResponseStatus pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
 		PDIResponseStatus pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);

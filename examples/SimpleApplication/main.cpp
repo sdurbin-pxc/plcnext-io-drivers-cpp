@@ -8,12 +8,12 @@ int main()
 	printf("\nInitializing Axioline bus system... ");
 
 	// Initialize the main Axioline bus class.
-	Axiobus axio = Axiobus();
-
+	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::CYCLIC);
+	printf("Axio class instantiated.\n");
 	// Check to see if the class successfully attached to the driver.
 	if (!axio.isInitialized())
 	{
-		printf("Axiobus class initialization failed.\n");
+		printf("Axiobus class initialization failed. Init Error: %d\n", axio.getInitializationError());
 		return 1;
 	}
 
@@ -54,7 +54,7 @@ int main()
 
 	// Configure the AI2/AO2 module's first AI2 channel to measure from 0 to 10 Volts:
 
-	if (!ai2ao2->ai2->channel[0]->setMeasuringRange(AXLF_AI2AO2::AO2_Channel::OutputRange::V_0_P10))
+	if (!ai2ao2->ai2->channel[0]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::V_0_P10))
 	{
 		printf("Configuring AI2/AO2's first input channel's measuring range failed.\n");
 		return 4;
@@ -68,11 +68,30 @@ int main()
 		return 5;
 	}
 
-	// Tell the Axioline I/O driver that we will be handling the process outputs.
+	if (!ai2ao2->ao2->channel[0]->setSubstituteBehavior(AXLAnalogOutput::SubstituteBehavior::Substitute))
+		printf("trouble setting sub behavior.\n");
 
-	axio.enableOutputs();
+	if (!ai2ao2->ao2->channel[0]->setSubstituteValue(12.3))
+		printf("trouble setting sub value\n");
 
-	axio.saveConfiguration("testConfig.json");
+
+	// Configure the AI2/AO2 module's second AI2 channel to measure from 4 to 20 mA:
+
+	if (!ai2ao2->ai2->channel[1]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::mA_P4_P20))
+	{
+		printf("Configuring AI2/AO2's second input channel's measuring range failed.\n");
+		return 6;
+	}
+	
+	// Set digital output bus fail output behavior:
+	if (!di8do8->setSubstituteBehavior(AXLDigitalOutputModule::SubstituteBehavior::HoldLast))
+		printf("trouble setting do sub behavior.\n");
+
+	// Tell the Axioline I/O component that we will be handling the process outputs.
+
+	axio.enablePLCnextOutputs();
+
+	//axio.saveConfiguration("testConfig.json");
 
 	printf("\nEntering program loop. PRESS CTRL+C to end\n\n\n");
 	// Loop forever
@@ -80,19 +99,20 @@ int main()
 	{
 		// Get the bus diagnostics information
 		Axiobus::DiagnosticsInfo diag = axio.getDiagnosticsInfo();
-
+		
 		// Check if we are in the desired controller state (Bus ready, bus active, and controller in run state)
 		// The diag.status, diag.param1 and diag.param2 will give detailed information of the system and I/O state.
 		// Refer to the "UM EN AXL F SYS DIAG" document that is provided at the AXC F 2152 product page downloads section
 		// for more information
 
+		//printf("Diag: %x, %x, %x\n", diag.status, diag.param1, diag.param2);
 		if ((diag.status & 0xE0) != 0xE0)
 		{
 			printf("Bus not in active/run state. Check diagnostic parameters.\n");
 			return 6;
 		}
 
-		// Get the value of the first channel of AI2/AO2's first input:
+		// Get the value of the first channel of AI2/AO2's input:
 
 		double ai2voltage = 0;
 		uint err = ai2ao2->ai2->channel[0]->getValue(ai2voltage);
@@ -104,6 +124,20 @@ int main()
 			printf("\b\rAI2 Channel 1: %f V, | ", ai2voltage);
 		else
 			printf("\b\rAI2 Channel 1: Error %u, | ", err);
+
+
+		// Get the value of the second channel of AI2/AO2's input:
+
+		double ai2mA = 0;
+		err = ai2ao2->ai2->channel[1]->getValue(ai2mA);
+
+		// Check the return error:
+		// Note, these errors are enumerated via AXLF_AI2AO2::AI2_Channel::Error
+
+		if (err == AXLF_AI2AO2::AI2_Channel::NoError)
+			printf("AI2 Channel 2: %f mA, | ", ai2mA);
+		else
+			printf("AI2 Channel 2: Error %u, | ", err);
 
 		// Append the diagnostics information to console output:
 

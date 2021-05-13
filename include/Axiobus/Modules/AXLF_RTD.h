@@ -127,7 +127,7 @@ namespace PLCnext {
 		private:
 			char* pdIn;
 			AXLF_RTD* rtd;
-			uint channelNum;
+			//uint channelNum;
 			char sensorType;
 			char r0;
 			char resolution;

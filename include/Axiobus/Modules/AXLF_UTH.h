@@ -121,7 +121,7 @@ namespace PLCnext {
 			char* pdIn;
 			char* pdOut;
 			AXLF_UTH* uth;
-			uint channelNum;
+			//uint channelNum;
 			char sensorType;
 			char coldJunctionType;
 			char resolution;
