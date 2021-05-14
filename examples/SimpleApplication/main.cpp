@@ -8,7 +8,7 @@ int main()
 	printf("\nInitializing Axioline bus system... ");
 
 	// Initialize the main Axioline bus class.
-	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::CYCLIC);
+	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);
 	printf("Axio class instantiated.\n");
 	// Check to see if the class successfully attached to the driver.
 	if (!axio.isInitialized())
@@ -113,7 +113,7 @@ int main()
 		}
 
 		// Get the value of the first channel of AI2/AO2's input:
-
+		axio.readInputs();
 		double ai2voltage = 0;
 		uint err = ai2ao2->ai2->channel[0]->getValue(ai2voltage);
 
@@ -171,6 +171,7 @@ int main()
 
 		// Wait for 100ms
 
+		axio.writeOutputs();
 		usleep(100000);
 
 	}
