@@ -19,6 +19,8 @@ This method of utilizing the controller and I/O requires experience in C++ and t
 **/lib**      -> Contains the static library file that will need to be referenced by your project.  
 **/plcnext-io-driver-component**  -> Contains tar files that will need to be deployed if using PLCnext Runtime.  This is not needed for Direct access.
 
+**Note:**  The 3152 is an intel x86_64 processor, and the 1152 and 2152 are 32-bit ARM.  When selecting files (from lib and plcnext-io-driver-component), only use the files labeled x64 for the 3152 device.
+
 # Getting Started
 
 Follow these steps to get your development environment set up. Note, if you are only using the DIRECT interface, you can skip 1d to 1f.
