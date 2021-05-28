@@ -4,9 +4,9 @@
 
 This repository contains C++ classes to read and write I/O data from Axioline modules. It is offered as a static library (.a) with associated header files.  This library supports the following PLCnext controllers:
 
-([AXC F 1152, Part Number 1151412](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1151412)) 
-([AXC F 2152, Part Number 2404267](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2404267)) 
-([AXC F 3152, Part Number 1069208](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1069208)) 
+[AXC F 1152, Part Number 1151412](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1151412)
+[AXC F 2152, Part Number 2404267](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2404267)
+[AXC F 3152, Part Number 1069208](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1069208) 
 
 This library enables reading and writing the I/O by either direct hardware access, or in conjunction with the PLCnext Engineer runtime.  You may choose this interface while initializing the class.  Note that if you intend on having PLCnext Engineer running an IEC 61131 application, you must use the "PLCnext" interface. 
 
