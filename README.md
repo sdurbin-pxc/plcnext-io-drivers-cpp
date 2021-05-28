@@ -2,18 +2,22 @@
 
 # Overview
 
-This repository contains C++ driver classes to read and write I/O data from PLCnext Axioline modules. This library currently only supports the Axioline 2152 controller ([AXC F 2152, Part Number 2404267](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2404267)), and is currently offered as a static library (.a) with associated header files.
+This repository contains C++ classes to read and write I/O data from Axioline modules. It is offered as a static library (.a) with associated header files.  This library supports the following PLCnext controllers:
 
-This method of accessing the I/O is not intended to be used in conjunction with PLCnext Engineer IEC 61131 development environment, but rather a means to utilize the I/O from a Linux/C++ application. Please visit the PLCnext Community tutorials at the following link if you are looking to integrate C++ code into an IEC 61131 application:  https://www.plcnext-community.net
+([AXC F 1152, Part Number 1151412](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1151412))
+([AXC F 2152, Part Number 2404267](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2404267))
+([AXC F 3152, Part Number 1069208](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1069208))
 
-This method of utilizing the controller and I/O requires experience in C++ and the Linux OS. Note that the SDK and samples are for cross-compiling from your PC to the device.
+This library enables reading and writing the I/O by either direct hardware access, or in conjunction with the PLCnext Engineer runtime.  You may choose this interface while initializing the class.  Note that if you intend on having PLCnext Engineer running an IEC 61131 application, you must use the "PLCnext" interface. 
+
+This method of utilizing the controller and I/O requires experience in C++ and the Linux OS. Note that the SDK and samples are for cross-compiling from your PC to the device. Please visit the PLCnext Community tutorials at the following link if you are looking to integrate C++ code into an IEC 61131 application:  https://www.plcnext-community.net
 
 # Repository Overview
 
 **/examples** -> Contains examples of programs that utilize the library.  
 **/include**  -> Contains the header files (.h) you will need to add to your project.  
 **/lib**      -> Contains the static library file that will need to be referenced by your project.  
-**/plcnext-io-driver-component**  -> Contains tar files that will need to be deployed to the controller before using the library.  
+**/plcnext-io-driver-component**  -> Contains tar files that will need to be deployed if using PLCnext Runtime.  This is not needed for Direct access.
 
 # Getting Started
 
