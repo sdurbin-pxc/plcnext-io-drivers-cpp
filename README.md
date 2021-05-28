@@ -21,7 +21,7 @@ This method of utilizing the controller and I/O requires experience in C++ and t
 
 # Getting Started
 
-Follow these steps to get your development environment set up:
+Follow these steps to get your development environment set up. Note, if you are only using the DIRECT interface, you can skip 1d to 1f.
 
 ## 1. Deploy the PLCnext I/O Driver Component to the device:
 
@@ -29,11 +29,13 @@ Follow these steps to get your development environment set up:
 
 **1b.** Connect to the device using user: "admin", and the default password is on the front of the device.
 
-**1c.** Check the device firmware version by running *cat /etc/plcnext/arpversion*.  Add a *20* in front of the response and this will be your firmware version. For instance, if the response is 19.3.0, your firmware version is 2019.3.0.
+**1c.** Create the root user password via "sudo passwd root", and switch to root user.
 
-**1d.** Copy the corresponding package from the */plcnext-io-driver-component* folder to your device. For example, if your device has 2019.6, the latest available package would be *plcnext-iodriver-2019.3.tar.gz*.
+**1d.** Check the device firmware version by running *cat /etc/plcnext/arpversion*.  Add a *20* in front of the response and this will be your firmware version. For instance, if the response is 19.3.0, your firmware version is 2019.3.0.
 
-**1e.** Using SSH as the root user, *cd* to the path you copied the driver component package to and run the following commands. Note: change *{fwVersion}* to the firmware version of the driver you downloaded from this repository.
+**1e.** Copy the corresponding package from the */plcnext-io-driver-component* folder to your device. For example, if your device has 2019.6, the latest available package would be *plcnext-iodriver-2019.3.tar.gz*.
+
+**1f.** Using SSH as the root user, *cd* to the path you copied the driver component package to and run the following commands. Note: change *{fwVersion}* to the firmware version of the driver you downloaded from this repository.
 
 **NOTE:  SSH login via root is disabled for security reasons.  You need to login as admin, and then switch to root  'su root'.  If you have not created a root password on the device, you can do so from the admin user via 'sudo passwd root'.**
 
