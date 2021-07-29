@@ -90,15 +90,6 @@ namespace PLCnext {
 		// Default constructor defaults to "PLCnext Mode - CYCLIC"
 		Axiobus();	
 
-		// DataInterface:
-		//	PLCNEXT -> If using PLCNext Runtime
-		//	DIRECT  -> If PLCnext Runtime is not running.
-
-		// BusMode:
-		//	CYCLIC -> Data reads/writes update on a cycle.
-		//	EXPLICIT -> Data immediately reads/writes on command.
-		//				Use if process data must not change mid-code execution.
-
 		Axiobus(DataInterface, BusMode);
 		bool initialize();
 		const vector<AXLModule*>& getModules() const;

@@ -8,7 +8,10 @@ int main()
 	printf("\nInitializing Axioline bus system... ");
 
 	// Initialize the main Axioline bus class.
-	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);
+	
+	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
+
+
 	printf("Axio class instantiated.\n");
 	// Check to see if the class successfully attached to the driver.
 	if (!axio.isInitialized())
@@ -67,13 +70,6 @@ int main()
 		printf("Configuring AI2/AO2's first output channel's output range failed.\n");
 		return 5;
 	}
-
-	if (!ai2ao2->ao2->channel[0]->setSubstituteBehavior(AXLAnalogOutput::SubstituteBehavior::Substitute))
-		printf("trouble setting sub behavior.\n");
-
-	if (!ai2ao2->ao2->channel[0]->setSubstituteValue(12.3))
-		printf("trouble setting sub value\n");
-
 
 	// Configure the AI2/AO2 module's second AI2 channel to measure from 4 to 20 mA:
 
