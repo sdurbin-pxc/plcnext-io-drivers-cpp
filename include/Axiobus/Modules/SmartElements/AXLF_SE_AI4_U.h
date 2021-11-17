@@ -14,7 +14,7 @@
 
 #include <sys/types.h>
 #include "../../AXLModule.h"
-#include "../../AXLInput.h"
+#include "../../AXLAnalogInput.h"
 
 using namespace std;
 
@@ -28,7 +28,7 @@ namespace PLCnext {
 	{
 	public:
 
-		class AI4_Channel : public AXLInput
+		class AI4_Channel : public AXLAnalogInput
 		{
 		public:
 			AI4_Channel(char* _pd, AXLF_SE_AI4_U* ai4u, uint channelNum);

@@ -24,7 +24,7 @@ namespace PLCnext
 	{
 	public:
 		AXLOutput() {
-			channelType = Output;
+			channelDirection = Output;
 		}
 		virtual string setValueString(string) = 0;
 	};

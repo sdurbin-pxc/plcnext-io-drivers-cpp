@@ -14,7 +14,6 @@
 
 #include <sys/types.h>
 #include "../AXLModule.h"
-//#include "../AXLOutput.h"
 #include "../AXLAnalogOutput.h"
 
 using namespace std;
@@ -79,6 +78,7 @@ namespace PLCnext {
 			char outputRange;
 			AXLF_AO4* ao4;
 			string errorToString(uint);
+			void setRangeMinMax();
 
 		protected:
 

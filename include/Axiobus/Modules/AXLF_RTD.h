@@ -14,7 +14,7 @@
 
 #include <sys/types.h>
 #include "../AXLModule.h"
-#include "../AXLInput.h"
+#include "../AXLAnalogInput.h"
 
 using namespace std;
 
@@ -29,7 +29,7 @@ namespace PLCnext {
 	{
 	public:
 
-		class RTD_Channel : public AXLInput
+		class RTD_Channel : public AXLAnalogInput
 		{
 		public:
 			RTD_Channel(char* _pdIn, AXLF_RTD* uth, uint channelNum);

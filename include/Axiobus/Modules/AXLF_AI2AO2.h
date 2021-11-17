@@ -15,7 +15,7 @@
 #include <sys/types.h>
 #include "../AXLModule.h"
 #include "../AXLAnalogOutput.h"
-#include "../AXLInput.h"
+#include "../AXLAnalogInput.h"
 
 using namespace std;
 
@@ -75,7 +75,7 @@ namespace PLCnext {
 			char* pdOut;
 			char outputRange;
 			string errorToString(uint);
-			
+			void setRangeMinMax();
 			// Function enum pointers
 			AXLEnumParameter* m_rangeEnum;
 
@@ -84,7 +84,7 @@ namespace PLCnext {
 			uint32_t convertValueToRaw(double value, uint16_t& converted);
 		};
 
-		class AI2_Channel : public AXLInput
+		class AI2_Channel : public AXLAnalogInput
 		{
 		public:
 			AI2_Channel(char* _pd, AXLF_AI2AO2* AI2AO2, uint channelNum);
@@ -149,6 +149,7 @@ namespace PLCnext {
 			bool filter;
 			string errorToString(uint);
 			ushort getCfgWord(ushort measuringRange, ushort filter, ushort meanValue);
+			void setRangeMinMax();
 
 			// Function enum pointers
 			AXLEnumParameter* m_rangeEnum;

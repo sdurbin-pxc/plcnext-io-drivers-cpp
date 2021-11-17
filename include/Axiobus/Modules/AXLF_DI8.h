@@ -15,7 +15,7 @@
 #include <sys/types.h>
 #include <string>
 #include "../AXLModule.h"
-#include "../AXLInput.h"
+#include "../AXLDigitalInput.h"
 
 using namespace std;
 
@@ -28,7 +28,7 @@ namespace PLCnext {
 	class AXLF_DI8 : public AXLModule
 	{
 	public:
-		class DI8_Channel : public AXLInput
+		class DI8_Channel : public AXLDigitalInput
 		{
 		public:
 			DI8_Channel(char* _pdIn, uint channel);

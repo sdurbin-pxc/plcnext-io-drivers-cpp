@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../../../include/Axiobus/AXLAnalogInput.h
+AXLInput.h
+../../../include/Axiobus/AXLInput.h
+
 ../../../include/Axiobus/AXLAnalogOutput.h
 string
 -
@@ -21,6 +25,14 @@ AXLFunction.h
 ../../../include/Axiobus/AXLFunction.h
 AXLModule.h
 ../../../include/Axiobus/AXLModule.h
+
+../../../include/Axiobus/AXLDigitalInput.h
+AXLInput.h
+../../../include/Axiobus/AXLInput.h
+
+../../../include/Axiobus/AXLDigitalOutput.h
+AXLOutput.h
+../../../include/Axiobus/AXLOutput.h
 
 ../../../include/Axiobus/AXLDigitalOutputModule.h
 string
@@ -149,32 +161,32 @@ sys/types.h
 ../../../include/Axiobus/AXLModule.h
 ../AXLAnalogOutput.h
 ../../../include/Axiobus/AXLAnalogOutput.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/AXLF_AI4_I.h
 sys/types.h
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/AXLF_AI4_U.h
 sys/types.h
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/AXLF_AI8.h
 sys/types.h
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/AXLF_AO4.h
 sys/types.h
@@ -191,8 +203,8 @@ string
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLDigitalInput.h
+../../../include/Axiobus/AXLDigitalInput.h
 
 ../../../include/Axiobus/Modules/AXLF_DI32.h
 sys/types.h
@@ -201,8 +213,8 @@ string
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLDigitalInput.h
+../../../include/Axiobus/AXLDigitalInput.h
 
 ../../../include/Axiobus/Modules/AXLF_DI64.h
 sys/types.h
@@ -211,8 +223,8 @@ string
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLDigitalInput.h
+../../../include/Axiobus/AXLDigitalInput.h
 
 ../../../include/Axiobus/Modules/AXLF_DI8.h
 sys/types.h
@@ -221,8 +233,8 @@ string
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLDigitalInput.h
+../../../include/Axiobus/AXLDigitalInput.h
 
 ../../../include/Axiobus/Modules/AXLF_DI8DO8.h
 sys/types.h
@@ -243,8 +255,8 @@ string
 -
 ../AXLDigitalOutputModule.h
 ../../../include/Axiobus/AXLDigitalOutputModule.h
-../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../AXLDigitalOutput.h
+../../../include/Axiobus/AXLDigitalOutput.h
 
 ../../../include/Axiobus/Modules/AXLF_DO32.h
 sys/types.h
@@ -253,8 +265,8 @@ string
 -
 ../AXLDigitalOutputModule.h
 ../../../include/Axiobus/AXLDigitalOutputModule.h
-../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../AXLDigitalOutput.h
+../../../include/Axiobus/AXLDigitalOutput.h
 
 ../../../include/Axiobus/Modules/AXLF_DO64.h
 sys/types.h
@@ -263,8 +275,8 @@ string
 -
 ../AXLDigitalOutputModule.h
 ../../../include/Axiobus/AXLDigitalOutputModule.h
-../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../AXLDigitalOutput.h
+../../../include/Axiobus/AXLDigitalOutput.h
 
 ../../../include/Axiobus/Modules/AXLF_DO8.h
 sys/types.h
@@ -273,24 +285,24 @@ string
 -
 ../AXLDigitalOutputModule.h
 ../../../include/Axiobus/AXLDigitalOutputModule.h
-../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../AXLDigitalOutput.h
+../../../include/Axiobus/AXLDigitalOutput.h
 
 ../../../include/Axiobus/Modules/AXLF_RTD.h
 sys/types.h
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/AXLF_UTH.h
 sys/types.h
 -
 ../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/Function/AXLF_CNT.h
 sys/types.h
@@ -309,32 +321,32 @@ sys/types.h
 -
 ../../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_AI4_U.h
 sys/types.h
 -
 ../../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_AO4_I.h
 sys/types.h
 -
 ../../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../../AXLAnalogOutput.h
+../../../include/Axiobus/AXLAnalogOutput.h
 
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_AO4_U.h
 sys/types.h
 -
 ../../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../../AXLAnalogOutput.h
+../../../include/Axiobus/AXLAnalogOutput.h
 
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_DI16.h
 sys/types.h
@@ -343,8 +355,8 @@ string
 -
 ../../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../../AXLInput.h
-../../../include/Axiobus/AXLInput.h
+../../AXLDigitalInput.h
+../../../include/Axiobus/AXLDigitalInput.h
 
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_DO16.h
 sys/types.h
@@ -353,8 +365,8 @@ string
 -
 ../../AXLDigitalOutputModule.h
 ../../../include/Axiobus/AXLDigitalOutputModule.h
-../../AXLOutput.h
-../../../include/Axiobus/AXLOutput.h
+../../AXLDigitalOutput.h
+../../../include/Axiobus/AXLDigitalOutput.h
 
 ../../../include/Axiobus/PDIResponseStatus.h
 
@@ -417,12 +429,8 @@ stdint.h
 ../../../include/Hardware/axio_xfer.h
 
 ../../../include/Hardware/ddi_macr.h
-stdtypes.h
-../../../include/Hardware/stdtypes.h
 
 ../../../include/Hardware/fibo_msg_codes.h
-
-../../../include/Hardware/stdtypes.h
 
 C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/main.cpp
 math.h

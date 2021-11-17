@@ -15,7 +15,7 @@
 #include <sys/types.h>
 #include <string>
 #include "../AXLDigitalOutputModule.h"
-#include "../AXLOutput.h"
+#include "../AXLDigitalOutput.h"
 
 using namespace std;
 
@@ -27,7 +27,7 @@ namespace PLCnext {
 	class AXLF_DO32 : public AXLDigitalOutputModule
 	{
 	public:
-		class DO32_Channel : public AXLOutput
+		class DO32_Channel : public AXLDigitalOutput
 		{
 		public:
 			DO32_Channel(char* _pdOut, uint channel);

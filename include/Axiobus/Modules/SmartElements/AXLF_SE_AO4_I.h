@@ -14,7 +14,7 @@
 
 #include <sys/types.h>
 #include "../../AXLModule.h"
-#include "../../AXLOutput.h"
+#include "../../AXLAnalogOutput.h"
 
 using namespace std;
 
@@ -28,7 +28,7 @@ namespace PLCnext {
 	{
 	public:
 
-		class AO4_Channel : public AXLOutput
+		class AO4_Channel : public AXLAnalogOutput
 		{
 		public:
 			AO4_Channel(char* _pdIn, char* _pdOut, AXLF_SE_AO4_I* ao4, uint _channelNum);
@@ -60,6 +60,9 @@ namespace PLCnext {
 			char* pdOut;
 			string errorToString(uint);
 
+		protected:
+
+			uint32_t convertValueToRaw(double value, uint16_t& converted);
 
 
 		};

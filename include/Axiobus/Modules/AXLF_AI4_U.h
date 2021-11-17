@@ -14,7 +14,7 @@
 
 #include <sys/types.h>
 #include "../AXLModule.h"
-#include "../AXLInput.h"
+#include "../AXLAnalogInput.h"
 
 using namespace std;
 
@@ -28,7 +28,7 @@ namespace PLCnext {
 	{
 	public:
 
-		class AI4_U_Channel : public AXLInput
+		class AI4_U_Channel : public AXLAnalogInput
 		{
 		public:
 			AI4_U_Channel(char* _pd, AXLF_AI4_U* ai4u, uint channelNum);
@@ -87,7 +87,7 @@ namespace PLCnext {
 			bool filter;
 			string errorToString(uint);
 			ushort getCfgWord(ushort measuringRange, ushort filter, ushort meanValue);
-
+			void setRangeMinMax();
 			// Function enum pointers
 			AXLEnumParameter* m_rangeEnum;
 			AXLEnumParameter* m_meanEnum;

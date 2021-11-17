@@ -24,22 +24,37 @@ namespace PLCnext
 	class AXLChannel
 	{
 	public:
-		enum ChannelType
+		enum ChannelDirection
 		{
 			Input,
-			Output
+			Output,
+			InputOutput
 		};
+
+		enum ChannelType
+		{
+			Digital,
+			Analog
+		};
+
+		const ChannelDirection getChannelDirection();
 		const ChannelType getChannelType();
 		const vector<AXLFunction*>& getFunctions();
 		virtual Variant getVariantValue() = 0;
 		virtual string getUnitsString() = 0;
 		virtual bool executeFunction(int id, vector<Variant> params) = 0;
 		Axiobus* getAxioMaster();
+		uint getChannelNumber();
+		double getRangeMinimum();
+		double getRangeMaximum();
 	protected:
-		ChannelType channelType;
+		ChannelDirection channelDirection;
+		ChannelType m_channelType;
 		vector<AXLFunction*> functions;
 		AXLModule* m_module;
 		uint channelNum;
+		double m_rangeMinimum;
+		double m_rangeMaximum;
 	};
 
 }

@@ -40,7 +40,6 @@ namespace PLCnext
 		//SubstituteBehavior m_substituteBehavior;
 		//uint16_t m_substituteValue;
 		virtual uint32_t convertValueToRaw(double value, uint16_t&) = 0;
-
 	};
 
 }
