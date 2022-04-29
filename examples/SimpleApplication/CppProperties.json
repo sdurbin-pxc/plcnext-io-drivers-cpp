@@ -14,7 +14,7 @@
       // The includePaths below may change depending on the C++ version that is in the SDK
 
 
-      "sysroots_arm": "c:/2152sdk2021/sysroots",
+      "sysroots_arm": "c:/2152sdk2021.9/sysroots",
       "sysroots_x64": "c:/3152sdk2021.0.3/sysroots"
     }
   ],
