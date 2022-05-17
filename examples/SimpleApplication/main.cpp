@@ -8,7 +8,7 @@ int main()
 	printf("\nInitializing Axioline bus system... ");
 
 	// Initialize the main Axioline bus class.
-	
+
 	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
 
 
@@ -45,14 +45,14 @@ int main()
 	}
 
 	printf("Axioline bus initialized.\n\n");
-	
+
 	// Get the device temperature (not processor temp):
 	printf("Device temp: %f C\n\n", axio.deviceTemperature());
 
 	// Cast the base AXLModule classes into their derived classes:
 
-	AXLF_DI8DO8* di8do8	= dynamic_cast<AXLF_DI8DO8*>(modules[0]);
-	AXLF_AI2AO2* ai2ao2	= dynamic_cast<AXLF_AI2AO2*>(modules[1]);
+	AXLF_DI8DO8* di8do8 = dynamic_cast<AXLF_DI8DO8*>(modules[0]);
+	AXLF_AI2AO2* ai2ao2 = dynamic_cast<AXLF_AI2AO2*>(modules[1]);
 
 
 	// Configure the AI2/AO2 module's first AI2 channel to measure from 0 to 10 Volts:
@@ -78,7 +78,7 @@ int main()
 		printf("Configuring AI2/AO2's second input channel's measuring range failed.\n");
 		return 6;
 	}
-	
+
 	// Set digital output bus fail output behavior:
 	if (!di8do8->setSubstituteBehavior(AXLDigitalOutputModule::SubstituteBehavior::HoldLast))
 		printf("trouble setting do sub behavior.\n");
@@ -95,7 +95,7 @@ int main()
 	{
 		// Get the bus diagnostics information
 		Axiobus::DiagnosticsInfo diag = axio.getDiagnosticsInfo();
-		
+
 		// Check if we are in the desired controller state (Bus ready, bus active, and controller in run state)
 		// The diag.status, diag.param1 and diag.param2 will give detailed information of the system and I/O state.
 		// Refer to the "UM EN AXL F SYS DIAG" document that is provided at the AXC F 2152 product page downloads section

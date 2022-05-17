@@ -49,6 +49,7 @@
 #include "Modules/SmartElements/AXLF_SE_DI16.h"
 #include "Modules/SmartElements/AXLF_SE_DO16.h"
 #include "Modules/Function/AXLF_CNT.h"
+#include "Modules/HART/AXLF_HART_AI8.h"
 #include "PDIResponseStatus.h"
 #include "../Hardware/AxioServiceExecuter.hpp"
 #include <thread>
