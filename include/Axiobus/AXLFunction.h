@@ -32,6 +32,7 @@ namespace PLCnext
 		enum Type
 		{
 			INT,
+			REAL,
 			ENUM
 		};
 		virtual Type getType() = 0;
@@ -67,7 +68,7 @@ namespace PLCnext
 	{
 	public:
 		Type getType() { return INT; }
-		AXLIntegerParameter(string, long long, long long, long long);
+		AXLIntegerParameter(string _name, long long val, long long min, long long max);
 		long long getMax();
 		long long getMin();
 		void setCurrentValue(Variant);
@@ -78,21 +79,20 @@ namespace PLCnext
 		long long m_max;
 	};
 
-	/*
-	class AXLIntegerParameter : public AXLParameter
+	class AXLRealParameter : public AXLParameter
 	{
 	public:
-		int min;
-		int max;
+		Type getType() { return REAL; }
+		AXLRealParameter(string _name, double val, double min, double max);
+		double getMax();
+		double getMin();
+		void setCurrentValue(Variant);
+		Variant getCurrentValue();
+	private:
+		double m_currentValue;
+		double m_min;
+		double m_max;
 	};
-	
-
-	class AXLDoubleParameter : public AXLParameter
-	{
-		double min;
-		double max;
-	};
-	*/
 
 	class AXLFunction
 	{

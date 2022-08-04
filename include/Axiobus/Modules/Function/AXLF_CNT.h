@@ -110,6 +110,11 @@ namespace PLCnext {
 			Variant getVariantValue();
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
+
+			// AXLChannel Overrides
+
+			bool readConfiguration();
+
 		private:
 			char* pdIn;
 			char* pdOut;
@@ -118,7 +123,6 @@ namespace PLCnext {
 			void bitClear(int wordNum, int bit);
 			void bitSet(int wordNum, int bit);
 			bool getBit(int wordNum, int bit);
-			bool initConfiguration();
 			double timeSpecToSeconds(struct timespec* ts);
 
 #pragma pack(push, 1)

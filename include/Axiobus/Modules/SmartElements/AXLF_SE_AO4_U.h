@@ -14,7 +14,7 @@
 
 #include <sys/types.h>
 #include "../../AXLModule.h"
-#include "../../AXLAnalogOutput.h"
+#include "AXLAnalogOutputSE.h"
 
 using namespace std;
 
@@ -28,7 +28,7 @@ namespace PLCnext {
 	{
 	public:
 
-		class AO4_Channel : public AXLAnalogOutput
+		class AO4_Channel : public AXLAnalogOutputSE
 		{
 		public:
 			AO4_Channel(char* _pdIn, char* _pdOut, AXLF_SE_AO4_U* ao4, uint _channelNum);
@@ -53,6 +53,10 @@ namespace PLCnext {
 			string setValueString(string);
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
+
+			// AXLChannel Overrides
+
+			bool readConfiguration();
 
 		private:
 			//uint channelNum;

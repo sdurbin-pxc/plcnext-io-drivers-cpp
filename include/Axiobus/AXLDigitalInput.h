@@ -29,6 +29,10 @@ namespace PLCnext
 			m_rangeMinimum = 0.0;
 		}
 
+		// AXLChannel Override
+
+		bool readConfiguration() { return true; }
+
 	};
 
 }

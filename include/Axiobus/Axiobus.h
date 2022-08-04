@@ -25,11 +25,14 @@
 #include <errno.h>
 #include <unistd.h>
 #include <vector>
+#include <features.h>
+#include <signal.h>
 #include "AXLModule.h"
 #include "Modules/AXLF_AI4_I.h"
 #include "Modules/AXLF_AI4_U.h"
 #include "Modules/AXLF_AI8.h"
 #include "Modules/AXLF_AO4.h"
+#include "Modules/AXLF_AO8.h"
 #include "Modules/AXLF_DO8.h"
 #include "Modules/AXLF_DO16.h"
 #include "Modules/AXLF_DO32.h"
@@ -88,6 +91,22 @@ namespace PLCnext {
 			ushort param2;		// Error Location (slot number, 1 based index);
 		};
 
+		enum class DiagStatusFlags : std::uint16_t
+		{
+			IO_WARNING			= 0x0001,
+			IO_ERROR			= 0x0002,
+			BUS_ERROR			= 0x0004,
+			CONTROLLER_ERROR	= 0x0008,
+			RUNNING				= 0x0020,
+			ACTIVE				= 0x0040,
+			BUS_READY			= 0x0080,
+			BUS_DIFFERENT		= 0x0100,
+			SYS_FAIL			= 0x0200,
+			FORCE_MODE			= 0x0400,
+			SYNC_FAILED			= 0x0800,
+			PARAM_REQUIRED		= 0x1000
+		};
+
 		// Default constructor defaults to "PLCnext Mode - CYCLIC"
 		Axiobus();	
 
@@ -131,6 +150,8 @@ namespace PLCnext {
 
 		double deviceTemperature();
 		
+
+
 	private:
 
 		struct PDIPipe {
@@ -155,7 +176,7 @@ namespace PLCnext {
 		size_t mapSize;
 		AXLModule* moduleFromType(ushort slot, uint type, uintptr_t &pdInOffset, uintptr_t &pdOutOffset, bool missing);
 		double timeSpecToSeconds(struct timespec* ts);
-		vector<AXLModule*> modules;
+		static vector<AXLModule*> modules;
 		uint m_initError;
 		uint* m_pOutputEnabled;
 		pair<uint, uint> getProcessDataSize(ushort type, char data[]);
@@ -171,6 +192,9 @@ namespace PLCnext {
 
 		BusMode m_busMode;
 		DataInterface m_dataInterface;
+
+		static void configNotifyHandler(int sig, siginfo_t *si, void *ucontext);
+
 	protected:
 		PDIResponseStatus pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
 		PDIResponseStatus pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);

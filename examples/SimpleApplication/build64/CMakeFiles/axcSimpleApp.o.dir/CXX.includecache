@@ -99,6 +99,10 @@ unistd.h
 -
 vector
 -
+features.h
+-
+signal.h
+-
 AXLModule.h
 ../../../include/Axiobus/AXLModule.h
 Modules/AXLF_AI4_I.h
@@ -109,6 +113,8 @@ Modules/AXLF_AI8.h
 ../../../include/Axiobus/Modules/AXLF_AI8.h
 Modules/AXLF_AO4.h
 ../../../include/Axiobus/Modules/AXLF_AO4.h
+Modules/AXLF_AO8.h
+../../../include/Axiobus/Modules/AXLF_AO8.h
 Modules/AXLF_DO8.h
 ../../../include/Axiobus/Modules/AXLF_DO8.h
 Modules/AXLF_DO16.h
@@ -147,6 +153,8 @@ Modules/SmartElements/AXLF_SE_DO16.h
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_DO16.h
 Modules/Function/AXLF_CNT.h
 ../../../include/Axiobus/Modules/Function/AXLF_CNT.h
+Modules/HART/AXLF_HART_AI8.h
+../../../include/Axiobus/Modules/HART/AXLF_HART_AI8.h
 PDIResponseStatus.h
 ../../../include/Axiobus/PDIResponseStatus.h
 ../Hardware/AxioServiceExecuter.hpp
@@ -189,6 +197,14 @@ sys/types.h
 ../../../include/Axiobus/AXLAnalogInput.h
 
 ../../../include/Axiobus/Modules/AXLF_AO4.h
+sys/types.h
+-
+../AXLModule.h
+../../../include/Axiobus/AXLModule.h
+../AXLAnalogOutput.h
+../../../include/Axiobus/AXLAnalogOutput.h
+
+../../../include/Axiobus/Modules/AXLF_AO8.h
 sys/types.h
 -
 ../AXLModule.h
@@ -316,6 +332,22 @@ unistd.h
 ../../AXLInput.h
 ../../../include/Axiobus/AXLInput.h
 
+../../../include/Axiobus/Modules/HART/AXLF_HART_AI8.h
+sys/types.h
+-
+../../AXLModule.h
+../../../include/Axiobus/AXLModule.h
+../../AXLAnalogInput.h
+../../../include/Axiobus/AXLAnalogInput.h
+../../AXLChannel.h
+../../../include/Axiobus/AXLChannel.h
+
+../../../include/Axiobus/Modules/SmartElements/AXLAnalogOutputSE.h
+string
+-
+../../AXLOutput.h
+../../../include/Axiobus/AXLOutput.h
+
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_AI4_I.h
 sys/types.h
 -
@@ -337,16 +369,16 @@ sys/types.h
 -
 ../../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../../AXLAnalogOutput.h
-../../../include/Axiobus/AXLAnalogOutput.h
+AXLAnalogOutputSE.h
+../../../include/Axiobus/Modules/SmartElements/AXLAnalogOutputSE.h
 
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_AO4_U.h
 sys/types.h
 -
 ../../AXLModule.h
 ../../../include/Axiobus/AXLModule.h
-../../AXLAnalogOutput.h
-../../../include/Axiobus/AXLAnalogOutput.h
+AXLAnalogOutputSE.h
+../../../include/Axiobus/Modules/SmartElements/AXLAnalogOutputSE.h
 
 ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_DI16.h
 sys/types.h

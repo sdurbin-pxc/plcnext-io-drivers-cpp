@@ -77,6 +77,7 @@ namespace PLCnext {
 			Variant getVariantValue();
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
+			bool readConfiguration();
 
 		private:
 			char* pd;

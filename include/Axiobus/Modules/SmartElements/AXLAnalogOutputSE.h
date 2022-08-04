@@ -13,41 +13,33 @@
 #pragma once
 
 #include <string>
-#include "AXLOutput.h"
+#include "../../AXLOutput.h"
 
 using namespace std;
 
 namespace PLCnext
 {
 
-	class AXLAnalogOutput : public AXLOutput
+	class AXLAnalogOutputSE : public AXLOutput
 	{
 	public:
-		AXLAnalogOutput();
+		AXLAnalogOutputSE();
 
 		enum SubstituteBehavior
 		{
 			Minimum = 0,	//Output of zero values(0 V / 0 mA / 4 mA) at output
 			Maximum = 1,	//Output of final values(10 V / 5 V / 20 mA) at output
 			HoldLast = 2,	//Hold last value
-			Substitute = 3	// Transfer the substitute value
 		};
 
-		bool setSubstituteBehavior(SubstituteBehavior);
-		bool setSubstituteValue(double);
-		
+		bool setSubstituteBehavior(SubstituteBehavior);		
 		SubstituteBehavior getSubstituteBehavior();
-		double getSubstituteValue();
 
 	protected:
 		bool readSubstituteBehavior();
 		SubstituteBehavior m_substituteBehavior;
-		double m_substituteValue;
 		virtual uint32_t convertValueToRaw(double value, uint16_t&) = 0;
-		virtual uint32_t convertRawToValue(uint16_t value, double& ret) = 0;
 		AXLEnumParameter* m_subBehaviorEnum;
-		AXLRealParameter* m_subValueParam;
-		AXLEnumParameter* m_filterEnum;
 	};
 
 }

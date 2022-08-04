@@ -49,6 +49,7 @@ namespace PLCnext {
 		PDIResponseStatus pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
 		PDIResponseStatus pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
 		bool isMissing();
+		bool configurationChanged();
 
 		enum Error
 		{
@@ -59,13 +60,17 @@ namespace PLCnext {
 		uint m_serialNumber;
 		uint m_orderNumber;
 		uint m_slot;
+		uint m_lastConfigCnt = 0;
+		uint m_currConfigCnt = 0;
+		bool readConfiguration();
+		friend class Axiobus;
 	protected:
 		uint m_type;
 		bool m_missing;
 		uint inOffset;
 		uint outOffset;
-
 		vector<AXLChannel*> _channels;
+		void configChangeNotify();
 	};
 
 }

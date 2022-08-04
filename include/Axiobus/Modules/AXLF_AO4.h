@@ -69,7 +69,12 @@ namespace PLCnext {
 			bool executeFunction(int id, vector<Variant> params);
 
 			// Function enum pointers
+
 			AXLEnumParameter* m_rangeEnum;
+
+			// AXLChannel Overrides
+
+			bool readConfiguration();
 
 		private:
 			//uint channelNum;
@@ -82,8 +87,10 @@ namespace PLCnext {
 
 		protected:
 
-			uint32_t convertValueToRaw(double value, uint16_t& converted);
+			// AXLAnalogOutput Overrides:
 
+			uint32_t convertValueToRaw(double value, uint16_t& converted);
+			uint32_t convertRawToValue(uint16_t value, double& ret);
 
 		};
 

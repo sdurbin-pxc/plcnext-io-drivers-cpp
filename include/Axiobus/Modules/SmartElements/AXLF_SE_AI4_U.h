@@ -51,6 +51,10 @@ namespace PLCnext {
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
+			// AXLChannel Overrides
+
+			bool readConfiguration() { return true; }
+
 		private:
 			char* pd;
 			//uint channelNum;

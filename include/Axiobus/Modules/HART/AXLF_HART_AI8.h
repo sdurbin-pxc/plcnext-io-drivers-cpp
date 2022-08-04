@@ -75,8 +75,10 @@ namespace PLCnext {
 			};
 
 
+
 			Channel_Enable getChannelEnabled();
 			bool setChannelEnabled(Channel_Enable);
+
 
 			enum class Priority_Polling
 			{
@@ -93,6 +95,7 @@ namespace PLCnext {
 			Variant getVariantValue();
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
+			bool readConfiguration();
 
 		private:
 			int m_channelNum;
@@ -103,6 +106,11 @@ namespace PLCnext {
 			AXLEnumParameter* m_assignChannelEnum;
 			AXLEnumParameter* m_channelEnableEnum;
 			AXLEnumParameter* m_highPrioPolling;
+
+			Channel_Enable m_channelEnabled;
+			Data_Variable m_assignedVariable;
+			Channel_Select m_assignedChannel;
+			Priority_Polling m_priorityPolling;
 		};
 
 		class AI_Channel : public AXLAnalogInput
@@ -158,6 +166,10 @@ namespace PLCnext {
 			Variant getVariantValue();
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
+
+			// AXLChannel Overrides
+
+			bool readConfiguration();
 
 		private:
 			char* pd;

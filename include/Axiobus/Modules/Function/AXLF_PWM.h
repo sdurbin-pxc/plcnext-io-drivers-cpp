@@ -65,6 +65,10 @@ namespace PLCnext {
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
+			// AXLChannel Overrides
+
+			bool readConfiguration();
+
 			enum Error
 			{
 				NoError = 0x0000,

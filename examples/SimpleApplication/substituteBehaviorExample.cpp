@@ -36,8 +36,9 @@ int main()
 	}
 
 	// Check to make sure we have the right modules in the right slots:
+	// In this example:  [DI8/DO8, AI2/AO2]
 
-	if (modules[1]->getType() != AXLF_MODULE_AI2AO2)
+	if (modules[0]->getType() != AXLF_MODULE_DI8DO8 || modules[1]->getType() != AXLF_MODULE_AI2AO2)
 	{
 		printf("Incorrect modules, or module order detected.\n");
 		return 3;
@@ -45,17 +46,48 @@ int main()
 
 	printf("Axioline bus initialized.\n\n");
 
+	// Get the device temperature (not processor temp):
+	printf("Device temp: %f C\n\n", axio.deviceTemperature());
+
 	// Cast the base AXLModule classes into their derived classes:
 
 	AXLF_DI8DO8* di8do8 = dynamic_cast<AXLF_DI8DO8*>(modules[0]);
 	AXLF_AI2AO2* ai2ao2 = dynamic_cast<AXLF_AI2AO2*>(modules[1]);
 
-	ai2ao2->ao2->channel[0]->setOutputRange(AXLF_AI2AO2::AO2_Channel::OutputRange::V_0_P10);
-	ai2ao2->ao2->channel[0]->setValue(5.5);
-	ai2ao2->ao2->channel[0]->setSubstituteBehavior(PLCnext::AXLAnalogOutput::SubstituteBehavior::Substitute);
-	ai2ao2->ao2->channel[0]->setSubstituteValue(8.8);
 
-	axio.writeOutputs();
+	// Configure the AI2/AO2 module's first AI2 channel to measure from 0 to 10 Volts:
+
+	if (!ai2ao2->ai2->channel[0]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::V_0_P10))
+	{
+		printf("Configuring AI2/AO2's first input channel's measuring range failed.\n");
+		return 4;
+	}
+
+	// Configure the AI2/AO2 module's first output channel to output from 4 to 20 mA:
+
+	if (!ai2ao2->ao2->channel[0]->setOutputRange(AXLF_AI2AO2::AO2_Channel::OutputRange::mA_P4_P20))
+	{
+		printf("Configuring AI2/AO2's first output channel's output range failed.\n");
+		return 5;
+	}
+
+	// Configure the AI2/AO2 module's second AI2 channel to measure from 4 to 20 mA:
+
+	if (!ai2ao2->ai2->channel[1]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::mA_P4_P20))
+	{
+		printf("Configuring AI2/AO2's second input channel's measuring range failed.\n");
+		return 6;
+	}
+
+	// Set digital output bus fail output behavior:
+	if (!di8do8->setSubstituteBehavior(AXLDigitalOutputModule::SubstituteBehavior::HoldLast))
+		printf("trouble setting do sub behavior.\n");
+
+	// Tell the Axioline I/O component that we will be handling the process outputs.
+
+	axio.enablePLCnextOutputs();
+
+	//axio.saveConfiguration("testConfig.json");
 
 	printf("\nEntering program loop. PRESS CTRL+C to end\n\n\n");
 	// Loop forever
@@ -76,22 +108,72 @@ int main()
 			return 6;
 		}
 
-		// Read the loop current value
+		// Get the value of the first channel of AI2/AO2's input:
 		axio.readInputs();
+		double ai2voltage = 0;
+		if (ai2ao2->ai2->channel[0]->configurationChanged())
+			printf("config change detected 0\n");
 
-		//double aiLoopCurrent = 0;
-		//uint err = ai8hart->aiChannel[0]->getValue(aiLoopCurrent);
+		if (ai2ao2->ai2->channel[1]->configurationChanged())
+			printf("config change detected 1\n");
 
-		//uint32_t data = ai8hart->dataChannel[0]->getValue();
+		uint err = ai2ao2->ai2->channel[0]->getValue(ai2voltage);
 
-		// In this instance (temp sensor), the data object is a float.  So convert the UINT32 to float.
-		//float val = *(float*)&data;
+		// Check the return error:
+		// Note, these errors are enumerated via AXLF_AI2AO2::AI2_Channel::Error
 
-		//printf("\b\rCh.1 Loop Current: %f mA, HART Data Channel 1: %f V | ", aiLoopCurrent, val);
+		//if (err == AXLF_AI2AO2::AI2_Channel::NoError)
+		//	printf("\b\rAI2 Channel 1: %f V, | ", ai2voltage);
+		//else
+		//	printf("\b\rAI2 Channel 1: Error %u, | ", err);
+
+
+		// Get the value of the second channel of AI2/AO2's input:
+
+		double ai2mA = 0;
+		err = ai2ao2->ai2->channel[1]->getValue(ai2mA);
+
+		// Check the return error:
+		// Note, these errors are enumerated via AXLF_AI2AO2::AI2_Channel::Error
+
+		//if (err == AXLF_AI2AO2::AI2_Channel::NoError)
+		//	printf("AI2 Channel 2: %f mA, | ", ai2mA);
+		//else
+		//	printf("AI2 Channel 2: Error %u, | ", err);
+
+		// Append the diagnostics information to console output:
 
 		//printf("Diag Status: %X, Param1: %X, Param2: %X\n", diag.status, diag.param1, diag.param2);
 		//fflush(stdout);
 
+		// Linear conversion of 0-10V to 4-20mA where:  0V => 4mA, 10V => 20mA.
+
+		//double ao2mA = 4.0 + (16.0 * (ai2voltage / 10.0));
+
+		// Set the AO2 channel 1 output to the calculated value:
+
+		//err = ai2ao2->ao2->channel[0]->setValue(ao2mA);
+
+		// Read the 8 inputs on the DI8DO8 card.
+		// Note, you can read individual channels via di8do8->di8->channel[x]->getValue();
+
+		//char di8val = di8do8->di8->getValue();
+
+		// If the AI2's channel 1 Voltage input is over 5 Volts,
+		// Make the DI8/DO8's outputs reflect the inverse of the inputs.
+		// Otherwise, make the outputs directly reflect the inputs:
+
+		//if (ai2voltage > 5.0)
+		//	di8do8->do8->setValue(~di8val);
+		//else
+		//	di8do8->do8->setValue(di8val);
+
+		// Note: You can set an indivual channel of the output via:
+		// di8do8->do8->channel[x]->setValue(true/false);
+
+		// Wait for 100ms
+
+		axio.writeOutputs();
 		usleep(100000);
 
 	}

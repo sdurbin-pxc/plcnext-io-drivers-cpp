@@ -24,6 +24,9 @@ namespace PLCnext
 	class AXLChannel
 	{
 	public:
+
+		AXLChannel();
+
 		enum ChannelDirection
 		{
 			Input,
@@ -43,11 +46,21 @@ namespace PLCnext
 		virtual Variant getVariantValue() = 0;
 		virtual string getUnitsString() = 0;
 		virtual bool executeFunction(int id, vector<Variant> params) = 0;
+		virtual bool readConfiguration() = 0;
+
+		bool configurationChanged();
+
 		Axiobus* getAxioMaster();
 		uint getChannelNumber();
 		double getRangeMinimum();
 		double getRangeMaximum();
+
+	private:
+		uint m_lastConfigCnt;
+		uint m_currConfigCnt;
+		friend class Axiobus;
 	protected:
+		void configChangeNotify();
 		ChannelDirection channelDirection;
 		ChannelType m_channelType;
 		vector<AXLFunction*> functions;
@@ -55,6 +68,7 @@ namespace PLCnext
 		uint channelNum;
 		double m_rangeMinimum;
 		double m_rangeMaximum;
+		uint m_functionCount;
 	};
 
 }

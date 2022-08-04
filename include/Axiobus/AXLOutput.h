@@ -23,9 +23,7 @@ namespace PLCnext
 	class AXLOutput : public AXLChannel
 	{
 	public:
-		AXLOutput() {
-			channelDirection = Output;
-		}
+		AXLOutput();
 		virtual string setValueString(string) = 0;
 	};
 

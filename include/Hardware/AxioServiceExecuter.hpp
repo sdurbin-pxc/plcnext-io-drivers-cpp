@@ -23,6 +23,7 @@ class AxioServiceExecuter
 {
 public:
     AxioServiceExecuter();
+	AxioServiceExecuter(bool reset);
     ~AxioServiceExecuter();
 
 public:

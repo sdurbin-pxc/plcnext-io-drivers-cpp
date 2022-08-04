@@ -70,6 +70,9 @@ namespace PLCnext {
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
+			// AXLChannel Overrides
+			bool readConfiguration();
+
 		private:
 			//uint channelNum;
 			char* pdOut;
@@ -81,7 +84,10 @@ namespace PLCnext {
 
 		protected:
 
+			// AXLAnalogOutput Overrides:
+
 			uint32_t convertValueToRaw(double value, uint16_t& converted);
+			uint32_t convertRawToValue(uint16_t value, double& ret);
 		};
 
 		class AI2_Channel : public AXLAnalogInput
@@ -141,6 +147,8 @@ namespace PLCnext {
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
+			// AXLChannel Overrides
+			bool readConfiguration();
 		private:
 			char* pd;
 			//uint channelNum;

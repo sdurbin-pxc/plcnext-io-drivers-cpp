@@ -33,10 +33,10 @@ namespace PLCnext
 		};
 
 		bool setSubstituteBehavior(SubstituteBehavior);
-
-	//to protected:
-		//virtual uint32_t convertValueToRaw(double value, uint16_t&) = 0;
-
+		SubstituteBehavior getSubstituteBehavior();
+		bool readConfiguration();
+	private:
+		SubstituteBehavior m_substituteBehavior;
 	};
 
 }
