@@ -68,6 +68,7 @@ namespace PLCnext {
 		friend class AXLModule;
 	public:
 
+
 		// Select the process data interface.
 		// To work in conjunction with PLCnext Engineer, PLCNEXT must be chosen.
 		enum DataInterface
@@ -89,6 +90,7 @@ namespace PLCnext {
 			ushort status;		// Bus status flags
 			ushort param1;		// Error code
 			ushort param2;		// Error Location (slot number, 1 based index);
+			bool driverError;	// Driver error
 		};
 
 		enum class DiagStatusFlags : std::uint16_t
@@ -107,10 +109,9 @@ namespace PLCnext {
 			PARAM_REQUIRED		= 0x1000
 		};
 
-		// Default constructor defaults to "PLCnext Mode - CYCLIC"
-		Axiobus();	
-
+		Axiobus();
 		Axiobus(DataInterface, BusMode);
+
 		bool initialize();
 		const vector<AXLModule*>& getModules() const;
 		bool scanModules();
@@ -170,6 +171,9 @@ namespace PLCnext {
 		bool m_initialized;
 		int fd;
 		int pdiMutexFd;
+
+		static Axiobus* m_instance;
+
 		pthread_mutex_t* pdiWriteMutex;
 		pthread_mutex_t* pdiReadMutex;
 		char* map;

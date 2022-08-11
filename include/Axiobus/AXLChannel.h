@@ -37,7 +37,8 @@ namespace PLCnext
 		enum ChannelType
 		{
 			Digital,
-			Analog
+			Analog,
+			Unknown
 		};
 
 		const ChannelDirection getChannelDirection();

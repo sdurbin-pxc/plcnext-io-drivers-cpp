@@ -29,7 +29,7 @@ int main()
 	// Check to make sure you have the right number of modules you are expecting.
 	// In this example, we are expecting two:
 
-	if (modules.size() != 2)
+	if (modules.size() != 1)
 	{
 		printf("Incorrect number of modules detected: %i\n", modules.size());
 		return 2;
@@ -38,7 +38,7 @@ int main()
 	// Check to make sure we have the right modules in the right slots:
 	// In this example:  [DI8/DO8, AI2/AO2]
 
-	if (modules[0]->getType() != AXLF_MODULE_DI8DO8 || modules[1]->getType() != AXLF_MODULE_AI2AO2)
+	if (modules[0]->getType() != AXLF_MODULE_AI2AO2)
 	{
 		printf("Incorrect modules, or module order detected.\n");
 		return 3;
@@ -51,13 +51,13 @@ int main()
 
 	// Cast the base AXLModule classes into their derived classes:
 
-	AXLF_DI8DO8* di8do8 = dynamic_cast<AXLF_DI8DO8*>(modules[0]);
-	AXLF_AI2AO2* ai2ao2 = dynamic_cast<AXLF_AI2AO2*>(modules[1]);
+	//AXLF_DI8DO8* di8do8 = dynamic_cast<AXLF_DI8DO8*>(modules[0]);
+	AXLF_AI2AO2* ai2ao2 = dynamic_cast<AXLF_AI2AO2*>(modules[0]);
 
 
 	// Configure the AI2/AO2 module's first AI2 channel to measure from 0 to 10 Volts:
 
-	if (!ai2ao2->ai2->channel[0]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::V_0_P10))
+	if (!ai2ao2->ai2->channel[1]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::V_0_P10))
 	{
 		printf("Configuring AI2/AO2's first input channel's measuring range failed.\n");
 		return 4;
@@ -65,23 +65,23 @@ int main()
 
 	// Configure the AI2/AO2 module's first output channel to output from 4 to 20 mA:
 
-	if (!ai2ao2->ao2->channel[0]->setOutputRange(AXLF_AI2AO2::AO2_Channel::OutputRange::mA_P4_P20))
-	{
-		printf("Configuring AI2/AO2's first output channel's output range failed.\n");
-		return 5;
-	}
+	//if (!ai2ao2->ao2->channel[0]->setOutputRange(AXLF_AI2AO2::AO2_Channel::OutputRange::mA_P4_P20))
+	//{
+	//	printf("Configuring AI2/AO2's first output channel's output range failed.\n");
+	//	return 5;
+	//}
 
 	// Configure the AI2/AO2 module's second AI2 channel to measure from 4 to 20 mA:
 
-	if (!ai2ao2->ai2->channel[1]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::mA_P4_P20))
-	{
-		printf("Configuring AI2/AO2's second input channel's measuring range failed.\n");
-		return 6;
-	}
+	//if (!ai2ao2->ai2->channel[1]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::mA_P4_P20))
+	//{
+	//	printf("Configuring AI2/AO2's second input channel's measuring range failed.\n");
+	//	return 6;
+	//}
 
 	// Set digital output bus fail output behavior:
-	if (!di8do8->setSubstituteBehavior(AXLDigitalOutputModule::SubstituteBehavior::HoldLast))
-		printf("trouble setting do sub behavior.\n");
+	//if (!di8do8->setSubstituteBehavior(AXLDigitalOutputModule::SubstituteBehavior::HoldLast))
+	//	printf("trouble setting do sub behavior.\n");
 
 	// Tell the Axioline I/O component that we will be handling the process outputs.
 

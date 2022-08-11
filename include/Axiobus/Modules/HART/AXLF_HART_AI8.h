@@ -29,7 +29,7 @@ namespace PLCnext {
 	{
 	public:
 
-		class Data_Channel : AXLChannel
+		class Data_Channel : public AXLChannel
 		{
 		public:
 			Data_Channel(char* _pd, AXLF_HART_AI8* ai8, uint channelNum);
