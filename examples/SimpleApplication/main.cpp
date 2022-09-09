@@ -65,7 +65,7 @@ int main()
 
 	// Configure the AI2/AO2 module's first output channel to output from 4 to 20 mA:
 
-	if (!ai2ao2->ao2->channel[0]->setOutputRange(AXLF_AI2AO2::AO2_Channel::OutputRange::mA_P4_P20))
+	if (!ai2ao2->ao2->channel[0]->setOutputRange(AXLF_AI2AO2::AO2_Channel::OutputRange::INACTIVE))
 	{
 		printf("Configuring AI2/AO2's first output channel's output range failed.\n");
 		return 5;
@@ -73,7 +73,7 @@ int main()
 
 	// Configure the AI2/AO2 module's second AI2 channel to measure from 4 to 20 mA:
 
-	if (!ai2ao2->ai2->channel[1]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::mA_P4_P20))
+	if (!ai2ao2->ai2->channel[1]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::INACTIVE))
 	{
 		printf("Configuring AI2/AO2's second input channel's measuring range failed.\n");
 		return 6;
@@ -105,6 +105,8 @@ int main()
 		if ((diag.status & 0xE0) != 0xE0)
 		{
 			printf("Bus not in active/run state. Check diagnostic parameters.\n");
+			printf("Diag Status: %X, Param1: %X, Param2: %X\n", diag.status, diag.param1, diag.param2);
+			fflush(stdout);
 			return 6;
 		}
 
@@ -116,25 +118,28 @@ int main()
 		// Check the return error:
 		// Note, these errors are enumerated via AXLF_AI2AO2::AI2_Channel::Error
 
+		cout << "\b\r";
 		if (err == AXLF_AI2AO2::AI2_Channel::NoError)
-			printf("\b\rAI2 Channel 1: %f V, | ", ai2voltage);
+			printf("AI2 Channel 1: %f V, | ", ai2voltage);
 		else
-			printf("\b\rAI2 Channel 1: Error %u, | ", err);
+			printf("AI2 Channel 1: Error %u, | ", err);
 
 
 		// Get the value of the second channel of AI2/AO2's input:
 
+		/*
 		double ai2mA = 0;
 		err = ai2ao2->ai2->channel[1]->getValue(ai2mA);
-
+		*/
 		// Check the return error:
 		// Note, these errors are enumerated via AXLF_AI2AO2::AI2_Channel::Error
 
+		/*
 		if (err == AXLF_AI2AO2::AI2_Channel::NoError)
 			printf("AI2 Channel 2: %f mA, | ", ai2mA);
 		else
 			printf("AI2 Channel 2: Error %u, | ", err);
-
+		*/
 		// Append the diagnostics information to console output:
 
 		printf("Diag Status: %X, Param1: %X, Param2: %X\n", diag.status, diag.param1, diag.param2);

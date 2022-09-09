@@ -142,6 +142,7 @@ namespace PLCnext {
 
 		AXLF_UTH(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset, int numChannels);
 		AXLF_UTH();
+		~AXLF_UTH();
 		UTH_Channel** channel;
 		virtual const string name();
 	};

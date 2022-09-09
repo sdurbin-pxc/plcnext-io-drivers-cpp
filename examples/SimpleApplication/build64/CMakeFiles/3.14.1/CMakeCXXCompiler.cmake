@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-g++.exe")
+set(CMAKE_CXX_COMPILER "C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "9.3.0")
@@ -18,11 +18,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ar.exe")
-set(CMAKE_CXX_COMPILER_AR "C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-gcc-ar.exe")
-set(CMAKE_RANLIB "C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-x86_64-linux/x86_64-pxc-linux-gcc-ranlib.exe")
-set(CMAKE_LINKER "C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ld.exe")
+set(CMAKE_AR "C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ar.exe")
+set(CMAKE_CXX_COMPILER_AR "C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-gcc-ar.exe")
+set(CMAKE_RANLIB "C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-x86_64-linux/x86_64-pxc-linux-gcc-ranlib.exe")
+set(CMAKE_LINKER "C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -72,7 +72,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include;C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed;C:/3152sdk2021.0.3/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0;C:/3152sdk2021.0.3/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux;C:/3152sdk2021.0.3/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward;C:/3152sdk2021.0.3/sysroots/corei7-64-pxc-linux/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include;C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;pthread;c;gcc_s;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0;C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc;C:/3152sdk2021.0.3/sysroots/corei7-64-pxc-linux/lib;C:/3152sdk2021.0.3/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0;C:/3152sdk2021.0.3/sysroots/corei7-64-pxc-linux/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0;C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

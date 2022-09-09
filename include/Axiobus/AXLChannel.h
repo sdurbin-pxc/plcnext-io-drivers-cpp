@@ -48,7 +48,7 @@ namespace PLCnext
 		virtual string getUnitsString() = 0;
 		virtual bool executeFunction(int id, vector<Variant> params) = 0;
 		virtual bool readConfiguration() = 0;
-
+		virtual ~AXLChannel();
 		bool configurationChanged();
 
 		Axiobus* getAxioMaster();

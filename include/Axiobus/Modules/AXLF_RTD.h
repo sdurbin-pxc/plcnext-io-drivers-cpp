@@ -149,9 +149,11 @@ namespace PLCnext {
 		};
 
 		AXLF_RTD(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, int numChannels);
+		~AXLF_RTD();
 		AXLF_RTD();
 		RTD_Channel** channel;
 		virtual const string name();
+
 	};
 
 	class AXLF_RTD8 : public AXLF_RTD
@@ -165,4 +167,5 @@ namespace PLCnext {
 	public:
 		AXLF_RTD4(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset);
 	};
+
 }

@@ -39,6 +39,7 @@ namespace PLCnext {
 	public:
 		AXLModule(Axiobus* axc, ushort slot, uint type);
 		AXLModule();
+		virtual ~AXLModule();
 		virtual const string name()=0;
 		const vector<AXLChannel*>& getChannels();
 		uint getSerialNumber();

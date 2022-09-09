@@ -38,6 +38,7 @@ namespace PLCnext
 		virtual Type getType() = 0;
 		virtual Variant getCurrentValue() = 0;
 		string name;
+		virtual ~AXLParameter() = default;
 	};
 
 	struct AXLEnumPair
@@ -57,6 +58,7 @@ namespace PLCnext
 		Variant getCurrentValue();
 		string getString(int);
 		const vector<string>& getStrings();
+		virtual ~AXLEnumParameter() = default;
 	private:
 		unordered_map<string, int> values;
 		vector<string> strings;
@@ -73,6 +75,7 @@ namespace PLCnext
 		long long getMin();
 		void setCurrentValue(Variant);
 		Variant getCurrentValue();
+		virtual ~AXLIntegerParameter() = default;
 	private:
 		long long m_currentValue;
 		long long m_min;
@@ -88,6 +91,7 @@ namespace PLCnext
 		double getMin();
 		void setCurrentValue(Variant);
 		Variant getCurrentValue();
+		virtual ~AXLRealParameter() = default;
 	private:
 		double m_currentValue;
 		double m_min;
@@ -105,6 +109,7 @@ namespace PLCnext
 		int getId();
 		bool isConfiguration();
 		string getCamelCaseName();
+		~AXLFunction();
 	protected:
 		int id;
 		bool m_isConfig;

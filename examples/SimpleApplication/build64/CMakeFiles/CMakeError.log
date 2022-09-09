@@ -1,43 +1,43 @@
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-gcc.exe 
+Compiler: C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-gcc.exe 
 Build flags: -m64;-march=nehalem;-mtune=generic;-mfpmath=sse;-msse4.2;-fomit-frame-pointer
 Id flags:  
 
 The output was:
 1
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find Scrt1.o: No such file or directory
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crti.o: No such file or directory
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtbeginS.o: No such file or directory
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc_s
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lc
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc_s
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtendS.o: No such file or directory
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtn.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find Scrt1.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crti.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtbeginS.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc_s
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lc
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc_s
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtendS.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtn.o: No such file or directory
 collect2.exe: error: ld returned 1 exit status
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: C:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-g++.exe 
+Compiler: C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-g++.exe 
 Build flags: -std=c++11;-m64;-march=nehalem;-mtune=generic;-mfpmath=sse;-msse4.2;-fomit-frame-pointer;-pthread
 Id flags:  
 
 The output was:
 1
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find Scrt1.o: No such file or directory
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crti.o: No such file or directory
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtbeginS.o: No such file or directory
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lstdc++
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lm
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc_s
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lpthread
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lc
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc_s
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtendS.o: No such file or directory
-c:/3152sdk2021.0.3/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtn.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find Scrt1.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crti.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtbeginS.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lstdc++
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lm
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc_s
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lpthread
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lc
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc_s
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find -lgcc
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtendS.o: No such file or directory
+c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/real-ld.exe: cannot find crtn.o: No such file or directory
 collect2.exe: error: ld returned 1 exit status
 
 
