@@ -53,6 +53,7 @@
 #include "Modules/SmartElements/AXLF_SE_DO16.h"
 #include "Modules/Function/AXLF_CNT.h"
 #include "Modules/HART/AXLF_HART_AI8.h"
+#include "Modules/HART/AXLF_HART_AO4.h"
 #include "PDIResponseStatus.h"
 #include "../Hardware/AxioServiceExecuter.hpp"
 #include <thread>
@@ -151,6 +152,8 @@ namespace PLCnext {
 
 		double deviceTemperature();
 		
+		PDIResponseStatus pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
+		PDIResponseStatus pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);
 
 
 	private:
@@ -199,9 +202,7 @@ namespace PLCnext {
 
 		static void configNotifyHandler(int sig, siginfo_t *si, void *ucontext);
 
-	protected:
-		PDIResponseStatus pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		PDIResponseStatus pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);
+
 
 	};
 

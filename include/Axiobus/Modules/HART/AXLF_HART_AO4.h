@@ -21,7 +21,8 @@ using namespace std;
 
 namespace PLCnext {
 
-	const uint AXLF_MODULE_HART_AO4 = 0xB0CA2;
+	// DataSheet says 0xBOCA2. Needs correction.
+	const uint AXLF_MODULE_HART_AO4 = 0xB0CA3;
 
 	class Axiobus;
 
@@ -41,11 +42,7 @@ namespace PLCnext {
 				Channel2,
 				Channel3,
 				Channel4,
-				Channel5,
-				Channel6,
-				Channel7,
-				Channel8,
-				Unknown
+				Unknown = 9
 			};
 
 			bool assignChannel(Channel_Select channel);

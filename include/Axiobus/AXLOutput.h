@@ -26,5 +26,5 @@ namespace PLCnext
 		AXLOutput();
 		virtual string setValueString(string) = 0;
 	};
-
+	 
 }

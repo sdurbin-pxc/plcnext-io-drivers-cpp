@@ -22,8 +22,6 @@ namespace PLCnext {
 
 	const uint AXLF_MODULE_SE_AO4_U = 0x1a10;
 
-	class Axiobus;
-
 	class AXLF_SE_AO4_U : public AXLModule
 	{
 	public:
