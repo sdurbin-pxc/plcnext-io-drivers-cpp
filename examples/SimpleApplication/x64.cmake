@@ -6,7 +6,7 @@
 #	Note, these sysroots can be downloaded from the "Downloads" section of the		#
 #	AXL F 3152 product page at https://www.phoenixcontact.com						#
 #																					#
-	set(AXC_SYSROOT "C:/3152sdk2022/sysroots")								#
+	set(AXC_SYSROOT "D:/3152sdk2022/sysroots")								#
 #																					#
 # __________________________________________________________________________________#
 
@@ -29,7 +29,7 @@ set(CMAKE_CXX_COMPILER_AR "${AXC_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/x86_64-
 set(CMAKE_AR "${AXC_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ar.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_FIND_ROOT_PATH "${AXC_SYSROOT}"  CACHE INTERNAL "" FORCE)
 set(CMAKE_LINKER "${AXC_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ld.exe" CACHE INTERNAL "" FORCE)
-set(CMAKE_MAKE_PROGRAM "${AXC_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/make64.exe"  CACHE INTERNAL "" FORCE)
+set(CMAKE_MAKE_PROGRAM "${AXC_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/make.exe"  CACHE INTERNAL "" FORCE)
 set(CMAKE_NM "${AXC_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-nm.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_OBJCOPY "${AXC_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-objcopy.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_OBJDUMP "${AXC_SYSROOT}/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-objdump.exe" CACHE INTERNAL "" FORCE)

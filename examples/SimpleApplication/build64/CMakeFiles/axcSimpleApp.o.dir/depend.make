@@ -32,6 +32,7 @@ CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../../../include/Axiobus/Modules/AXLF_
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../../../include/Axiobus/Modules/AXLF_UTH.h
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../../../include/Axiobus/Modules/Function/AXLF_CNT.h
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../../../include/Axiobus/Modules/HART/AXLF_HART_AI8.h
+CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../../../include/Axiobus/Modules/HART/AXLF_HART_AO4.h
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../../../include/Axiobus/Modules/SmartElements/AXLAnalogOutputSE.h
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_AI4_I.h
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../../../include/Axiobus/Modules/SmartElements/AXLF_SE_AI4_U.h

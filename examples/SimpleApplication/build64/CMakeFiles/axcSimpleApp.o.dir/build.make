@@ -59,15 +59,15 @@ include CMakeFiles/axcSimpleApp.o.dir/flags.make
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: CMakeFiles/axcSimpleApp.o.dir/flags.make
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/axcSimpleApp.o.dir/main.cpp.o"
-	C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\axcSimpleApp.o.dir\main.cpp.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\main.cpp
+	D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\axcSimpleApp.o.dir\main.cpp.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\main.cpp
 
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/axcSimpleApp.o.dir/main.cpp.i"
-	C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\main.cpp > CMakeFiles\axcSimpleApp.o.dir\main.cpp.i
+	D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\main.cpp > CMakeFiles\axcSimpleApp.o.dir\main.cpp.i
 
 CMakeFiles/axcSimpleApp.o.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/axcSimpleApp.o.dir/main.cpp.s"
-	C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\main.cpp -o CMakeFiles\axcSimpleApp.o.dir\main.cpp.s
+	D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\main.cpp -o CMakeFiles\axcSimpleApp.o.dir\main.cpp.s
 
 # Object files for target axcSimpleApp.o
 axcSimpleApp_o_OBJECTS = \

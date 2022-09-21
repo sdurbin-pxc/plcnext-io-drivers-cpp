@@ -1,7 +1,7 @@
 The target system is: Linux -  - 
 The host system is: Windows - 10.0.19044 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-gcc.exe 
+Compiler: D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-gcc.exe 
 Build flags: -m64;-march=nehalem;-mtune=generic;-mfpmath=sse;-msse4.2;-fomit-frame-pointer
 Id flags: -c 
 
@@ -14,7 +14,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 The C compiler identification is GNU, found in "C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/3.14.1/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-g++.exe 
+Compiler: D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-g++.exe 
 Build flags: -std=c++11;-m64;-march=nehalem;-mtune=generic;-mfpmath=sse;-msse4.2;-fomit-frame-pointer;-pthread
 Id flags: -c 
 
@@ -29,163 +29,163 @@ The CXX compiler identification is GNU, found in "C:/Users/sdurbin/Documents/Sou
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_d5402/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_d5402.dir\build.make CMakeFiles/cmTC_d5402.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d5402.dir/testCCompiler.c.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -o CMakeFiles\cmTC_d5402.dir\testCCompiler.c.o   -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_d5402
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_d5402.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer     -rdynamic CMakeFiles/cmTC_d5402.dir/testCCompiler.c.o  -o cmTC_d5402 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_db4e6/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_db4e6.dir\build.make CMakeFiles/cmTC_db4e6.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_db4e6.dir/testCCompiler.c.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -o CMakeFiles\cmTC_db4e6.dir\testCCompiler.c.o   -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_db4e6
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_db4e6.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer     -rdynamic CMakeFiles/cmTC_db4e6.dir/testCCompiler.c.o  -o cmTC_db4e6 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_6aee9/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_6aee9.dir\build.make CMakeFiles/cmTC_6aee9.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6aee9.dir/CMakeCCompilerABI.c.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -v -o CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o   -c "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_3b7be/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_3b7be.dir\build.make CMakeFiles/cmTC_3b7be.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b7be.dir/CMakeCCompilerABI.c.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -v -o CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o   -c "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"
 Using built-in specs.
-COLLECT_GCC=C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe
+COLLECT_GCC=D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe
 Target: x86_64-pxc-linux
 Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-mingw32 --target=x86_64-pxc-linux --prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --exec_prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --bindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --sbindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --libexecdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/libexec/x86_64-pxc-linux --datadir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share --sysconfdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/etc --sharedstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/com --localstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/var --libdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux --includedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --oldincludedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --infodir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/info --mandir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=x86_64-pxc-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot-native/usr/x86_64-pxc-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-__cxa_atexit --disable-nls
 Thread model: posix
 gcc version 9.3.0 (GCC) 
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o' '-c'
- c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/cc1.exe -quiet -v -iprefix c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/ -isysroot C:/3152sdk2022/sysroots/corei7-64-pxc-linux C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -auxbase-strip CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o -version -fomit-frame-pointer -o C:\Users\sdurbin\AppData\Local\Temp\ccAevVl5.s
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o' '-c'
+ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/cc1.exe -quiet -v -iprefix d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/ -isysroot D:/3152sdk2022/sysroots/corei7-64-pxc-linux C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -auxbase-strip CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o -version -fomit-frame-pointer -o C:\Users\sdurbin\AppData\Local\Temp\ccqtjYLP.s
 GNU C17 (GCC) version 9.3.0 (x86_64-pxc-linux)
 	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"
-ignoring duplicate directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include"
-ignoring nonexistent directory "C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/include"
-ignoring nonexistent directory "C:/3152sdk2022/sysroots/corei7-64-pxc-linux/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../include"
-ignoring duplicate directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed"
-ignoring nonexistent directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"
+ignoring nonexistent directory "d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"
+ignoring duplicate directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include"
+ignoring nonexistent directory "D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/include"
+ignoring nonexistent directory "D:/3152sdk2022/sysroots/corei7-64-pxc-linux/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../include"
+ignoring duplicate directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed"
+ignoring nonexistent directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"
 #include "..." search starts here:
 #include <...> search starts here:
- c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include
- c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed
- C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include
+ d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include
+ d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed
+ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include
 End of search list.
 GNU C17 (GCC) version 9.3.0 (x86_64-pxc-linux)
 	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: f23ccb0f341ff4b4d36679a9da7fc1e8
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o' '-c'
- c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/as.exe -v --64 -o CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o C:\Users\sdurbin\AppData\Local\Temp\ccAevVl5.s
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o' '-c'
+ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/as.exe -v --64 -o CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o C:\Users\sdurbin\AppData\Local\Temp\ccqtjYLP.s
 GNU assembler version 2.34.0 (x86_64-pxc-linux) using BFD version (GNU Binutils) 2.34.0.20200220
-COMPILER_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/
-LIBRARY_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o' '-c'
-Linking C executable cmTC_6aee9
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6aee9.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -v -rdynamic CMakeFiles/cmTC_6aee9.dir/CMakeCCompilerABI.c.o  -o cmTC_6aee9 
+COMPILER_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/
+LIBRARY_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o' '-c'
+Linking C executable cmTC_3b7be
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3b7be.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -v -rdynamic CMakeFiles/cmTC_3b7be.dir/CMakeCCompilerABI.c.o  -o cmTC_3b7be 
 Using built-in specs.
-COLLECT_GCC=C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe
-COLLECT_LTO_WRAPPER=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/lto-wrapper.exe
+COLLECT_GCC=D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe
+COLLECT_LTO_WRAPPER=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/lto-wrapper.exe
 Target: x86_64-pxc-linux
 Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-mingw32 --target=x86_64-pxc-linux --prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --exec_prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --bindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --sbindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --libexecdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/libexec/x86_64-pxc-linux --datadir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share --sysconfdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/etc --sharedstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/com --localstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/var --libdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux --includedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --oldincludedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --infodir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/info --mandir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=x86_64-pxc-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot-native/usr/x86_64-pxc-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-__cxa_atexit --disable-nls
 Thread model: posix
 gcc version 9.3.0 (GCC) 
-COMPILER_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/
-LIBRARY_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-rdynamic' '-o' 'cmTC_6aee9'
- c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -pie -o cmTC_6aee9 C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o -Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0 -Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0 -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0 -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib CMakeFiles/cmTC_6aee9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-rdynamic' '-o' 'cmTC_6aee9'
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+COMPILER_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/
+LIBRARY_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-rdynamic' '-o' 'cmTC_3b7be'
+ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -pie -o cmTC_3b7be D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o -Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0 -Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0 -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0 -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib CMakeFiles/cmTC_3b7be.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-rdynamic' '-o' 'cmTC_3b7be'
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
-    add: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
-    add: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
+    add: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
+    add: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
+    add: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
   end of search list found
-  collapse include dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include] ==> [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
-  collapse include dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed] ==> [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
-  collapse include dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
-  implicit include dirs: [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include;C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
+  collapse include dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include] ==> [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
+  collapse include dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed] ==> [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
+  collapse include dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
+  implicit include dirs: [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include;D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-pxc-linux-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_6aee9/fast ]
-  ignore line: [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_6aee9.dir\build.make CMakeFiles/cmTC_6aee9.dir/build]
-  ignore line: [make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_6aee9.dir/CMakeCCompilerABI.c.o]
-  ignore line: [C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -v -o CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o   -c "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_3b7be/fast ]
+  ignore line: [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_3b7be.dir\build.make CMakeFiles/cmTC_3b7be.dir/build]
+  ignore line: [make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_3b7be.dir/CMakeCCompilerABI.c.o]
+  ignore line: [D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -v -o CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o   -c "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe]
+  ignore line: [COLLECT_GCC=D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe]
   ignore line: [Target: x86_64-pxc-linux]
   ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-mingw32 --target=x86_64-pxc-linux --prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --exec_prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --bindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --sbindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --libexecdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/libexec/x86_64-pxc-linux --datadir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share --sysconfdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/etc --sharedstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/com --localstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/var --libdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux --includedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --oldincludedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --infodir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/info --mandir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=x86_64-pxc-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot-native/usr/x86_64-pxc-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-__cxa_atexit --disable-nls]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.3.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o' '-c']
-  ignore line: [ c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/cc1.exe -quiet -v -iprefix c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/ -isysroot C:/3152sdk2022/sysroots/corei7-64-pxc-linux C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -auxbase-strip CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o -version -fomit-frame-pointer -o C:\Users\sdurbin\AppData\Local\Temp\ccAevVl5.s]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/cc1.exe -quiet -v -iprefix d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/ -isysroot D:/3152sdk2022/sysroots/corei7-64-pxc-linux C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -auxbase-strip CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o -version -fomit-frame-pointer -o C:\Users\sdurbin\AppData\Local\Temp\ccqtjYLP.s]
   ignore line: [GNU C17 (GCC) version 9.3.0 (x86_64-pxc-linux)]
   ignore line: [	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"]
-  ignore line: [ignoring duplicate directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include"]
-  ignore line: [ignoring nonexistent directory "C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/include"]
-  ignore line: [ignoring nonexistent directory "C:/3152sdk2022/sysroots/corei7-64-pxc-linux/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../include"]
-  ignore line: [ignoring duplicate directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed"]
-  ignore line: [ignoring nonexistent directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"]
+  ignore line: [ignoring nonexistent directory "d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"]
+  ignore line: [ignoring duplicate directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include"]
+  ignore line: [ignoring nonexistent directory "D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/include"]
+  ignore line: [ignoring nonexistent directory "D:/3152sdk2022/sysroots/corei7-64-pxc-linux/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
-  ignore line: [ c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
-  ignore line: [ C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
+  ignore line: [ d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
+  ignore line: [ d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
+  ignore line: [ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
   ignore line: [End of search list.]
   ignore line: [GNU C17 (GCC) version 9.3.0 (x86_64-pxc-linux)]
   ignore line: [	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: f23ccb0f341ff4b4d36679a9da7fc1e8]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o' '-c']
-  ignore line: [ c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/as.exe -v --64 -o CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o C:\Users\sdurbin\AppData\Local\Temp\ccAevVl5.s]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/as.exe -v --64 -o CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o C:\Users\sdurbin\AppData\Local\Temp\ccqtjYLP.s]
   ignore line: [GNU assembler version 2.34.0 (x86_64-pxc-linux) using BFD version (GNU Binutils) 2.34.0.20200220]
-  ignore line: [COMPILER_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
-  ignore line: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/]
-  ignore line: [LIBRARY_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
-  ignore line: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_6aee9.dir\CMakeCCompilerABI.c.o' '-c']
-  ignore line: [Linking C executable cmTC_6aee9]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6aee9.dir\link.txt --verbose=1]
-  ignore line: [C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -v -rdynamic CMakeFiles/cmTC_6aee9.dir/CMakeCCompilerABI.c.o  -o cmTC_6aee9 ]
+  ignore line: [COMPILER_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
+  ignore line: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/]
+  ignore line: [LIBRARY_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
+  ignore line: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-o' 'CMakeFiles\cmTC_3b7be.dir\CMakeCCompilerABI.c.o' '-c']
+  ignore line: [Linking C executable cmTC_3b7be]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3b7be.dir\link.txt --verbose=1]
+  ignore line: [D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -v -rdynamic CMakeFiles/cmTC_3b7be.dir/CMakeCCompilerABI.c.o  -o cmTC_3b7be ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/lto-wrapper.exe]
+  ignore line: [COLLECT_GCC=D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/lto-wrapper.exe]
   ignore line: [Target: x86_64-pxc-linux]
   ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-mingw32 --target=x86_64-pxc-linux --prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --exec_prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --bindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --sbindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --libexecdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/libexec/x86_64-pxc-linux --datadir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share --sysconfdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/etc --sharedstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/com --localstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/var --libdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux --includedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --oldincludedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --infodir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/info --mandir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=x86_64-pxc-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot-native/usr/x86_64-pxc-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-__cxa_atexit --disable-nls]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.3.0 (GCC) ]
-  ignore line: [COMPILER_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
-  ignore line: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/]
-  ignore line: [LIBRARY_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
-  ignore line: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-rdynamic' '-o' 'cmTC_6aee9']
-  link line: [ c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -pie -o cmTC_6aee9 C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o -Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0 -Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0 -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0 -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib CMakeFiles/cmTC_6aee9.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o]
-    arg [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe] ==> ignore
-    arg [--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux] ==> ignore
+  ignore line: [COMPILER_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
+  ignore line: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/]
+  ignore line: [LIBRARY_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
+  ignore line: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-v' '-rdynamic' '-o' 'cmTC_3b7be']
+  link line: [ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -pie -o cmTC_3b7be D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o -Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0 -Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0 -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0 -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib CMakeFiles/cmTC_3b7be.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o]
+    arg [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe] ==> ignore
+    arg [--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [--hash-style=gnu] ==> ignore
@@ -196,19 +196,19 @@ Parsed C implicit link information from above output:
     arg [/lib/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6aee9] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o] ==> ignore
-    arg [-Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0] ==> dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0]
-    arg [-Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc] ==> dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
-    arg [CMakeFiles/cmTC_6aee9.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_3b7be] ==> ignore
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o] ==> ignore
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o] ==> ignore
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o] ==> ignore
+    arg [-Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0] ==> dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0]
+    arg [-Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc] ==> dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
+    arg [CMakeFiles/cmTC_3b7be.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -220,18 +220,18 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--pop-state] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o] ==> ignore
-  collapse library dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0] ==> [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0]
-  collapse library dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc] ==> [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o] ==> ignore
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o] ==> ignore
+  collapse library dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0] ==> [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0]
+  collapse library dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc] ==> [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
   implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0;C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
+  implicit dirs: [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0;D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
   implicit fwks: []
 
 
@@ -240,15 +240,15 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_7a278/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_7a278.dir\build.make CMakeFiles/cmTC_7a278.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7a278.dir/feature_tests.c.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -std=c11 -o CMakeFiles\cmTC_7a278.dir\feature_tests.c.o   -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.c
-Linking C executable cmTC_7a278
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_7a278.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer     -rdynamic CMakeFiles/cmTC_7a278.dir/feature_tests.c.o  -o cmTC_7a278 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_adba2/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_adba2.dir\build.make CMakeFiles/cmTC_adba2.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_adba2.dir/feature_tests.c.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -std=c11 -o CMakeFiles\cmTC_adba2.dir\feature_tests.c.o   -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.c
+Linking C executable cmTC_adba2
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_adba2.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer     -rdynamic CMakeFiles/cmTC_adba2.dir/feature_tests.c.o  -o cmTC_adba2 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -260,15 +260,15 @@ make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_5e2cc/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_5e2cc.dir\build.make CMakeFiles/cmTC_5e2cc.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5e2cc.dir/feature_tests.c.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -std=c99 -o CMakeFiles\cmTC_5e2cc.dir\feature_tests.c.o   -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.c
-Linking C executable cmTC_5e2cc
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5e2cc.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer     -rdynamic CMakeFiles/cmTC_5e2cc.dir/feature_tests.c.o  -o cmTC_5e2cc 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_5cfcb/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_5cfcb.dir\build.make CMakeFiles/cmTC_5cfcb.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5cfcb.dir/feature_tests.c.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -std=c99 -o CMakeFiles\cmTC_5cfcb.dir\feature_tests.c.o   -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.c
+Linking C executable cmTC_5cfcb
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5cfcb.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer     -rdynamic CMakeFiles/cmTC_5cfcb.dir/feature_tests.c.o  -o cmTC_5cfcb 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -280,15 +280,15 @@ make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_5f3f1/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_5f3f1.dir\build.make CMakeFiles/cmTC_5f3f1.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5f3f1.dir/feature_tests.c.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -std=c90 -o CMakeFiles\cmTC_5f3f1.dir\feature_tests.c.o   -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.c
-Linking C executable cmTC_5f3f1
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_5f3f1.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer     -rdynamic CMakeFiles/cmTC_5f3f1.dir/feature_tests.c.o  -o cmTC_5f3f1 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_8a986/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_8a986.dir\build.make CMakeFiles/cmTC_8a986.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8a986.dir/feature_tests.c.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux   -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer    -std=c90 -o CMakeFiles\cmTC_8a986.dir\feature_tests.c.o   -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.c
+Linking C executable cmTC_8a986
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_8a986.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-gcc.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer     -rdynamic CMakeFiles/cmTC_8a986.dir/feature_tests.c.o  -o cmTC_8a986 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -298,175 +298,175 @@ make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_1d817/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_1d817.dir\build.make CMakeFiles/cmTC_1d817.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1d817.dir/testCXXCompiler.cxx.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -o CMakeFiles\cmTC_1d817.dir\testCXXCompiler.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTC_1d817
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_1d817.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_1d817.dir/testCXXCompiler.cxx.o  -o cmTC_1d817 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_21340/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_21340.dir\build.make CMakeFiles/cmTC_21340.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21340.dir/testCXXCompiler.cxx.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -o CMakeFiles\cmTC_21340.dir\testCXXCompiler.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_21340
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_21340.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_21340.dir/testCXXCompiler.cxx.o  -o cmTC_21340 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_3fc31/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_3fc31.dir\build.make CMakeFiles/cmTC_3fc31.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3fc31.dir/CMakeCXXCompilerABI.cpp.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -v -o CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o -c "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_c8bd5/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_c8bd5.dir\build.make CMakeFiles/cmTC_c8bd5.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c8bd5.dir/CMakeCXXCompilerABI.cpp.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -v -o CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o -c "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"
 Using built-in specs.
-COLLECT_GCC=C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe
+COLLECT_GCC=D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe
 Target: x86_64-pxc-linux
 Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-mingw32 --target=x86_64-pxc-linux --prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --exec_prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --bindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --sbindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --libexecdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/libexec/x86_64-pxc-linux --datadir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share --sysconfdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/etc --sharedstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/com --localstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/var --libdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux --includedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --oldincludedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --infodir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/info --mandir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=x86_64-pxc-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot-native/usr/x86_64-pxc-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-__cxa_atexit --disable-nls
 Thread model: posix
 gcc version 9.3.0 (GCC) 
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
- c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/cc1plus.exe -quiet -v -iprefix c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/ -isysroot C:/3152sdk2022/sysroots/corei7-64-pxc-linux -D_GNU_SOURCE -D_REENTRANT C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -auxbase-strip CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o -std=c++11 -version -fomit-frame-pointer -o C:\Users\sdurbin\AppData\Local\Temp\ccuuZDUl.s
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/cc1plus.exe -quiet -v -iprefix d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/ -isysroot D:/3152sdk2022/sysroots/corei7-64-pxc-linux -D_GNU_SOURCE -D_REENTRANT C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -auxbase-strip CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o -std=c++11 -version -fomit-frame-pointer -o C:\Users\sdurbin\AppData\Local\Temp\cc0Y0Yzj.s
 GNU C++11 (GCC) version 9.3.0 (x86_64-pxc-linux)
 	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"
-ignoring duplicate directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include"
-ignoring nonexistent directory "C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/include"
-ignoring nonexistent directory "C:/3152sdk2022/sysroots/corei7-64-pxc-linux/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../include"
-ignoring duplicate directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed"
-ignoring nonexistent directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"
+ignoring nonexistent directory "d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"
+ignoring duplicate directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include"
+ignoring nonexistent directory "D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/include"
+ignoring nonexistent directory "D:/3152sdk2022/sysroots/corei7-64-pxc-linux/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../include"
+ignoring duplicate directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed"
+ignoring nonexistent directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"
 #include "..." search starts here:
 #include <...> search starts here:
- c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include
- c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed
- C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0
- C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux
- C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward
- C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include
+ d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include
+ d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed
+ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0
+ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux
+ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward
+ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include
 End of search list.
 GNU C++11 (GCC) version 9.3.0 (x86_64-pxc-linux)
 	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: bc22da994047a4cbb9722160a32f6e10
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
- c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/as.exe -v --64 -o CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o C:\Users\sdurbin\AppData\Local\Temp\ccuuZDUl.s
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/as.exe -v --64 -o CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o C:\Users\sdurbin\AppData\Local\Temp\cc0Y0Yzj.s
 GNU assembler version 2.34.0 (x86_64-pxc-linux) using BFD version (GNU Binutils) 2.34.0.20200220
-COMPILER_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/
-LIBRARY_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
-Linking CXX executable cmTC_3fc31
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3fc31.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -v -rdynamic CMakeFiles/cmTC_3fc31.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3fc31 
+COMPILER_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/
+LIBRARY_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+Linking CXX executable cmTC_c8bd5
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c8bd5.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -v -rdynamic CMakeFiles/cmTC_c8bd5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c8bd5 
 Using built-in specs.
-COLLECT_GCC=C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe
-COLLECT_LTO_WRAPPER=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/lto-wrapper.exe
+COLLECT_GCC=D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe
+COLLECT_LTO_WRAPPER=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/lto-wrapper.exe
 Target: x86_64-pxc-linux
 Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-mingw32 --target=x86_64-pxc-linux --prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --exec_prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --bindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --sbindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --libexecdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/libexec/x86_64-pxc-linux --datadir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share --sysconfdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/etc --sharedstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/com --localstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/var --libdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux --includedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --oldincludedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --infodir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/info --mandir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=x86_64-pxc-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot-native/usr/x86_64-pxc-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-__cxa_atexit --disable-nls
 Thread model: posix
 gcc version 9.3.0 (GCC) 
-COMPILER_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/
-LIBRARY_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-rdynamic' '-o' 'cmTC_3fc31' '-shared-libgcc'
- c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -pie -o cmTC_3fc31 C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o -Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0 -Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0 -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0 -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib CMakeFiles/cmTC_3fc31.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o
-COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-rdynamic' '-o' 'cmTC_3fc31' '-shared-libgcc'
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+COMPILER_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/
+LIBRARY_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/;d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-rdynamic' '-o' 'cmTC_c8bd5' '-shared-libgcc'
+ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -pie -o cmTC_c8bd5 D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o -Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0 -Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0 -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0 -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib CMakeFiles/cmTC_c8bd5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-rdynamic' '-o' 'cmTC_c8bd5' '-shared-libgcc'
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
-    add: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
-    add: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0]
-    add: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux]
-    add: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward]
-    add: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
+    add: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
+    add: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
+    add: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0]
+    add: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux]
+    add: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward]
+    add: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
   end of search list found
-  collapse include dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include] ==> [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
-  collapse include dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed] ==> [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
-  collapse include dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0]
-  collapse include dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux]
-  collapse include dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward]
-  collapse include dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
-  implicit include dirs: [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include;C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
+  collapse include dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include] ==> [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
+  collapse include dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed] ==> [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
+  collapse include dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0]
+  collapse include dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux]
+  collapse include dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward]
+  collapse include dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
+  implicit include dirs: [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include;D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(x86_64-pxc-linux-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_3fc31/fast ]
-  ignore line: [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_3fc31.dir\build.make CMakeFiles/cmTC_3fc31.dir/build]
-  ignore line: [make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_3fc31.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -v -o CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o -c "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_c8bd5/fast ]
+  ignore line: [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_c8bd5.dir\build.make CMakeFiles/cmTC_c8bd5.dir/build]
+  ignore line: [make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c8bd5.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -v -o CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o -c "C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp"]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe]
+  ignore line: [COLLECT_GCC=D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe]
   ignore line: [Target: x86_64-pxc-linux]
   ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-mingw32 --target=x86_64-pxc-linux --prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --exec_prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --bindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --sbindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --libexecdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/libexec/x86_64-pxc-linux --datadir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share --sysconfdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/etc --sharedstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/com --localstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/var --libdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux --includedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --oldincludedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --infodir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/info --mandir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=x86_64-pxc-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot-native/usr/x86_64-pxc-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-__cxa_atexit --disable-nls]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.3.0 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
-  ignore line: [ c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/cc1plus.exe -quiet -v -iprefix c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/ -isysroot C:/3152sdk2022/sysroots/corei7-64-pxc-linux -D_GNU_SOURCE -D_REENTRANT C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -auxbase-strip CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o -std=c++11 -version -fomit-frame-pointer -o C:\Users\sdurbin\AppData\Local\Temp\ccuuZDUl.s]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/cc1plus.exe -quiet -v -iprefix d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/ -isysroot D:/3152sdk2022/sysroots/corei7-64-pxc-linux -D_GNU_SOURCE -D_REENTRANT C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -auxbase-strip CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o -std=c++11 -version -fomit-frame-pointer -o C:\Users\sdurbin\AppData\Local\Temp\cc0Y0Yzj.s]
   ignore line: [GNU C++11 (GCC) version 9.3.0 (x86_64-pxc-linux)]
   ignore line: [	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"]
-  ignore line: [ignoring duplicate directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include"]
-  ignore line: [ignoring nonexistent directory "C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/include"]
-  ignore line: [ignoring nonexistent directory "C:/3152sdk2022/sysroots/corei7-64-pxc-linux/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../include"]
-  ignore line: [ignoring duplicate directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed"]
-  ignore line: [ignoring nonexistent directory "c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"]
+  ignore line: [ignoring nonexistent directory "d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"]
+  ignore line: [ignoring duplicate directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include"]
+  ignore line: [ignoring nonexistent directory "D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/include"]
+  ignore line: [ignoring nonexistent directory "D:/3152sdk2022/sysroots/corei7-64-pxc-linux/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../include"]
+  ignore line: [ignoring duplicate directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/../../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/../../../../../x86_64-pxc-linux/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
-  ignore line: [ c:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
-  ignore line: [ C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0]
-  ignore line: [ C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux]
-  ignore line: [ C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward]
-  ignore line: [ C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
+  ignore line: [ d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include]
+  ignore line: [ d:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed]
+  ignore line: [ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0]
+  ignore line: [ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux]
+  ignore line: [ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward]
+  ignore line: [ D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/include]
   ignore line: [End of search list.]
   ignore line: [GNU C++11 (GCC) version 9.3.0 (x86_64-pxc-linux)]
   ignore line: [	compiled by GNU C version 9.3.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none]
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: bc22da994047a4cbb9722160a32f6e10]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
-  ignore line: [ c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/as.exe -v --64 -o CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o C:\Users\sdurbin\AppData\Local\Temp\ccuuZDUl.s]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/as.exe -v --64 -o CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o C:\Users\sdurbin\AppData\Local\Temp\cc0Y0Yzj.s]
   ignore line: [GNU assembler version 2.34.0 (x86_64-pxc-linux) using BFD version (GNU Binutils) 2.34.0.20200220]
-  ignore line: [COMPILER_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
-  ignore line: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/]
-  ignore line: [LIBRARY_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
-  ignore line: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_3fc31.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
-  ignore line: [Linking CXX executable cmTC_3fc31]
-  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_3fc31.dir\link.txt --verbose=1]
-  ignore line: [C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -v -rdynamic CMakeFiles/cmTC_3fc31.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3fc31 ]
+  ignore line: [COMPILER_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
+  ignore line: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/]
+  ignore line: [LIBRARY_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
+  ignore line: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-o' 'CMakeFiles\cmTC_c8bd5.dir\CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [Linking CXX executable cmTC_c8bd5]
+  ignore line: ["C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c8bd5.dir\link.txt --verbose=1]
+  ignore line: [D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -v -rdynamic CMakeFiles/cmTC_c8bd5.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c8bd5 ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe]
-  ignore line: [COLLECT_LTO_WRAPPER=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/lto-wrapper.exe]
+  ignore line: [COLLECT_GCC=D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/lto-wrapper.exe]
   ignore line: [Target: x86_64-pxc-linux]
   ignore line: [Configured with: ../../../../../../work-shared/gcc-9.3.0-r0/gcc-9.3.0/configure --build=x86_64-linux --host=x86_64-pokysdk-mingw32 --target=x86_64-pxc-linux --prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --exec_prefix=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr --bindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --sbindir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux --libexecdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/libexec/x86_64-pxc-linux --datadir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share --sysconfdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/etc --sharedstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/com --localstatedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/var --libdir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux --includedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --oldincludedir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/include --infodir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/info --mandir=/opt/pxc/2022.0/sysroots/x86_64-pokysdk-mingw32/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-clocale=generic --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-default-pie --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=x86_64-pxc-linux- --without-local-prefix --disable-install-libiberty --enable-lto --disable-libssp --enable-libitm --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --without-isl --with-gxx-include-dir=/not/exist/usr/include/c++/9.3.0 --with-build-time-tools=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot-native/usr/x86_64-pxc-linux/bin --with-sysroot=/not/exist --with-build-sysroot=/yocto/jenkins/workspace/octo_SIM-AXCF3152_release_22.0.x/sim-axcf3152-64_build/tmp/work/x86_64-nativesdk-mingw32-pokysdk-mingw32/gcc-cross-canadian-x86-64/9.3.0-r0/recipe-sysroot --enable-poison-system-directories --disable-static --disable-nls --enable-initfini-array --enable-__cxa_atexit --disable-nls]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 9.3.0 (GCC) ]
-  ignore line: [COMPILER_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
-  ignore line: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/]
-  ignore line: [LIBRARY_PATH=c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
-  ignore line: [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/]
-  ignore line: [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-rdynamic' '-o' 'cmTC_3fc31' '-shared-libgcc']
-  link line: [ c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -pie -o cmTC_3fc31 C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o -Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0 -Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0 -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0 -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib -LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib CMakeFiles/cmTC_3fc31.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o]
-    arg [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe] ==> ignore
-    arg [--sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux] ==> ignore
+  ignore line: [COMPILER_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
+  ignore line: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/]
+  ignore line: [LIBRARY_PATH=d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/]
+  ignore line: [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/]
+  ignore line: [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux' '-std=c++11' '-m64' '-march=nehalem' '-mtune=generic' '-mfpmath=sse' '-msse4.2' '-fomit-frame-pointer' '-pthread' '-v' '-rdynamic' '-o' 'cmTC_c8bd5' '-shared-libgcc']
+  link line: [ d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib/ld-linux-x86-64.so.2 -pie -o cmTC_c8bd5 D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o -Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0 -Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0 -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0 -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib -LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib CMakeFiles/cmTC_c8bd5.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o]
+    arg [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../libexec/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/collect2.exe] ==> ignore
+    arg [--sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux] ==> ignore
     arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [--hash-style=gnu] ==> ignore
@@ -477,19 +477,19 @@ Parsed CXX implicit link information from above output:
     arg [/lib/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3fc31] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o] ==> ignore
-    arg [-Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0] ==> dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0]
-    arg [-Lc:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc] ==> dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
-    arg [-LC:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib] ==> dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
-    arg [CMakeFiles/cmTC_3fc31.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTC_c8bd5] ==> ignore
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/Scrt1.o] ==> ignore
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crti.o] ==> ignore
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtbeginS.o] ==> ignore
+    arg [-Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0] ==> dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0]
+    arg [-Ld:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc] ==> dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
+    arg [-LD:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib] ==> dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
+    arg [CMakeFiles/cmTC_c8bd5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -498,18 +498,18 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o] ==> ignore
-    arg [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o] ==> ignore
-  collapse library dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0] ==> [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0]
-  collapse library dir [c:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc] ==> [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
-  collapse library dir [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib] ==> [C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0/crtendS.o] ==> ignore
+    arg [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/crtn.o] ==> ignore
+  collapse library dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0] ==> [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0]
+  collapse library dir [d:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/../../lib/x86_64-pxc-linux/gcc] ==> [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib/../lib] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib/x86_64-pxc-linux/9.3.0] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/../lib] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib]
+  collapse library dir [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib] ==> [D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
   implicit libs: [stdc++;m;gcc_s;gcc;pthread;c;gcc_s;gcc]
-  implicit dirs: [C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0;C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0;C:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
+  implicit dirs: [D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0;D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/lib;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib/x86_64-pxc-linux/9.3.0;D:/3152sdk2022/sysroots/corei7-64-pxc-linux/usr/lib]
   implicit fwks: []
 
 
@@ -518,15 +518,15 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_92fee/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_92fee.dir\build.make CMakeFiles/cmTC_92fee.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_92fee.dir/feature_tests.cxx.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++2a -o CMakeFiles\cmTC_92fee.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_92fee
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_92fee.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_92fee.dir/feature_tests.cxx.o  -o cmTC_92fee 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_e1375/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_e1375.dir\build.make CMakeFiles/cmTC_e1375.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e1375.dir/feature_tests.cxx.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++2a -o CMakeFiles\cmTC_e1375.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_e1375
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e1375.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_e1375.dir/feature_tests.cxx.o  -o cmTC_e1375 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -591,15 +591,15 @@ make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_09228/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_09228.dir\build.make CMakeFiles/cmTC_09228.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_09228.dir/feature_tests.cxx.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++17 -o CMakeFiles\cmTC_09228.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_09228
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_09228.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_09228.dir/feature_tests.cxx.o  -o cmTC_09228 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_59b26/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_59b26.dir\build.make CMakeFiles/cmTC_59b26.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_59b26.dir/feature_tests.cxx.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++17 -o CMakeFiles\cmTC_59b26.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_59b26
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_59b26.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_59b26.dir/feature_tests.cxx.o  -o cmTC_59b26 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -664,15 +664,15 @@ make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_e3412/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_e3412.dir\build.make CMakeFiles/cmTC_e3412.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e3412.dir/feature_tests.cxx.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++14 -o CMakeFiles\cmTC_e3412.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_e3412
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_e3412.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_e3412.dir/feature_tests.cxx.o  -o cmTC_e3412 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_0cff1/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_0cff1.dir\build.make CMakeFiles/cmTC_0cff1.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0cff1.dir/feature_tests.cxx.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++14 -o CMakeFiles\cmTC_0cff1.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_0cff1
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_0cff1.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_0cff1.dir/feature_tests.cxx.o  -o cmTC_0cff1 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -737,15 +737,15 @@ make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_796e4/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_796e4.dir\build.make CMakeFiles/cmTC_796e4.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_796e4.dir/feature_tests.cxx.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++11 -o CMakeFiles\cmTC_796e4.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_796e4
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_796e4.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_796e4.dir/feature_tests.cxx.o  -o cmTC_796e4 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_40420/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_40420.dir\build.make CMakeFiles/cmTC_40420.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_40420.dir/feature_tests.cxx.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++11 -o CMakeFiles\cmTC_40420.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_40420
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_40420.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_40420.dir/feature_tests.cxx.o  -o cmTC_40420 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -810,15 +810,15 @@ make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe cmTC_01959/fast 
-C:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make64.exe -f CMakeFiles\cmTC_01959.dir\build.make CMakeFiles/cmTC_01959.dir/build
-make64[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_01959.dir/feature_tests.cxx.o
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++98 -o CMakeFiles\cmTC_01959.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_01959
-"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_01959.dir\link.txt --verbose=1
-C:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=C:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_01959.dir/feature_tests.cxx.o  -o cmTC_01959 
-make64[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Run Build Command(s):D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe cmTC_6edb9/fast 
+D:/3152sdk2022/sysroots/x86_64-pokysdk-mingw32/usr/bin/make.exe -f CMakeFiles\cmTC_6edb9.dir\build.make CMakeFiles/cmTC_6edb9.dir/build
+make[1]: Entering directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6edb9.dir/feature_tests.cxx.o
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux    -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread    -std=c++98 -o CMakeFiles\cmTC_6edb9.dir\feature_tests.cxx.o -c C:\Users\sdurbin\Documents\Source\AxioDriverDeploy\examples\SimpleApplication\build64\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_6edb9
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_6edb9.dir\link.txt --verbose=1
+D:\3152sdk2022\sysroots\x86_64-pokysdk-mingw32\usr\bin\x86_64-pxc-linux\x86_64-pxc-linux-g++.exe --sysroot=D:/3152sdk2022/sysroots/corei7-64-pxc-linux  -std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread     -rdynamic CMakeFiles/cmTC_6edb9.dir/feature_tests.cxx.o  -o cmTC_6edb9 
+make[1]: Leaving directory 'C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
