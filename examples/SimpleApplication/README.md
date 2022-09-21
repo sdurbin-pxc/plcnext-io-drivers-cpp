@@ -31,7 +31,7 @@ Be sure to save the file.
 
 ## Step 4: Add Windows Environment Variables PATH entry for make.exe:
 
-Add an entry for the following path in your System Environment Variables:  
+Add an entry for the following path in your Windows System Environment Variables:  
   
 	{sysrootsPath}\x86_64-pokysdk-mingw32\usr\bin  
   
