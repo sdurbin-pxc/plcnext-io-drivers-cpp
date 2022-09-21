@@ -17,12 +17,14 @@ The path to this directory will be referred to as {sysrootsPath} in this walkthr
 ## Step 3: Set path in Cmake files:
 
 Open x64.cmake (for 3152) and/or arm.cmake (for 2152) located in the SimpleApplication project directory.  
+  
 Change the sysroots path as follows:  
   
 	set(AXC_SYSROOT "{sysrootsPath}")  
 	
   
 For example, if your syroots path is C:\sysroots, it should show as:  set(AXC_SYSROOT "C:\sysroots").  
+  
 Be sure to save the file.  
 
 ## Step 4: Add Windows Environment Variables PATH entry for make.exe:
