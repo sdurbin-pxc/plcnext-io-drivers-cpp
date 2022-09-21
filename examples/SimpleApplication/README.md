@@ -4,35 +4,26 @@
 ## Step 1:  Install the latest Cmake:
 
 Download Cmake for Windows from: https://cmake.org/download/
-
 Verify that Cmake is installed by opening a command line and entering "cmake --version".
 
 ## Step 2:  Download the SDK/Sysroots:
 
 Download the SDK for Windows from the product's Software Downloads page:  Product>Downloads>Software.
-
 The zip file should start with "SDK_for_Windows_".  Open the zip and extrat the .tar.xz file to any directory.
-
 Using a tool similar to 7-zip, extract the contents of the embedded .tar file into a directory.
-
 The extracted contents should contain a folder named "sysroots".
-
 The path to this directory will be referred to as {sysrootsPath} in this walkthrough.
 
 
 ## Step 3: Set path in Cmake files:
 
 Open x64.cmake (for 3152) and/or arm.cmake (for 2152) located in the SimpleApplication project directory.
-
-
 Change the sysroots path as follows:
 
-
-	set(AXC_SYSROOT "{sysrootsPath}")
+**set(AXC_SYSROOT "{sysrootsPath}")
 	
 
 For example, if your syroots path is C:\sysroots, it should show as:  set(AXC_SYSROOT "C:\sysroots").
-
 Be sure to save the file.
 
 ## Step 4: Add Windows Environment Variables PATH entry for make.exe:
