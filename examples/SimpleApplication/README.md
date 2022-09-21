@@ -3,7 +3,7 @@
 
 ## Step 1:  Install the latest Cmake:
 
-Download Cmake for Windows from: https://cmake.org/download/
+Download Cmake for Windows from: https://cmake.org/download/  
 Verify that Cmake is installed by opening a command line and entering "cmake --version".
 
 ## Step 2:  Download the SDK/Sysroots:
