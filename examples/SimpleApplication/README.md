@@ -9,10 +9,12 @@ Verify that Cmake is installed by opening a command line and entering "cmake --v
 ## Step 2:  Download the SDK/Sysroots:
 
 Download the SDK for Windows from the product's Software Downloads page:  Product>Downloads>Software.  
-The zip file should start with "SDK_for_Windows_".  Open the zip and extrat the .tar.xz file to any directory.  
+The zip file should start with "SDK_for_Windows_".  Open the zip and extrat the .tar.xz file to any directory.    
 Using a tool similar to 7-zip, extract the contents of the embedded .tar file into a directory.  
-The extracted contents should contain a folder named "sysroots".  
+The extracted contents should contain a folder named "sysroots".   
 The path to this directory will be referred to as {sysrootsPath} in this walkthrough.  
+
+Optional:  Change the sysroots directories in the CppProperties.json file if you are using Visual Studio or VSCode.  This should allow intellisense to properly evaluate your code.  
 
 ## Step 3: Set path in Cmake files:
 
