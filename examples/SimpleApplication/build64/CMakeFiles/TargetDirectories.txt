@@ -1,7 +1,0 @@
-C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/install/strip.dir
-C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/axcSimpleApp.o.dir
-C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/install/local.dir
-C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/install.dir
-C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/edit_cache.dir
-C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/rebuild_cache.dir
-C:/Users/sdurbin/Documents/Source/AxioDriverDeploy/examples/SimpleApplication/build64/CMakeFiles/list_install_components.dir

@@ -1,4 +1,0 @@
-build/*
-build64/*
-!build64/.gitkeep
-!build/.gitkeep
