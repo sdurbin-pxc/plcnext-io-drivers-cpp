@@ -12,7 +12,7 @@ Download the SDK for Windows from the product's Software Downloads page:  Produc
 The zip file should start with "SDK_for_Windows_".  Open the zip and extrat the .tar.xz file to any directory.  
   
 Note:  Make sure the firmware version on the device is the same or newer than the SDK version. 
-You can check the firmware version by clicking the "General Data" link on the web based management:  https://<deviceip>/wbm  
+You can check the firmware version by clicking the "General Data" link on the web based management:  https://{device_ip}/wbm  
   
 Using a tool similar to 7-zip, extract the contents of the embedded .tar file into a directory.  
 The extracted contents should contain a folder named "sysroots".   
