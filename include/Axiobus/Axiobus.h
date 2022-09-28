@@ -174,7 +174,7 @@ namespace PLCnext {
 		bool m_initialized;
 		int fd;
 		int pdiMutexFd;
-
+		bool m_emptyBus;
 		static Axiobus* m_instance;
 
 		pthread_mutex_t* pdiWriteMutex;
