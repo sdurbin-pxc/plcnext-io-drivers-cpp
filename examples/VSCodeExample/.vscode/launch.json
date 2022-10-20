@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Remote Debug AXC 2152",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "start_gdbserver",
+            "program": "${workspaceFolder}/build/${config:outputFileName}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerServerAddress": "192.168.1.10:3000",
+            "miDebuggerPath": "${config:axcf2152_sysroots}/x86_64-pokysdk-mingw32/usr/bin/arm-pxc-linux-gnueabi/arm-pxc-linux-gnueabi-gdb.exe",
+            "logging": {
+                "trace": true,
+                "traceResponse": true,
+                "engineLogging": true
+            }
+        },
+        {
+            "name": "Remote Debug AXC 3152",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "start_gdbserver",
+            "program": "${workspaceFolder}/build/${config:outputFileName}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerServerAddress": "192.168.1.10:3000",
+            "miDebuggerPath": "${config:axcf3152_sysroots}/x86_64-pokysdk-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-gdb.exe",
+            "logging": {
+                "trace": true,
+                "traceResponse": true,
+                "engineLogging": true
+            }
+        }        
+    ]
+}

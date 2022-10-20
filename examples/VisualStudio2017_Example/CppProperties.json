@@ -2,9 +2,11 @@
   "environments": [
     {
       // Path to your Axioline sysroots:
-      "sysroots": "c:/2152sdk2020.6.1/sysroots",
-      "buildPath": "./build",
-      "outputName":  "vsExample.o",
+      "sysroots2152": "D:/2152sdk2022/sysroots",
+      "sysroots3152": "D:/3152sdk2022/sysroots",
+      "buildPath2152": "./build",
+      "buildPath3152":  "./build64",
+      "outputName": "vsExample.o",
 
       // Path to the AXC Driver root folder, this is two levels up from this example in the repo:
       "axcDriver": "${workspaceRoot}/../../"
@@ -12,7 +14,7 @@
   ],
   "configurations": [
     {
-      "name": "AXC2152_FW2019.9",
+      "name": "AXCx152",
       "compilerSwitches": "-std=c++11 /O1",
       "inheritEnvironments": ["linux_x86"],
       "includePath": [

@@ -1,0 +1,88 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },            
+        },
+        {
+            "label": "moveToRemote",
+            "command": "pscp",
+            "args": [
+              "-pw",
+              "${config:sshPassword}",
+              "${workspaceFolder}\\build\\${config:outputFileName}",
+              "${config:sshUser}@192.168.1.10:/tmp/${config:outputFileName}"
+            ],
+             "dependsOn": [
+                 "build"
+             ]
+        },
+        {
+            "label": "setPermissions",
+            "command": "plink",
+            "args": [
+              "${config:sshUser}@192.168.1.10",                
+              "-pw",
+              "${config:sshPassword}",
+              "-batch",
+              "chmod +x /tmp/${config:outputFileName}"
+            ],
+             "dependsOn": [
+                 "moveToRemote"
+             ]
+        },                 
+        {
+            "label": "start_gdbserver",
+            "command": "plink",
+            "args": [
+                "${config:sshUser}@192.168.1.10",
+                "-pw",
+                "${config:sshPassword}",
+                "-batch",
+                "gdbserver localhost:3000 /tmp/${config:outputFileName}"
+            ],
+             "dependsOn": [
+                 "setPermissions"
+             ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "group": "build",
+            "detail": "Starts the gdbserver and waits for success",
+            "isBackground": true,
+            "problemMatcher": {
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": "^.*Process*",
+                    "endsPattern": "^.*Listening*"
+                }
+            }
+        }        
+    ]
+}

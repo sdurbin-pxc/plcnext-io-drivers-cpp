@@ -6,15 +6,12 @@
       "taskName": "AXC2152 Build",
       "appliesTo": "/",
       "type": "launch",
-      "contextType": "build",
-      "command": "${env.sysroots}/x86_64-pokysdk-mingw32/usr/bin/arm-pxc-linux-gnueabi/arm-pxc-linux-gnueabi-g++.exe",
+      //"contextType": "build",
+      "command": "${env.sysroots2152}/x86_64-pokysdk-mingw32/usr/bin/arm-pxc-linux-gnueabi/arm-pxc-linux-gnueabi-g++.exe",
       "args": [
-        "--sysroot=${env.sysroots}/cortexa9t2hf-neon-pxc-linux-gnueabi",
+        "--sysroot=${env.sysroots2152}/cortexa9t2hf-neon-pxc-linux-gnueabi",
         "-std=c++11",
-        "-fPIC",
-        "-fno-gnu-unique",
         "-mfloat-abi=hard",
-        "-march=armv7-a",
         "-mthumb",
         "-mfpu=neon",
         "-mcpu=cortex-a9",
@@ -22,8 +19,30 @@
         "-O1",
         "-v",
         "-I \"${env.axcDriver}include\"",
-        "-o \"${env.buildPath}/${env.outputName}\"",
-        "-g main.cpp \"${env.axcDriver}/lib/libAxio2152.a\""
+        "-o \"${env.buildPath2152}/${env.outputName}\"",
+        "-g main.cpp \"${env.axcDriver}/lib/arm/libAxiobus.a\""
+      ]
+    },
+    {
+      "taskLabel": "AXC3152 Build",
+      "taskName": "AXC3152 Build",
+      "appliesTo": "/",
+      "type": "launch",
+      //"contextType": "build",
+      "command": "${env.sysroots3152}/x86_64-pokysdk-mingw32/usr/bin/arm-pxc-linux-gnueabi/arm-pxc-linux-gnueabi-g++.exe",
+      "args": [
+        "--sysroot=${env.sysroots3152}/cortexa9t2hf-neon-pxc-linux-gnueabi",
+        "-std=c++11",
+        "-m64",
+        "-march=nehalem",
+        "-mtune=generic",
+        "-mfpmath=sse",
+        "-msse4.2",
+        "-pthread",
+        "-v",
+        "-I \"${env.axcDriver}include\"",
+        "-o \"${env.buildPath3152}/${env.outputName}\"",
+        "-g main.cpp \"${env.axcDriver}/lib/x64/libAxiobus.a\""
       ]
     },
     {
@@ -34,16 +53,16 @@
         {
           "command": "pscp",
           "args": [
-            "-pw phoenix",
-            "\"${workspaceRoot}/${env.buildPath}/${env.outputName}\"",
-            "root@192.168.1.10:/tmp/${env.outputName}"
+            "-pw 86e3d050",
+            "\"${workspaceRoot}/${env.buildPath2152}/${env.outputName}\"",
+            "admin@192.168.1.10:/tmp/${env.outputName}"
           ]
         },
         {
           "command": "plink",
           "args": [
-            "root@192.168.1.10",
-            "-pw phoenix",
+            "admin@192.168.1.10",
+            "-pw 86e3d050",
             "chmod +x /tmp/${env.outputName}"
           ]
         }

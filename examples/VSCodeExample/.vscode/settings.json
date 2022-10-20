@@ -1,0 +1,10 @@
+{
+    "outputFileName": "axcExample",
+    "sshUser": "admin",
+    "sshPassword": "86e3d050",
+    "axcf2152_sysroots": "D:/2152sdk2022/sysroots",
+    "axcf3152_sysroots": "D:/3152sdk2022/sysroots",
+    "cmake.configureArgs": [
+        "-DOUTPUT_NAME=axcExample"
+    ]
+}

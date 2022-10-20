@@ -1,0 +1,18 @@
+[
+    {
+        "name": "AXC2152",
+        "toolchainFile": "${workspaceFolder}/arm.cmake",
+        "environmentVariables":
+        {
+            "AXC_SYSROOT": "D:/2152sdk2022/sysroots"
+        }
+    },
+    {
+        "name": "AXC3152",
+        "toolchainFile": "${workspaceFolder}/x64.cmake",
+        "environmentVariables":
+        {
+            "AXC_SYSROOT": "D:/3152sdk2022/sysroots"
+        }        
+    }
+]

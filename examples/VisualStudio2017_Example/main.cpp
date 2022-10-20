@@ -1,5 +1,5 @@
 #include <iostream>
-#include <AXC2152/AXC2152.h>
+#include <Axiobus/Axiobus.h>
 #include <vector>
 
 using namespace std;
@@ -10,12 +10,12 @@ int main()
 	printf("\nInitializing Axioline bus system... ");
 
 	// Initialize the main Axioline 2152 class.
-	AXC2152 axio = AXC2152();
+	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);
 
 	// Check to see if the class successfully attached to the driver.
 	if (!axio.isInitialized())
 	{
-		printf("AXC2152 class initialization failed.\n");
+		printf("Axiobus class initialization failed.\n");
 		return 1;
 	}
 
