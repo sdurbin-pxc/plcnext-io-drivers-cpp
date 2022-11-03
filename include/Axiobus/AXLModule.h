@@ -11,22 +11,12 @@
 ******************************************************************************/
 
 
-/* Smart Element Types:
-
-slot: 1: type: 1a0d - ai4/u
-slot: 2: type: 1d19 - do16/1
-slot: 3: type: 1d18 - di16/1
-slot: 4: type: 1a10 - ao4/u
-slot: 5: type: 1a0c - ai4/i
-slot: 6: type: 1a0f - ao4/i
-
-*/
 #pragma once
 
 #include <sys/types.h>
 #include <vector>
 #include <string>
-#include "PDIResponseStatus.h"
+#include "../Hardware/PdiResult.hpp"
 
 using namespace std;
 
@@ -47,8 +37,8 @@ namespace PLCnext {
 		uint getType();
 		uint getSlotNumber();
 		Axiobus* getAxioMaster();
-		PDIResponseStatus pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		PDIResponseStatus pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, char* data, int length);
+		PdiResult pdiRead(ushort subSlot, ushort readIndex, ushort readSubIndex, std::vector<uint8_t>& data);
+		PdiResult pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, const std::vector<uint8_t>& data);
 		bool isMissing();
 		bool configurationChanged();
 

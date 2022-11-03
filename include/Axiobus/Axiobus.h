@@ -54,8 +54,8 @@
 #include "Modules/Function/AXLF_CNT.h"
 #include "Modules/HART/AXLF_HART_AI8.h"
 #include "Modules/HART/AXLF_HART_AO4.h"
-#include "PDIResponseStatus.h"
 #include "../Hardware/AxioServiceExecuter.hpp"
+#include "../Hardware/PdiResult.hpp"
 #include <thread>
 
 #define PROCESS_DATA_SIZE 512
@@ -152,8 +152,8 @@ namespace PLCnext {
 
 		double deviceTemperature();
 		
-		PDIResponseStatus pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data);
-		PDIResponseStatus pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, char* data, int length);
+		PdiResult pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, std::vector<uint8_t>& data);
+		PdiResult pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, const std::vector<uint8_t>& data);
 
 
 	private:
@@ -186,7 +186,7 @@ namespace PLCnext {
 		static vector<AXLModule*> modules;
 		uint m_initError;
 		uint* m_pOutputEnabled;
-		pair<uint, uint> getProcessDataSize(ushort type, char data[]);
+		pair<uint, uint> getProcessDataSize(ushort type, uint8_t data[]);
 		bool CreatePdiMutexes();
 		AxioServiceExecuter* m_axioServiceExecuter;
 		uint m_inDataSize;
