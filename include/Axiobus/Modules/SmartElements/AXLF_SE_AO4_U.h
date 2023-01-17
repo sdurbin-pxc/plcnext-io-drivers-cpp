@@ -59,13 +59,13 @@ namespace PLCnext {
 		private:
 			//uint channelNum;
 			char* pdIn;
-			char* pdOut;
+			//char* pdOut;
 			string errorToString(uint);
 
 		protected:
 
 			uint32_t convertValueToRaw(double value, uint16_t& converted);
-
+			uint32_t convertRawToValue(uint16_t value, double& ret);
 		};
 
 		AXLF_SE_AO4_U(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);

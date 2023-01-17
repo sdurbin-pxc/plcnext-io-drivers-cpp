@@ -39,6 +39,7 @@ namespace PLCnext
 		SubstituteBehavior getSubstituteBehavior();
 		double getSubstituteValue();
 
+		double getSetpoint();
 	protected:
 		bool readSubstituteBehavior();
 		SubstituteBehavior m_substituteBehavior;
@@ -48,6 +49,8 @@ namespace PLCnext
 		AXLEnumParameter* m_subBehaviorEnum;
 		AXLRealParameter* m_subValueParam;
 		AXLEnumParameter* m_filterEnum;
+		char* pdOut;
+		virtual bool executeFunction(int id, vector<Variant> params);
 	};
 
 }

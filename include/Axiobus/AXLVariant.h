@@ -143,6 +143,17 @@ public:
 		if (DOUBLE == data.type) {
 			return data.realVal;
 		}
+		else if (STRING == data.type)
+		{
+			try
+			{
+				return stod(*data.strVal);
+			}
+			catch (...)
+			{
+
+			}
+		}
 		//do type conversion if you like
 		throw std::runtime_error("bad cast");
 	}

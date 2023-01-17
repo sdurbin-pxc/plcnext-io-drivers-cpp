@@ -38,6 +38,7 @@ namespace PLCnext
 		{
 			Digital,
 			Analog,
+			AnalogSE,
 			Unknown
 		};
 

@@ -34,12 +34,14 @@ namespace PLCnext
 
 		bool setSubstituteBehavior(SubstituteBehavior);		
 		SubstituteBehavior getSubstituteBehavior();
-
+		double getSetpoint();
 	protected:
 		bool readSubstituteBehavior();
 		SubstituteBehavior m_substituteBehavior;
 		virtual uint32_t convertValueToRaw(double value, uint16_t&) = 0;
+		virtual uint32_t convertRawToValue(uint16_t value, double& ret) = 0;
 		AXLEnumParameter* m_subBehaviorEnum;
+		char* pdOut;
 	};
 
 }

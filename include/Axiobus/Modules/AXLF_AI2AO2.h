@@ -75,7 +75,7 @@ namespace PLCnext {
 
 		private:
 			//uint channelNum;
-			char* pdOut;
+			//char* pdOut;
 			char outputRange;
 			string errorToString(uint);
 			void setRangeMinMax();

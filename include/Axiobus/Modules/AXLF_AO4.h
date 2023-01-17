@@ -77,7 +77,7 @@ namespace PLCnext {
 		private:
 			//uint channelNum;
 			char* pdIn;
-			char* pdOut;
+
 			char outputRange;
 			AXLF_AO4* ao4;
 			string errorToString(uint);

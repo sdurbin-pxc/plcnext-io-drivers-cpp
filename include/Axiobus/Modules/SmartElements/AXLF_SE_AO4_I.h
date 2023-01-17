@@ -59,13 +59,13 @@ namespace PLCnext {
 		private:
 			//uint channelNum;
 			char* pdIn;
-			char* pdOut;
+			//char* pdOut;
 			string errorToString(uint);
 
 		protected:
 
 			uint32_t convertValueToRaw(double value, uint16_t& converted);
-
+			uint32_t convertRawToValue(uint16_t value, double& ret);
 
 		};
 

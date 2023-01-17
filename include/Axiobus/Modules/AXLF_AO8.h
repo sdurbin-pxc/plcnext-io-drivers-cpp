@@ -78,7 +78,7 @@ namespace PLCnext {
 		private:
 
 			char* pdIn;
-			char* pdOut;
+			//char* pdOut;
 			char outputRange;
 			AXLF_AO8* AO8;
 			string errorToString(uint);
