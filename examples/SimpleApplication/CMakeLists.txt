@@ -10,7 +10,7 @@ include_directories(
 
 link_directories(
 	"${AXL_DRIVER_CLASSES}/lib/${LIBARCH}"
-)
+) 
 
 add_executable(
 	axcSimpleApp.o main.cpp

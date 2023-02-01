@@ -34,6 +34,7 @@ namespace PLCnext
 
 		bool setSubstituteBehavior(SubstituteBehavior);
 		SubstituteBehavior getSubstituteBehavior();
+		bool setOutputsToFailState();
 		bool readConfiguration();
 	private:
 		SubstituteBehavior m_substituteBehavior;

@@ -124,6 +124,7 @@ namespace PLCnext {
 		uint moduleTypeFromName(string name);
 		uint getInitializationError();
 		bool isInitialized();
+		bool setOutputsToFailState();
 
 		// Explicit Mode functions:
 		bool readInputs();

@@ -51,6 +51,7 @@ namespace PLCnext
 		virtual bool readConfiguration() = 0;
 		virtual ~AXLChannel();
 		bool configurationChanged();
+		virtual bool setFailState();
 
 		Axiobus* getAxioMaster();
 		uint getChannelNumber();

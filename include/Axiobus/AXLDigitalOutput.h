@@ -29,6 +29,9 @@ namespace PLCnext
 			m_rangeMinimum = 0.0;
 		}
 
+		virtual void setValue(bool value) = 0;
+		virtual bool getValue() = 0;
+
 		// AXLChannel Override
 
 		bool readConfiguration() { return true; }

@@ -38,9 +38,11 @@ namespace PLCnext
 		
 		SubstituteBehavior getSubstituteBehavior();
 		double getSubstituteValue();
-
+		bool setFailState();
 		double getSetpoint();
 	protected:
+		virtual uint setValue(double value) = 0;
+		virtual uint getValue(double &value) = 0;
 		bool readSubstituteBehavior();
 		SubstituteBehavior m_substituteBehavior;
 		double m_substituteValue;

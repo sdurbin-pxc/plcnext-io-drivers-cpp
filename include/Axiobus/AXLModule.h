@@ -27,6 +27,23 @@ namespace PLCnext {
 
 	class AXLModule {
 	public:
+
+		enum DiagnosticStatus
+		{
+			OK,
+			WARNING,
+			ERROR,
+			UNKNOWN
+		};
+
+		struct Diagnostics
+		{
+			DiagnosticStatus status;
+			uint16_t errorCode;
+			uint8_t channel;
+			string text;
+		};
+
 		AXLModule(Axiobus* axc, ushort slot, uint type);
 		AXLModule();
 		virtual ~AXLModule();
@@ -41,6 +58,11 @@ namespace PLCnext {
 		PdiResult pdiWrite(ushort subSlot, ushort writeIndex, ushort writeSubIndex, const std::vector<uint8_t>& data);
 		bool isMissing();
 		bool configurationChanged();
+		Diagnostics getDiagnostics();
+		string getFirmwareVersion();
+		string getFirmwareDate();
+		string getHardwareVersion();
+		string getHardwareDate();
 
 		enum Error
 		{
@@ -53,6 +75,10 @@ namespace PLCnext {
 		uint m_slot;
 		uint m_lastConfigCnt = 0;
 		uint m_currConfigCnt = 0;
+		string m_firmwareVersion;
+		string m_firmwareDate;
+		string m_hardwareVersion;
+		string m_hardwareDate;
 		bool readConfiguration();
 		friend class Axiobus;
 	protected:
@@ -62,6 +88,7 @@ namespace PLCnext {
 		uint outOffset;
 		vector<AXLChannel*> _channels;
 		void configChangeNotify();
+		bool setOutputsToFailState();
 	};
 
 }
