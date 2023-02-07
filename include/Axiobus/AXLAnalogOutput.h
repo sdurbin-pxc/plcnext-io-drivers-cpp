@@ -51,6 +51,8 @@ namespace PLCnext
 		AXLEnumParameter* m_subBehaviorEnum;
 		AXLRealParameter* m_subValueParam;
 		AXLEnumParameter* m_filterEnum;
+		double m_nominalMax;
+		double m_nominalMin;
 		char* pdOut;
 		virtual bool executeFunction(int id, vector<Variant> params);
 	};
