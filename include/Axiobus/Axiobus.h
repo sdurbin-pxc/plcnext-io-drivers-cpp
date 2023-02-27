@@ -82,7 +82,8 @@ namespace PLCnext {
 		enum BusMode
 		{
 			CYCLIC,		// Creates thread that writes/reads process data on a cycle.
-			EXPLICIT	// Reads bus and writes process data on command only.
+			EXPLICIT,	// Reads bus and writes process data on command only.
+			DETACHED	// Explicit mode that does not keep driver open, for PDI calls only
 		};
 
 		// Structure that holds diagnostic information about the bus
@@ -175,11 +176,12 @@ namespace PLCnext {
 		bool m_initialized;
 		int fd;
 		int pdiMutexFd;
+
 		bool m_emptyBus;
 		static Axiobus* m_instance;
 
-		pthread_mutex_t* pdiWriteMutex;
-		pthread_mutex_t* pdiReadMutex;
+		pthread_mutex_t* pdiMutex;
+		uint8_t* userId;
 		char* map;
 		size_t mapSize;
 		AXLModule* moduleFromType(ushort slot, uint type, uintptr_t &pdInOffset, uintptr_t &pdOutOffset, bool missing);
@@ -196,7 +198,6 @@ namespace PLCnext {
 		void cyclicExecution();
 		bool m_doCyclicExecution;
 		uintptr_t m_OutputPtr;
-		T_AXM_DIAG_EX m_directDiag;
 
 		BusMode m_busMode;
 		DataInterface m_dataInterface;

@@ -9,7 +9,7 @@
 #include "AxioDeviceConfiguration.hpp"
 #include "PdiResult.hpp"
 #include "PdiParam.hpp"
-
+#include <thread>
 #include <vector>
 #include <map>
 
@@ -19,8 +19,8 @@ namespace PLCnext
 	class AxioServiceExecuter
 	{
 	public:
-		AxioServiceExecuter();
-		AxioServiceExecuter(bool reset);
+		AxioServiceExecuter(uint8_t* userIdPtr, pthread_mutex_t* mutexPtr);
+		AxioServiceExecuter(uint8_t* userIdPtr, pthread_mutex_t* mutexPtr, bool reset);
 		~AxioServiceExecuter();
 
 	public:
@@ -43,7 +43,10 @@ namespace PLCnext
 	private:
 		uint16_t Builduint16Value(uint8_t lowByte, uint8_t highByte);
 		bool IsPdiRequest(AxioService service);
-
+		int pdiMutexFd;
+		pthread_mutex_t*  pdiMutex;
+		uint8_t* userId;
+		uint16_t getUserId();
 	protected:
 		AxioDrvAcc axioMxi;
 	};
