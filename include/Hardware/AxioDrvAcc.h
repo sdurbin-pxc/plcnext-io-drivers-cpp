@@ -9,7 +9,7 @@ class AxioDrvAcc
 public:
 	AxioDrvAcc();
 	~AxioDrvAcc();
-	uint16_t GetNextUserId();
+	//uint16_t GetNextUserId();
 	int Open(const bool reset = true);
 	int Close();
 	int Send(uint16_t  userId, const uint8_t *buffer);
@@ -31,8 +31,8 @@ public:
 	};
 private:
 
-	static std::mutex idMutex;
-	static uint16_t  lastUserId;
+	//static std::mutex idMutex;
+	//static uint16_t  lastUserId;
 	static std::string drvPath;
 
 	int drvFp;
