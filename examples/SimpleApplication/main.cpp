@@ -1,13 +1,6 @@
 #include <math.h>
 #include "../include/Axiobus/Axiobus.h"
 
-
-#include <fcntl.h>
-#include <unistd.h>
-#include <sys/stat.h>
-#include <sys/ioctl.h>
-
-
 using namespace PLCnext;
 
 int main()
@@ -16,20 +9,8 @@ int main()
 
 	// Initialize the main Axioline bus class.
 
-	//Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
-
-	int drvFp;
-	drvFp = open("/dev/axio_xfer0", O_RDWR | O_SYNC);
-
-	getchar();
-
-	close(drvFp);
-	while (true)
-	{
-		sleep(1);
-	}
-
 	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
+
 
 	printf("Axio class instantiated.\n");
 	// Check to see if the class successfully attached to the driver.
@@ -38,7 +19,6 @@ int main()
 		printf("Axiobus class initialization failed. Init Error: %d\n", axio.getInitializationError());
 		return 1;
 	}
-
 
 	printf("\nScanning I/O modules...\n");
 
@@ -105,13 +85,13 @@ int main()
 		return 6;
 	}
 
-	axio.enablePLCnextOutputs();
-	ai2ao2->ao2->channel[1]->setValue(5.5);
-	ai2ao2->ao2->channel[1]->setSubstituteBehavior(AXLAnalogOutput::SubstituteBehavior::Maximum);
-	axio.writeOutputs();
+	// Set digital output bus fail output behavior:
+	if (!di8do8->setSubstituteBehavior(AXLDigitalOutputModule::SubstituteBehavior::HoldLast))
+		printf("Trouble setting DO sub behavior.\n");
 
-	while (true)
-		usleep(100000);
+	// Tell the Axioline I/O component that we will be handling the process outputs.
+
+	axio.enablePLCnextOutputs();
 
 	//axio.saveConfiguration("testConfig.json");
 
