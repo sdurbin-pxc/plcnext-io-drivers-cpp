@@ -55,6 +55,7 @@ namespace PLCnext
 		double m_nominalMin;
 		char* pdOut;
 		virtual bool executeFunction(int id, vector<Variant> params);
+		int m_comboModuleChannelOffset;
 	};
 
 }

@@ -69,6 +69,8 @@ namespace PLCnext {
 			MODULE_MISSING = 99
 		};
 	private:
+		friend class Axiobus;
+
 		Axiobus* axc=0;
 		uint m_serialNumber;
 		uint m_orderNumber;
@@ -79,8 +81,8 @@ namespace PLCnext {
 		string m_firmwareDate;
 		string m_hardwareVersion;
 		string m_hardwareDate;
-		bool readConfiguration();
-		friend class Axiobus;
+		virtual bool readConfiguration();
+
 	protected:
 		uint m_type;
 		bool m_missing;
