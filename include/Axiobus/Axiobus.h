@@ -127,6 +127,13 @@ namespace PLCnext {
 		bool isInitialized();
 		bool setOutputsToFailState();
 
+		// (Re)configure the bus I/O
+		void configureBus();
+
+		// Clear the sysfail register and start input/output
+		void clearSysfail();
+
+
 		// Explicit Mode functions:
 		bool readInputs();
 		bool writeOutputs();

@@ -11,7 +11,6 @@ int main()
 
 	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
 
-
 	printf("Axio class instantiated.\n");
 	// Check to see if the class successfully attached to the driver.
 	if (!axio.isInitialized())
@@ -88,6 +87,7 @@ int main()
 	// Set digital output bus fail output behavior:
 	if (!di8do8->setSubstituteBehavior(AXLDigitalOutputModule::SubstituteBehavior::HoldLast))
 		printf("Trouble setting DO sub behavior.\n");
+
 
 	// Tell the Axioline I/O component that we will be handling the process outputs.
 
