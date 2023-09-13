@@ -1,5 +1,6 @@
 #include <math.h>
 #include "../include/Axiobus/Axiobus.h"
+#include "../include/Hardware/SignalLamps.h"
 
 using namespace PLCnext;
 
@@ -10,8 +11,9 @@ int main()
 	// Initialize the main Axioline bus class.
 
 	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
-
+	
 	printf("Axio class instantiated.\n");
+
 	// Check to see if the class successfully attached to the driver.
 	if (!axio.isInitialized())
 	{
@@ -88,10 +90,6 @@ int main()
 	if (!di8do8->setSubstituteBehavior(AXLDigitalOutputModule::SubstituteBehavior::HoldLast))
 		printf("Trouble setting DO sub behavior.\n");
 
-
-	// Tell the Axioline I/O component that we will be handling the process outputs.
-
-	axio.enablePLCnextOutputs();
 
 	//axio.saveConfiguration("testConfig.json");
 

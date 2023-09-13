@@ -70,18 +70,16 @@ namespace PLCnext {
 	public:
 
 
-		// Select the process data interface.
+		// Select the process data interface. Deprecated, PLCNEXT interface removed.
 		// To work in conjunction with PLCnext Engineer, PLCNEXT must be chosen.
 		enum DataInterface
 		{
-			DIRECT,		// Access I/O hardware directly
-			PLCNEXT		// Access I/O process data via PLCnext Runtime
+			DIRECT		// Access I/O hardware directly
 		};
 
 		// Determine how the process data is read/write.
 		enum BusMode
 		{
-			CYCLIC,		// Creates thread that writes/reads process data on a cycle.
 			EXPLICIT,	// Reads bus and writes process data on command only.
 			DETACHED	// Explicit mode that does not keep driver open, for PDI calls only
 		};
@@ -138,12 +136,6 @@ namespace PLCnext {
 		bool readInputs();
 		bool writeOutputs();
 
-
-		// PLCnext Interface Functionality
-		void enablePLCnextOutputs();
-		void disablePLCnextOutputs();
-
-		bool isOutputEnabled();
 		~Axiobus();
 
 
@@ -197,15 +189,12 @@ namespace PLCnext {
 		uint m_initError;
 		uint* m_pOutputEnabled;
 		pair<uint, uint> getProcessDataSize(ushort type, uint8_t data[]);
-		bool CreatePdiMutexes();
 		AxioServiceExecuter* m_axioServiceExecuter;
 		uint m_inDataSize;
 		uint m_outDataSize;
 		thread* m_cyclicThread;
-		void cyclicExecution();
-		bool m_doCyclicExecution;
 		uintptr_t m_OutputPtr;
-
+		bool CreatePdiMutexes();
 		BusMode m_busMode;
 		DataInterface m_dataInterface;
 
