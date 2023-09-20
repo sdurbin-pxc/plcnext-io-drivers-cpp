@@ -8,14 +8,18 @@ include_directories(
 	"${AXL_DRIVER_CLASSES}/include"
 )
 
+
 link_directories(
-	"${AXL_DRIVER_CLASSES}/lib/${LIBARCH}"
+	"${AXL_DRIVER_CLASSES}/lib/shared/${LIBARCH}"
 ) 
 
 add_executable(
 	axcSimpleApp.o main.cpp
 )
 
-target_link_libraries (axcSimpleApp.o Axiobus)
+add_library(axiobus SHARED IMPORTED)
+set_property(TARGET axiobus PROPERTY IMPORTED_LOCATION ${AXL_DRIVER_CLASSES}/lib/shared/${LIBARCH}/libAxiobus.so.0)
+
+target_link_libraries (axcSimpleApp.o axiobus)
 
 install (TARGETS axcSimpleApp.o DESTINATION bin)
