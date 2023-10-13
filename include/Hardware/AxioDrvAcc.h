@@ -35,6 +35,6 @@ private:
 	//static uint16_t  lastUserId;
 	static std::string drvPath;
 
-	int drvFp;
+	static int drvFp;
 
 };

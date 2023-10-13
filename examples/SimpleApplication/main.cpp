@@ -6,7 +6,7 @@ using namespace PLCnext;
 
 int main()
 {
-	printf("\nInitializing Axioline bus system... ");
+	printf("\nInitializing Axioline bus system... \n");
 
 	// Initialize the main Axioline bus class.
 
