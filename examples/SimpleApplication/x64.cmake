@@ -6,21 +6,19 @@
 #	Note, these sysroots can be downloaded from the "Downloads" section of the		#
 #	AXL F 3152 product page at https://www.phoenixcontact.com						#
 #																					#
-	set(AXC_SYSROOT "D:/3152sdk2023/sysroots")								#
+	set(AXC_SYSROOT "C:/Source/sdks/axcf3152sdk2023.0/sysroots")								#
 #																					#
 # __________________________________________________________________________________#
 
-
 # The following are paths/flags specific to cross-compiling with the AXC 3152 toolchain:
 # DO NOT CHANGE BELOW:
-
+ 
 set(LIBARCH "x64" CACHE INTERNAL "" FORCE)
-
 set(CMAKE_GENERATOR "MinGW Makefiles" CACHE INTERNAL "" FORCE)
 set(CMAKE_SYSTEM_NAME "Linux" CACHE INTERNAL "" FORCE)
 set(CMAKE_BUILD_TYPE RELEASE CACHE INTERNAL "" FORCE)
-set(CMAKE_CXX_FLAGS "-std=c++11 -m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer -pthread" CACHE INTERNAL "" FORCE)
-set(CMAKE_C_FLAGS "-m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fomit-frame-pointer" CACHE INTERNAL "" FORCE)
+set(CMAKE_CXX_FLAGS "-m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -pthread -fPIC" CACHE INTERNAL "" FORCE)
+set(CMAKE_C_FLAGS "-m64 -march=nehalem -mtune=generic -mfpmath=sse -msse4.2 -fPIC" CACHE INTERNAL "" FORCE)
 
 set(CMAKE_CXX_COMPILER "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-g++.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_C_COMPILER "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-gcc.exe" CACHE INTERNAL "" FORCE)
@@ -35,7 +33,6 @@ set(CMAKE_OBJCOPY "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x8
 set(CMAKE_OBJDUMP "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-objdump.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_RANLIB "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ranlib.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_STRIP "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-strip.exe" CACHE INTERNAL "" FORCE)
-set(CMAKE_SYSROOT "${AXC_SYSROOT}/corei7-64-pxc-linux" CACHE INTERNAL "" FORCE)
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE "BOTH" CACHE INTERNAL "" FORCE)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY "BOTH" CACHE INTERNAL "" FORCE)
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM "BOTH" CACHE INTERNAL "" FORCE)

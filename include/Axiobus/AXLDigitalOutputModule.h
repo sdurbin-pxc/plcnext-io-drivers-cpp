@@ -37,6 +37,7 @@ namespace PLCnext
 		bool setOutputsToFailState();
 		bool readConfiguration();
 	private:
+		void processDiagnostic(Diagnostics&);
 		SubstituteBehavior m_substituteBehavior;
 	};
 

@@ -18,7 +18,7 @@ add_executable(
 )
 
 add_library(axiobus SHARED IMPORTED)
-set_property(TARGET axiobus PROPERTY IMPORTED_LOCATION ${AXL_DRIVER_CLASSES}/lib/shared/${LIBARCH}/libAxiobus.so.0)
+set_property(TARGET axiobus PROPERTY IMPORTED_LOCATION ${AXL_DRIVER_CLASSES}/lib/shared/${LIBARCH}/libAxiobus.so.1)
 
 target_link_libraries (axcSimpleApp.o axiobus)
 

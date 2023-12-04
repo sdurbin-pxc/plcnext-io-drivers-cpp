@@ -32,7 +32,8 @@ namespace PLCnext {
 		AXLF_DO8* do8;
 		AXLF_DI8* di8;
 		AXLF_DI8DO8(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
-		//AXLF_DI8DO8() {}
+	private:
+		void processDiagnostic(Diagnostics&);
 	};
 
 }

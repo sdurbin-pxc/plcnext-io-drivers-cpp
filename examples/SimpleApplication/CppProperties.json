@@ -1,21 +1,8 @@
-
-// This file is for a Visual Studio "Open Folder" project.
-// It will help the IDE configure IntelliSense.
-
 {
   "environments": [
     {
-      //  Set the directory of your AXC F 2152 SYSROOTS that correspond
-      //  to the firmware version on your controller.
-
-      //  Note, these sysroots can be downloaded from the "Downloads" section of the
-      //  AXL F 2152 product page at https://www.phoenixcontact.com
-
-      // The includePaths below may change depending on the C++ version that is in the SDK
-
-
-      "sysroots_arm": "D:/2152sdk2022/sysroots",
-      "sysroots_x64": "D:/3152sdk2022/sysroots"
+      "sysroots_arm": "C:/Source/sdks/axcf2152sdk2023.6/sysroots",
+      "sysroots_x64": "C:/Source/sdks/axcf3152sdk2023.0/sysroots"
     }
   ],
   "configurations": [
@@ -24,28 +11,28 @@
       "compilerSwitches": "-std=c++11 /O1",
       "includePath": [
         "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include",
-        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0",
-        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0/arm-pxc-linux-gnueabi",
-        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/9.3.0/backward",
-        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/lib/gcc/arm-pxc-linux-gnueabi/9.3.0/include",
-        "${env.sysroots_arm}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/9.3.0/include",
-        "${env.sysroots_arm}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/9.3.0/include-fixed",
-        "${workspaceRoot}/../../**" // Axioline driver root directory. (two paths up relative to this example)
+        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/11.3.0",
+        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/11.3.0/arm-pxc-linux-gnueabi",
+        "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/include/c++/11.3.0/backward",
+        // "${env.sysroots_arm}/cortexa9t2hf-neon-pxc-linux-gnueabi/usr/lib/gcc/arm-pxc-linux-gnueabi/11.3.0/include",
+        "${env.sysroots_arm}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/11.3.0/include",
+        "${env.sysroots_arm}/x86_64-pokysdk-mingw32/usr/lib/arm-pxc-linux-gnueabi/gcc/arm-pxc-linux-gnueabi/11.3.0/include-fixed",
+        "${workspaceRoot}/json/include/**"
       ],
       "intelliSenseMode": "linux-gcc-arm"
-    }, 
-    { 
+    },
+    {
       "name": "Axiobus_x64",
       "compilerSwitches": "-std=c++11 /O1",
       "includePath": [
         "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include",
-        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/9.3.0",
-        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/9.3.0/x86_64-pxc-linux",
-        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/9.3.0/backward",
-        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/lib/gcc/x86_64-pxc-linux/9.3.0/include",
-        "${env.sysroots_x64}/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include",
-        "${env.sysroots_x64}/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/9.3.0/include-fixed",
-        "${workspaceRoot}/../../**" // Axioline driver root directory. (two paths up relative to this example) 
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/11.3.0",
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/11.3.0/x86_64-pxc-linux",
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/include/c++/11.3.0/backward",
+        "${env.sysroots_x64}/corei7-64-pxc-linux/usr/lib/gcc/x86_64-pxc-linux/11.3.0/include",
+        "${env.sysroots_x64}/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/11.3.0/include",
+        "${env.sysroots_x64}/x86_64-pokysdk-mingw32/usr/lib/x86_64-pxc-linux/gcc/x86_64-pxc-linux/11.3.0/include-fixed",
+        "${workspaceRoot}/json/include/**"
       ],
       "intelliSenseMode": "linux-gcc-x64"
     }

@@ -1,6 +1,6 @@
 #include <math.h>
-#include "../include/Axiobus/Axiobus.h"
-#include "../include/Hardware/SignalLamps.h"
+#include "../../include/Axiobus/Axiobus.h"
+#include "../../include/Hardware/SignalLamps.h"
 
 using namespace PLCnext;
 
@@ -11,7 +11,7 @@ int main()
 	// Initialize the main Axioline bus class.
 
 	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
-	
+
 	printf("Axio class instantiated.\n");
 
 	// Check to see if the class successfully attached to the driver.

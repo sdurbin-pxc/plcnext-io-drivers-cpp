@@ -30,17 +30,21 @@ namespace PLCnext {
 
 		enum DiagnosticStatus
 		{
-			OK,
-			WARNING,
-			ERROR,
-			UNKNOWN
+			OK					= 0x00,
+			ERROR				= 0x01,
+			WARNING				= 0x02,
+			ERROR_REMOVED		= 0x81,
+			ERROR_ELIMINATED	= 0x82,
+			UNKNOWN				= 0xFE
 		};
 
 		struct Diagnostics
 		{
+			uint16_t id;
 			DiagnosticStatus status;
 			uint16_t errorCode;
 			uint8_t channel;
+			uint8_t moreFollows;
 			string text;
 		};
 
@@ -81,6 +85,7 @@ namespace PLCnext {
 		string m_firmwareDate;
 		string m_hardwareVersion;
 		string m_hardwareDate;
+		virtual void processDiagnostic(Diagnostics&);
 		virtual bool readConfiguration();
 
 	protected:
