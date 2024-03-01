@@ -113,7 +113,7 @@ namespace PLCnext {
 		class AO_Channel : public AXLAnalogOutput
 		{
 		public:
-			AO_Channel(char* _pdIn, char* _pdOut, AXLF_HART_AO4* AO4, uint channelNum);
+			AO_Channel(char* _pdIn, char* _pdOut, AXLF_HART_AO4* AO4, uint channelNum, bool aoFeedback);
 
 			uint getValue(double &ret);
 			uint setValue(double value);
@@ -167,7 +167,7 @@ namespace PLCnext {
 			OutputRange outputRange;
 			string errorToString(uint);
 			void setRangeMinMax();
-
+			bool m_aoFeedback;
 			// Function enum pointers
 			AXLEnumParameter* m_rangeEnum;
 		};

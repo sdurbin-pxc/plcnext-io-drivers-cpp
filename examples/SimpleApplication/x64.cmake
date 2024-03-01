@@ -6,7 +6,7 @@
 #	Note, these sysroots can be downloaded from the "Downloads" section of the		#
 #	AXL F 3152 product page at https://www.phoenixcontact.com						#
 #																					#
-	set(AXC_SYSROOT "C:/Source/sdks/axcf3152sdk2023.0/sysroots")								#
+	set(AXC_SYSROOT "C:/Source/sdks/axcf3152sdk2023.0/sysroots" CACHE INTERNAL "" FORCE)								#
 #																					#
 # __________________________________________________________________________________#
 
@@ -33,6 +33,7 @@ set(CMAKE_OBJCOPY "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x8
 set(CMAKE_OBJDUMP "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-objdump.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_RANLIB "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-ranlib.exe" CACHE INTERNAL "" FORCE)
 set(CMAKE_STRIP "${AXC_SYSROOT}/x86_64-w64-mingw32/usr/bin/x86_64-pxc-linux/x86_64-pxc-linux-strip.exe" CACHE INTERNAL "" FORCE)
+set(CMAKE_SYSROOT "${AXC_SYSROOT}/corei7-64-pxc-linux" CACHE INTERNAL "" FORCE)
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE "BOTH" CACHE INTERNAL "" FORCE)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY "BOTH" CACHE INTERNAL "" FORCE)
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM "BOTH" CACHE INTERNAL "" FORCE)
