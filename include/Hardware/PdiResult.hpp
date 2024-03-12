@@ -11,7 +11,7 @@ namespace PLCnext
 		uint16_t  AddInfo = 0;
 
 		operator bool() const {
-			return (ErrorCode == 0);
+			return (ErrorCode == 0 && ServiceDone == true);
 		}
 	};
 }

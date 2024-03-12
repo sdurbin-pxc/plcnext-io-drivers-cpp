@@ -87,6 +87,8 @@ namespace PLCnext {
 		string m_hardwareDate;
 		virtual void processDiagnostic(Diagnostics&);
 		virtual bool readConfiguration();
+		void readSerialNumber();
+		void readOrderNumber();
 
 	protected:
 		uint m_type;
