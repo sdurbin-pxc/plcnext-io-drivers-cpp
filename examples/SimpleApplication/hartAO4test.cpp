@@ -1,5 +1,6 @@
 #include <math.h>
-#include <Axiobus/Axiobus.h>
+#include "../../include/Axiobus/Axiobus.h"
+#include "../../include/Hardware/SignalLamps.h"
 
 using namespace PLCnext;
 
@@ -29,7 +30,7 @@ int main()
 	// Check to make sure you have the right number of modules you are expecting.
 	// In this example, we are expecting two:
 
-	if (modules.size() != 1)
+	if (modules.size() != 2)
 	{
 		printf("Incorrect number of modules detected: %i\n", modules.size());
 		return 2;
@@ -38,7 +39,7 @@ int main()
 	// Check to make sure we have the right modules in the right slots:
 	// In this example:  [DI8/DO8, AI2/AO2]
 
-	if (modules[0]->getType() != AXLF_MODULE_HART_AO4)
+	if (modules[0]->getType() != AXLF_MODULE_HART_AO4 || modules[1]->getType() != AXLF_MODULE_AI2AO2)
 	{
 		printf("Incorrect modules, or module order detected.\n");
 		return 3;
@@ -52,6 +53,8 @@ int main()
 	// Cast the base AXLModule classes into their derived classes:
 
 	AXLF_HART_AO4* hart = dynamic_cast<AXLF_HART_AO4*>(modules[0]);
+	AXLF_AI2AO2* ai2ao2 = dynamic_cast<AXLF_AI2AO2*>(modules[1]);
+
 	//AXLF_AI2AO2* ai2ao2 = dynamic_cast<AXLF_AI2AO2*>(modules[0]);
 
 
@@ -71,6 +74,7 @@ int main()
 	if (!hart->aoChannel[3]->setOutputRange(AXLF_HART_AO4::AO_Channel::OutputRange::INACTIVE))
 		printf("error setting output range\n");
 
+	/*
 	for (int i = 0; i < 4; i++)
 	{
 
@@ -83,14 +87,16 @@ int main()
 		if (!hart->dataChannel[i]->setChannelEnabled(AXLF_HART_AO4::Data_Channel::Channel_Enable::Enabled))
 			printf("error setting channel enabled\n");
 	}
+	*/
 
-	for (int i = 4; i < 8; i++)
+	for (int i = 0; i < 8; i++)
 		if (!hart->dataChannel[i]->assignChannel(AXLF_HART_AO4::Data_Channel::Channel_Select::Disabled))
 			printf("error setting channel select\n");
-	axio.enablePLCnextOutputs();
 
 
-	//hart->aoChannel[0]->setValue(13.0);
+
+	ai2ao2->ai2->channel[0]->setMeasuringRange(AXLF_AI2AO2::AI2_Channel::MeasuringRange::mA_P4_P20);
+	hart->aoChannel[0]->setValue(13.0);
 	//axio.writeOutputs();
 	//axio.saveConfiguration("testConfig.json");
 
@@ -119,7 +125,6 @@ int main()
 	for (;;)
 	{
 		// Get the bus diagnostics information
-		Axiobus::DiagnosticsInfo diag = axio.getDiagnosticsInfo();
 
 		// Check if we are in the desired controller state (Bus ready, bus active, and controller in run state)
 		// The diag.status, diag.param1 and diag.param2 will give detailed information of the system and I/O state.
@@ -134,8 +139,13 @@ int main()
 		//	fflush(stdout);
 		//	return 6;
 		//}
-		axio.readInputs();
+		//axio.readInputs();
+
 		// Get the value of the first channel of AI2/AO2's input:
+		
+		
+		//////
+		/*
 		uint32_t _pv, _sv, _tv, _qv;
 		float pv, sv, tv, qv;
 
@@ -151,7 +161,7 @@ int main()
 
 
 		printf("pv: %f, sv: %f, tv: %f, qv: %f\n", pv, sv, tv, qv);
-
+		*/
 		printf("set output: ");
 
 		double setpoint = -1.0;
@@ -160,6 +170,15 @@ int main()
 		if (setpoint >= 4.0 && setpoint <= 20)
 			hart->aoChannel[0]->setValue(setpoint);
 
+		axio.writeOutputs();
+		sleep(2);
+		axio.readInputs();
+		double ret = 0.0;
+		double ret2 = 0.0;
+		uint err = ai2ao2->ai2->channel[0]->getValue(ret);
+		uint err2 = hart->aoChannel[0]->getValue(ret2);
+		cout << "ai err: " << err << " value: " << ret << endl;
+		cout << "aofeed err: " << err2 << " value: " << ret2 << endl;
 
 		//double ai2voltage = 0;
 		//uint err = ai2ao2->ai2->channel[0]->getValue(ai2voltage);
@@ -190,6 +209,7 @@ int main()
 			printf("AI2 Channel 2: Error %u, | ", err);
 		*/
 		// Append the diagnostics information to console output:
+		Axiobus::DiagnosticsInfo diag = axio.getDiagnosticsInfo();
 
 		printf("Diag Status: %X, Param1: %X, Param2: %X\n", diag.status, diag.param1, diag.param2);
 		fflush(stdout);
@@ -197,7 +217,7 @@ int main()
 		// Linear conversion of 0-10V to 4-20mA where:  0V => 4mA, 10V => 20mA.
 
 
-		axio.writeOutputs();
+
 		usleep(100000);
 
 	}
