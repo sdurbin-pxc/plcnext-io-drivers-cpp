@@ -63,30 +63,6 @@ namespace PLCnext {
 
 			uint32_t getValue();
 
-			enum class Channel_Enable
-			{
-				Disabled,
-				Enabled,
-				Enabled_NoAlarms,
-				Unknown
-			};
-
-
-
-			Channel_Enable getChannelEnabled();
-			bool setChannelEnabled(Channel_Enable);
-
-
-			enum class Priority_Polling
-			{
-				Disabled,
-				Enabled,
-				Unknown
-			};
-
-			Priority_Polling getHighPriorityPolling();
-			bool setHighPriorityPolling(Priority_Polling);
-
 			// AXLChannel Overrides:
 
 			Variant getVariantValue();
@@ -101,13 +77,9 @@ namespace PLCnext {
 			char* m_pd;
 			AXLEnumParameter* m_assignVariableEnum;
 			AXLEnumParameter* m_assignChannelEnum;
-			AXLEnumParameter* m_channelEnableEnum;
-			AXLEnumParameter* m_highPrioPolling;
 
-			Channel_Enable m_channelEnabled;
 			Data_Variable m_assignedVariable;
 			Channel_Select m_assignedChannel;
-			Priority_Polling m_priorityPolling;
 		};
 
 		class AO_Channel : public AXLAnalogOutput
@@ -140,6 +112,27 @@ namespace PLCnext {
 				UnderRange		= 0x8080  // Below measuring range(underrange)
 			};
 
+			enum class HART_DataEnable
+			{
+				Disabled,
+				Enabled,
+				Enabled_NoAlarms,
+				Unknown
+			};
+
+			HART_DataEnable getChannelEnabled();
+			bool setChannelEnabled(HART_DataEnable);
+
+			enum class Priority_Polling
+			{
+				Disabled,
+				Enabled,
+				Unknown
+			};
+
+			Priority_Polling getHighPriorityPolling();
+			bool setHighPriorityPolling(Priority_Polling);
+
 			// AXLInput Overrides
 
 			Variant getVariantValue();
@@ -165,11 +158,15 @@ namespace PLCnext {
 			char* pdOut;
 			AXLF_HART_AO4* AO4;
 			OutputRange outputRange;
+			HART_DataEnable m_hartEnable;
+			Priority_Polling m_priorityPolling;
 			string errorToString(uint);
 			void setRangeMinMax();
 			bool m_aoFeedback;
 			// Function enum pointers
 			AXLEnumParameter* m_rangeEnum;
+			AXLEnumParameter* m_hartEnableEnum;
+			AXLEnumParameter* m_highPrioPolling;
 		};
 
 		AXLF_HART_AO4(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);

@@ -66,30 +66,6 @@ namespace PLCnext {
 
 			uint32_t getValue();
 
-			enum class Channel_Enable
-			{
-				Disabled,
-				Enabled,
-				Enabled_NoAlarms,
-				Unknown
-			};
-
-
-
-			Channel_Enable getChannelEnabled();
-			bool setChannelEnabled(Channel_Enable);
-
-
-			enum class Priority_Polling
-			{
-				Disabled,
-				Enabled,
-				Unknown
-			};
-
-			Priority_Polling getHighPriorityPolling();
-			bool setHighPriorityPolling(Priority_Polling);
-
 			// AXLChannel Overrides:
 
 			Variant getVariantValue();
@@ -105,12 +81,9 @@ namespace PLCnext {
 			AXLEnumParameter* m_assignVariableEnum;
 			AXLEnumParameter* m_assignChannelEnum;
 			AXLEnumParameter* m_channelEnableEnum;
-			AXLEnumParameter* m_highPrioPolling;
 
-			Channel_Enable m_channelEnabled;
 			Data_Variable m_assignedVariable;
 			Channel_Select m_assignedChannel;
-			Priority_Polling m_priorityPolling;
 		};
 
 		class AI_Channel : public AXLAnalogInput
@@ -118,6 +91,28 @@ namespace PLCnext {
 		public:
 			AI_Channel(char* _pd, AXLF_HART_AI8* ai8, uint channelNum);
 			uint getValue(double &ret);
+
+
+			enum class HART_DataEnable
+			{
+				Disabled,
+				Enabled,
+				Enabled_NoAlarms,
+				Unknown
+			};
+
+			HART_DataEnable getChannelEnabled();
+			bool setChannelEnabled(HART_DataEnable);
+
+			enum class Priority_Polling
+			{
+				Disabled,
+				Enabled,
+				Unknown
+			};
+
+			Priority_Polling getHighPriorityPolling();
+			bool setHighPriorityPolling(Priority_Polling);
 
 			enum class NE43_Alarm {
 
@@ -178,6 +173,8 @@ namespace PLCnext {
 			MeanValue meanValue;
 			MeasuringRange measuringRange;
 			NE43_Alarm ne43alarm;
+			HART_DataEnable m_hartEnable;
+			Priority_Polling m_priorityPolling;
 			string errorToString(uint);
 			ushort getCfgWord(ushort measuringRange, ushort filter, ushort meanValue);
 			void setRangeMinMax();
@@ -186,6 +183,9 @@ namespace PLCnext {
 			AXLEnumParameter* m_rangeEnum;
 			AXLEnumParameter* m_meanEnum;
 			AXLEnumParameter* m_ne43enum;
+			AXLEnumParameter* m_hartEnableEnum;
+			AXLEnumParameter* m_highPrioPolling;
+
 		};
 
 		AXLF_HART_AI8(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset);
