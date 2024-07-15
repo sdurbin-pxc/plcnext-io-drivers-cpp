@@ -59,7 +59,7 @@
 #include "../Hardware/PdiResult.hpp"
 #include <thread>
 
-#define PROCESS_DATA_SIZE 512
+#define PROCESS_DATA_SIZE 1024
 
 using namespace std;
 
@@ -136,6 +136,7 @@ namespace PLCnext {
 		// Explicit Mode functions:
 		bool readInputs();
 		bool writeOutputs();
+		void loadLastWrittenOutputs();
 
 		~Axiobus();
 
@@ -198,11 +199,11 @@ namespace PLCnext {
 		bool CreatePdiMutexes();
 		BusMode m_busMode;
 		DataInterface m_dataInterface;
+		char* m_writtenOutputs;
+		char* m_outputDataLoaded;
+		int m_mapSize;
 
 		static void configNotifyHandler(int sig, siginfo_t *si, void *ucontext);
-
-
-
 	};
 
 }
