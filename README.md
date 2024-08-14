@@ -66,13 +66,17 @@ The following steps are to show how to compile the example project "SimpleApplic
 
 Note that the *cmake ../* command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt  
 
-**3a-5.** Compile the program based on the Cmake-generated Makefile by running the following command:  
+**3a-5.** Setup the 'make' command in the PATH environment variable for commandline access. The make executable is in the {SYSROOT_FOLDER}\{architecture}*mingw32\usr\lib folder.  An example path to the make binary would be: {SYSROOTS_FOLDER}\x86_64-w64-mingw32\usr\bin\make.exe
+
+**Note:**  If you already have another dev environment that uses make, you can rename the make.exe in the sysroots and set a path to that.  For instance, make_pxc.exe.
+
+**3a-6.** Compile the program based on the Cmake-generated Makefile by running the following command:  
 
 -----> make  
 
 The program should compile, and in the case of the SimpleApplication example, the axcSimpleApp binary will be located in the build folder.  
 
-**3a-6.**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.  
+**3a-7.**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.  
 
 # Visual Studio - Open Folder
 
