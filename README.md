@@ -2,13 +2,15 @@
 
 # Overview
 
-This repository contains C++ classes to read and write I/O data from Axioline modules. It is offered as a static library (.a) with associated header files.  This library supports the following PLCnext controllers:
+This repository contains C++ classes to read and write I/O data from Axioline modules. It is offered as a static library (.a) or a dynamic library (.so) and the corresponding header files.
+
+This library supports the following PLCnext controllers:
 
 [AXC F 1152, Part Number 1151412](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1151412)<br>
 [AXC F 2152, Part Number 2404267](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2404267)<br>
 [AXC F 3152, Part Number 1069208](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1069208)<br>
 
-This library enables reading and writing of the Axioline I/O via direct hardware access.  You may choose this interface while initializing the class.
+This library enables reading and writing of the Axioline I/O via direct hardware access.
 
 This method of utilizing the controller and I/O requires experience in C++ and the Linux OS. Note that the SDK and samples are for cross-compiling from your PC to the device. Please visit the PLCnext Community tutorials at the following link if you are looking to integrate C++ code into an IEC 61131 application:  https://www.plcnext-community.net
 
