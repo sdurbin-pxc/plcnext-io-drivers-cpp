@@ -22,19 +22,15 @@ namespace PLCnext
 	class AXLDigitalOutput : public AXLOutput
 	{
 	public:
-		AXLDigitalOutput() : AXLOutput()
-		{
-			m_channelType = ChannelType::Digital;
-			m_rangeMaximum = 1.0;
-			m_rangeMinimum = 0.0;
-		}
+		AXLDigitalOutput();
 
 		virtual void setValue(bool value) = 0;
 		virtual bool getValue() = 0;
+		virtual bool setFailState() override;
 
 		// AXLChannel Override
 
-		bool readConfiguration() { return true; }
+		bool readConfiguration() override;
 
 	};
 
