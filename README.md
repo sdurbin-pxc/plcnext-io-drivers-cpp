@@ -2,13 +2,13 @@
 
 # Overview
 
-This repository contains C++ classes to read and write I/O data from Axioline modules. It is offered as a static library (.a) with associated header files.  This library supports the following PLCnext controllers:
+This repository contains C++ classes to read and write I/O data from Axioline modules. It is offered as a static library (.a) or a dynamic library (.so) and the corresponding header files.
+
+This library supports the following PLCnext controllers:
 
 [AXC F 1152, Part Number 1151412](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1151412)<br>
 [AXC F 2152, Part Number 2404267](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2404267)<br>
 [AXC F 3152, Part Number 1069208](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1069208)<br>
-
-This library enables reading and writing the I/O by either direct hardware access, or in conjunction with the PLCnext Engineer runtime.  You may choose this interface while initializing the class.  Note that if you intend on having PLCnext Engineer running an IEC 61131 application, you must use the "PLCnext" interface. 
 
 This method of utilizing the controller and I/O requires experience in C++ and the Linux OS. Note that the SDK and samples are for cross-compiling from your PC to the device. Please visit the PLCnext Community tutorials at the following link if you are looking to integrate C++ code into an IEC 61131 application:  https://www.plcnext-community.net
 
@@ -16,16 +16,15 @@ This method of utilizing the controller and I/O requires experience in C++ and t
 
 **/examples** -> Contains examples of programs that utilize the library.  
 **/include**  -> Contains the header files (.h) you will need to add to your project.  
-**/lib**      -> Contains the static library file that will need to be referenced by your project.  
-**/plcnext-io-driver-component**  -> Contains tar files that will need to be deployed if using PLCnext Runtime.  This is not needed for Direct access.
+**/lib**      -> Contains the dynamic and static library files that will need to be referenced by your project.
 
-**Note:**  The 3152 is an intel x86_64 processor, and the 1152 and 2152 are 32-bit ARM.  When selecting files (from lib and plcnext-io-driver-component), only use the files labeled x64 for the 3152 device.
+**Note:**  The AXC F 3152 is an intel x86_64 processor, and the AXC F 1152 and AXC F 2152 are 32-bit ARM. 
 
 # Getting Started
 
-Follow these steps to get your development environment set up. Note, if you are only using the DIRECT interface, you can skip 1d to 1f.
+Follow these steps to get your development environment set up:
 
-## 1. Deploy the PLCnext I/O Driver Component to the device:
+## 1. Set up SSH/file transfer client:
 
 **1a.** Download your favorite SSH client (PuTTy, for example), and file transfer client (WinSCP, for example).
 
@@ -33,16 +32,6 @@ Follow these steps to get your development environment set up. Note, if you are 
 
 **1c.** Create the root user password via "sudo passwd root", and switch to root user.
 
-**1d.** Check the device firmware version by running *cat /etc/plcnext/arpversion*.  Add a *20* in front of the response and this will be your firmware version. For instance, if the response is 19.3.0, your firmware version is 2019.3.0.
-
-**1e.** Copy the corresponding package from the */plcnext-io-driver-component* folder to your device. For example, if your device has 2019.6, the latest available package would be *plcnext-iodriver-2019.3.tar.gz*.
-
-**1f.** Using SSH as the root user, *cd* to the path you copied the driver component package to and run the following commands. Note: change *{fwVersion}* to the firmware version of the driver you downloaded from this repository.
-
-**NOTE:  SSH login via root is disabled for security reasons.  You need to login as admin, and then switch to root  'su root'.  If you have not created a root password on the device, you can do so from the admin user via 'sudo passwd root'.**
-
-------> **tar xvzf plcnext-iodriver-*{fwVersion}*.tar.gz --overwrite -C /** (Extract the driver component package)  
-------> **/etc/init.d/plcnext restart** (Restart the PLCnext runtime)  
 
 ## 2. Download the SDK/SYSROOTS for cross-compiling from Windows:
 
@@ -52,7 +41,7 @@ Follow these steps to get your development environment set up. Note, if you are 
 [AXC F 2152 Downloads](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=2404267&library=usen&tab=5)<br>
 [AXC F 3152 Downloads](https://www.phoenixcontact.com/online/portal/us/?uri=pxc-oc-itemdetail:pid=1069208&library=usen&tab=5)<br>
 
-Scroll down to find and download your corresponding Windows/Linux SDK.  If there is not an SDK that corresponds to your firmware version, you will need to update the firmware on your device before continuing.
+Scroll down to find and download your corresponding Windows/Linux SDK.  If there is not an SDK that corresponds to your firmware version, select the most recent SDK version that doesn't exceed your firmware version.
 
 **2b.** Extract the SDK to any directory on the local drive. Note that the *sysroots* folder in this directory is your "AXC_SYSROOT" folder.
 
@@ -77,13 +66,17 @@ The following steps are to show how to compile the example project "SimpleApplic
 
 Note that the *cmake ../* command tells cmake to generate build files (Makefile in this case) in the current directory (build), and to use one directory up (../) as the source directory that also contains the CMakeLists.txt  
 
-**3a-5.** Compile the program based on the Cmake-generated Makefile by running the following command:  
+**3a-5.** Setup the 'make' command in the PATH environment variable for commandline access. The make executable is in the {SYSROOT_FOLDER}\{architecture}*mingw32\usr\lib folder.  An example path to the make binary would be: {SYSROOTS_FOLDER}\x86_64-w64-mingw32\usr\bin\make.exe.  You will need to look in the syroots folder to find this path as it varies for the different sdks.
+
+**Note:**  If you already have another dev environment that uses make, you can rename the make.exe in the sysroots and set a path to that.  For instance, make_pxc.exe.
+
+**3a-6.** Compile the program based on the Cmake-generated Makefile by running the following command:  
 
 -----> make  
 
 The program should compile, and in the case of the SimpleApplication example, the axcSimpleApp binary will be located in the build folder.  
 
-**3a-6.**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.  
+**3a-7.**  Move the executable to the device, set it to executable (chmod +x), and execute the binary.  
 
 # Visual Studio - Open Folder
 
