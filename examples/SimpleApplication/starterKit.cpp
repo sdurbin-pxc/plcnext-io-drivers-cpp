@@ -31,7 +31,7 @@ int main()
 	// In this example, we are expecting six. Note: The SmartElement modules empty slots
 	// count as a module.
 
-	if (modules.size() != 6)
+	if (modules.size() != 4)
 	{
 		printf("Incorrect number of modules detected: %i\n", modules.size());
 		return 2;
