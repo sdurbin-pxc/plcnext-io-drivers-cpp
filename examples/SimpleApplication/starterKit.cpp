@@ -42,7 +42,7 @@ int main()
 
 	if (modules[0]->getType() != AXLF_MODULE_SE_DO16 ||
 		modules[1]->getType() != AXLF_MODULE_SE_DI16 ||
-		modules[3]->getType() != AXLF_MODULE_SE_AI4U)
+		modules[3]->getType() != AXLF_MODULE_SE_AI4_U)
 		
 	{
 		printf("Incorrect modules, or module order detected.\n");
