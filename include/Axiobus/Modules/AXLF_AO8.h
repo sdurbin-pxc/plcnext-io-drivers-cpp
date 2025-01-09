@@ -96,7 +96,7 @@ namespace PLCnext {
 
 		AXLF_AO8(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		AO8_Channel* channel[8];
-		virtual const string name();
+		const string name() override;
 	};
 
 }

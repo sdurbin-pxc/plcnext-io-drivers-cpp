@@ -45,7 +45,7 @@ namespace PLCnext {
 			char* pdOut;
 		};
 
-		virtual const string name();
+		const string name() override;
 		DO32_Channel* channel[32];
 		AXLF_DO32(Axiobus* axc, ushort _slot, uintptr_t pdOutOffset);
 		void setValue(uint value);

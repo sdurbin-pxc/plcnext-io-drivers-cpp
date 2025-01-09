@@ -91,7 +91,7 @@ namespace PLCnext {
 		AXLF_PWM(Axiobus* _axc, ushort _slot, uintptr_t pdOutOffset);
 		AXLF_PWM();
 		PWM_Channel* channel[2];
-		virtual const string name();
+		const string name() override;
 	};
 
 }

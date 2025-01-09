@@ -152,7 +152,7 @@ namespace PLCnext {
 		~AXLF_RTD();
 		AXLF_RTD();
 		RTD_Channel** channel;
-		virtual const string name();
+		const string name() override;
 
 	};
 

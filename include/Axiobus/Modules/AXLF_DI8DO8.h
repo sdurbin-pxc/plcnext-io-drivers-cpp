@@ -28,7 +28,7 @@ namespace PLCnext {
 	class AXLF_DI8DO8 : public AXLDigitalOutputModule
 	{
 	public:
-		virtual const string name();
+		const string name() override;
 		AXLF_DO8* do8;
 		AXLF_DI8* di8;
 		AXLF_DI8DO8(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);

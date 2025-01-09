@@ -49,6 +49,7 @@ namespace PLCnext {
 		};
 
 		AXLModule(Axiobus* axc, ushort slot, uint type);
+		AXLModule(Axiobus* axc, ushort slot, uint type, bool passive);
 		AXLModule();
 		virtual ~AXLModule();
 		virtual const string name()=0;
@@ -89,6 +90,7 @@ namespace PLCnext {
 		virtual bool readConfiguration();
 		void readSerialNumber();
 		void readOrderNumber();
+		virtual bool isPassive();
 
 	protected:
 		uint m_type;

@@ -44,7 +44,7 @@ namespace PLCnext {
 			char* pdIn;
 		};
 
-		virtual const string name();
+		const string name() override;
 		DI32_Channel* channel[32];
 		AXLF_DI32(Axiobus* axc, ushort _slot, uintptr_t pdInOffset);
 		uint getValue();

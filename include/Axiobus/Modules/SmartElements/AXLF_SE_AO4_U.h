@@ -70,7 +70,7 @@ namespace PLCnext {
 
 		AXLF_SE_AO4_U(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		AO4_Channel* channel[4];
-		virtual const string name();
+		const string name() override;
 	};
 
 }

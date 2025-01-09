@@ -173,7 +173,7 @@ namespace PLCnext {
 		AXLF_HART_AO4();
 		AO_Channel* aoChannel[4];
 		Data_Channel* dataChannel[8];
-		virtual const string name();
+		const string name() override;
 	};
 
 }

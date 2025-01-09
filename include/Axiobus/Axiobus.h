@@ -52,6 +52,7 @@
 #include "Modules/SmartElements/AXLF_SE_DI16.h"
 #include "Modules/SmartElements/AXLF_SE_DO16.h"
 #include "Modules/SmartElements/AXLF_SE_RTD.h"
+#include "Modules/SmartElements/AXLF_SE_Empty.h"
 #include "Modules/Function/AXLF_CNT.h"
 #include "Modules/HART/AXLF_HART_AI8.h"
 #include "Modules/HART/AXLF_HART_AO4.h"

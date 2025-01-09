@@ -192,7 +192,7 @@ namespace PLCnext {
 		AXLF_HART_AI8();
 		AI_Channel* aiChannel[8];
 		Data_Channel* dataChannel[8];
-		virtual const string name();
+		const string name() override;
 	};
 
 }

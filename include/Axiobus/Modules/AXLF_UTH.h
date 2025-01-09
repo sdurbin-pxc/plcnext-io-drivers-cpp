@@ -144,7 +144,7 @@ namespace PLCnext {
 		AXLF_UTH();
 		~AXLF_UTH();
 		UTH_Channel** channel;
-		virtual const string name();
+		const string name() override;
 	};
 
 	class AXLF_UTH8 : public AXLF_UTH

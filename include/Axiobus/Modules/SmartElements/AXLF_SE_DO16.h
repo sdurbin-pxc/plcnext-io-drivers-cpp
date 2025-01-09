@@ -45,7 +45,7 @@ namespace PLCnext {
 			char* pdOut;
 		};
 
-		virtual const string name();
+		const string name() override;
 		DO16_Channel* channel[16];
 		AXLF_SE_DO16(Axiobus* axc, ushort _slot, uintptr_t pdOutOffset);
 		void setValue(ushort value);

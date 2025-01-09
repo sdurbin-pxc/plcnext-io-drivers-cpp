@@ -146,7 +146,7 @@ namespace PLCnext {
 		AXLF_CNT(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		AXLF_CNT();
 		CNT_Channel* channel[2];
-		virtual const string name();
+		const string name() override;
 	
 
 	};

@@ -179,7 +179,7 @@ namespace PLCnext {
 
 		AXLF_AI2AO2(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 
-		virtual const string name();
+		const string name() override;
 
 	};
 }
