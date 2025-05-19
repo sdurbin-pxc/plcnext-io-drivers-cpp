@@ -25,7 +25,7 @@ namespace PLCnext
 	{
 	public:
 
-		AXLChannel();
+		AXLChannel(AXLModule* module);
 
 		enum ChannelDirection
 		{
@@ -42,10 +42,17 @@ namespace PLCnext
 			Unknown
 		};
 
+		struct ValueWithError
+		{
+			Variant value;
+			uint32_t error;
+		};
+
 		const ChannelDirection getChannelDirection();
 		const ChannelType getChannelType();
 		const vector<AXLFunction*>& getFunctions();
 		virtual Variant getVariantValue() = 0;
+		virtual ValueWithError getValueWithError() = 0;
 		virtual string getUnitsString() = 0;
 		virtual bool executeFunction(int id, vector<Variant> params) = 0;
 		virtual bool readConfiguration() = 0;
@@ -57,6 +64,7 @@ namespace PLCnext
 		uint getChannelNumber();
 		double getRangeMinimum();
 		double getRangeMaximum();
+		AXLModule* getModule();
 
 	private:
 		uint m_lastConfigCnt;

@@ -46,7 +46,7 @@ namespace PLCnext {
 				uint	upperCountLimit;
 			};
 
-			CNT_Channel(char* _pdIn, char* _pdOut, AXLF_CNT* cnt, uint channelNum);
+			CNT_Channel(char* _pdIn, char* _pdOut, AXLModule* module, uint channelNum);
 			bool start();
 			bool isRunning();
 			uint getCount();
@@ -107,7 +107,8 @@ namespace PLCnext {
 				UpperCountLimit = 2 << 4,
 				BothLimits		= 3 << 4
 			};
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 

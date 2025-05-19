@@ -23,9 +23,7 @@ namespace PLCnext
 	class AXLInput : public AXLChannel
 	{
 	public:
-		AXLInput() {
-			channelDirection = Input;
-		}
+		AXLInput(AXLModule* module);
 	};
 
 }

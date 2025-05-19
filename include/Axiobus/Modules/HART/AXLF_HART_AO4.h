@@ -33,7 +33,7 @@ namespace PLCnext {
 		class Data_Channel : public AXLChannel
 		{
 		public:
-			Data_Channel(char* _pd, AXLF_HART_AO4* AO4, uint channelNum);
+			Data_Channel(char* _pd, AXLModule* module, uint channelNum);
 
 			enum class Channel_Select
 			{
@@ -65,14 +65,14 @@ namespace PLCnext {
 
 			// AXLChannel Overrides:
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 			bool readConfiguration();
 
 		private:
 			int m_channelNum;
-			AXLF_HART_AO4* m_AO4;
 			bool m_enabled;
 			char* m_pd;
 			AXLEnumParameter* m_assignVariableEnum;
@@ -85,7 +85,7 @@ namespace PLCnext {
 		class AO_Channel : public AXLAnalogOutput
 		{
 		public:
-			AO_Channel(char* _pdIn, char* _pdOut, AXLF_HART_AO4* AO4, uint channelNum, bool aoFeedback);
+			AO_Channel(char* _pdIn, char* _pdOut, AXLModule* module, uint channelNum, bool aoFeedback);
 
 			uint getValue(double &ret);
 			uint setValue(double value);
@@ -133,9 +133,10 @@ namespace PLCnext {
 			Priority_Polling getHighPriorityPolling();
 			bool setHighPriorityPolling(Priority_Polling);
 
-			// AXLInput Overrides
+			// AXLOutput Overrides
 
 			Variant getVariantValue();
+			ValueWithError getValueWithError() override;
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
@@ -156,7 +157,7 @@ namespace PLCnext {
 		private:
 			char* pdIn;
 			char* pdOut;
-			AXLF_HART_AO4* AO4;
+			//AXLF_HART_AO4* AO4;
 			OutputRange outputRange;
 			HART_DataEnable m_hartEnable;
 			Priority_Polling m_priorityPolling;

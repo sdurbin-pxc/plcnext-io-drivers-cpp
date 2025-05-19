@@ -31,12 +31,14 @@ namespace PLCnext {
 		class DI32_Channel : public AXLDigitalInput
 		{
 		public:
-			DI32_Channel(char* _pdIn, uint channel);
+			DI32_Channel(char* _pdIn, AXLModule* module, uint channel);
 			bool getValue();
 
 			// AXLInput Overrides
 
 			Variant getVariantValue();
+			ValueWithError getValueWithError();
+
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params) { return false; }
 		private:
@@ -46,10 +48,8 @@ namespace PLCnext {
 
 		const string name() override;
 		DI32_Channel* channel[32];
-		AXLF_DI32(Axiobus* axc, ushort _slot, uintptr_t pdInOffset);
+		AXLF_DI32(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		uint getValue();
-	private:
-		char* pd;
 	};
 
 }

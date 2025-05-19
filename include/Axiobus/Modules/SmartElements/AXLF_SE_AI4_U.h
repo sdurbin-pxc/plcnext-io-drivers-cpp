@@ -31,7 +31,7 @@ namespace PLCnext {
 		class AI4_Channel : public AXLAnalogInput
 		{
 		public:
-			AI4_Channel(char* _pd, AXLF_SE_AI4_U* ai4u, uint channelNum);
+			AI4_Channel(char* _pd, AXLModule* module, uint channelNum);
 			uint getValue(double &ret);
 
 			enum Error {
@@ -47,7 +47,9 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
+
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
@@ -61,7 +63,7 @@ namespace PLCnext {
 			string errorToString(uint);
 		};
 
-		AXLF_SE_AI4_U(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset);
+		AXLF_SE_AI4_U(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		AXLF_SE_AI4_U();
 		AI4_Channel* channel[4];
 		const string name() override;

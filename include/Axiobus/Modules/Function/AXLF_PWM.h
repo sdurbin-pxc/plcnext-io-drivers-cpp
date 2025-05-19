@@ -33,7 +33,7 @@ namespace PLCnext {
 		{
 		public:
 
-			PWM_Channel(char* _pdOut, AXLF_PWM* pwm, uint channelNum);
+			PWM_Channel(char* _pdOut, AXLModule* module, uint channelNum);
 			
 			// Pdi Config Functions
 			bool setMode(ushort mode);
@@ -60,7 +60,9 @@ namespace PLCnext {
 				DIV_BY_100 = 2
 			};
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
+
 			string setValueString(string);
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
@@ -88,7 +90,7 @@ namespace PLCnext {
 			AXLIntegerParameter* m_pulseWidthParam;
 		};
 
-		AXLF_PWM(Axiobus* _axc, ushort _slot, uintptr_t pdOutOffset);
+		AXLF_PWM(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		AXLF_PWM();
 		PWM_Channel* channel[2];
 		const string name() override;

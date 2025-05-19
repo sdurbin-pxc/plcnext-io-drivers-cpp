@@ -32,7 +32,7 @@ namespace PLCnext {
 		class AO2_Channel : public AXLAnalogOutput
 		{
 		public:
-			AO2_Channel(char* _pdOut, AXLF_AI2AO2* ai2ao2, uint _channelNum);
+			AO2_Channel(char* _pdOut, AXLModule* module, uint _channelNum);
 			bool setOutputRange(ushort range);
 			ushort getOutputRange();
 			uint setValue(double value);
@@ -65,7 +65,9 @@ namespace PLCnext {
 
 			// AXLOutput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
+
 			string setValueString(string);
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
@@ -93,7 +95,7 @@ namespace PLCnext {
 		class AI2_Channel : public AXLAnalogInput
 		{
 		public:
-			AI2_Channel(char* _pd, AXLF_AI2AO2* AI2AO2, uint channelNum);
+			AI2_Channel(char* _pd, AXLModule* module, uint channelNum);
 			uint getValue(double &ret);
 			bool setMeasuringRange(ushort measuringRange);
 			bool setFilter(ushort filter);
@@ -143,7 +145,9 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
+
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 

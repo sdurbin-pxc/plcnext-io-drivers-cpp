@@ -162,6 +162,10 @@ public:
 		if (STRING == data.type) {
 			return *data.strVal;
 		}
+		else if (DOUBLE == data.type)
+		{
+			return std::to_string(data.realVal);
+		}
 		throw std::runtime_error("bad cast");
 	}
 	bool operator==(const Variant &other) const

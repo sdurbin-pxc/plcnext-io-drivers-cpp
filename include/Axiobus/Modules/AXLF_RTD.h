@@ -120,7 +120,8 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
@@ -148,7 +149,7 @@ namespace PLCnext {
 			AXLEnumParameter* m_r0Enum;
 		};
 
-		AXLF_RTD(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, int numChannels);
+		AXLF_RTD(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset, int numChannels);
 		~AXLF_RTD();
 		AXLF_RTD();
 		RTD_Channel** channel;
@@ -159,13 +160,13 @@ namespace PLCnext {
 	class AXLF_RTD8 : public AXLF_RTD
 	{
 	public:
-		AXLF_RTD8(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset);
+		AXLF_RTD8(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 	};
 
 	class AXLF_RTD4 : public AXLF_RTD
 	{
 	public:
-		AXLF_RTD4(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset);
+		AXLF_RTD4(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 	};
 
 }

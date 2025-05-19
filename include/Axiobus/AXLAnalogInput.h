@@ -22,10 +22,7 @@ namespace PLCnext
 	class AXLAnalogInput : public AXLInput
 	{
 	public:
-		AXLAnalogInput() : AXLInput()
-		{
-			m_channelType = ChannelType::Analog;
-		}
+		AXLAnalogInput(AXLModule* module);
 	};
 
 }

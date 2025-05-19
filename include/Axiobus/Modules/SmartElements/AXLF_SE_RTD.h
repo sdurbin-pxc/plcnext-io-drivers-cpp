@@ -32,7 +32,7 @@ namespace PLCnext {
 		class RTD_Channel : public AXLAnalogInput
 		{
 		public:
-			RTD_Channel(char* _pdIn, AXLF_SE_RTD* rtd, uint channelNum);
+			RTD_Channel(char* _pdIn, AXLModule* module, uint channelNum);
 
 			uint getValue(double &ret);
 
@@ -54,7 +54,8 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
@@ -71,7 +72,7 @@ namespace PLCnext {
 			string errorToString(uint);
 		};
 
-		AXLF_SE_RTD(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset);
+		AXLF_SE_RTD(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		~AXLF_SE_RTD();
 		AXLF_SE_RTD();
 		RTD_Channel* channel[4];

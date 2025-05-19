@@ -48,8 +48,8 @@ namespace PLCnext {
 			string text;
 		};
 
-		AXLModule(Axiobus* axc, ushort slot, uint type);
-		AXLModule(Axiobus* axc, ushort slot, uint type, bool passive);
+		AXLModule(Axiobus* axc, ushort slot, uintptr_t inOffset, uintptr_t outOffset, uint type);
+		AXLModule(Axiobus* axc, ushort slot, uintptr_t inOffset, uintptr_t outOffset, uint type, bool passive);
 		AXLModule();
 		virtual ~AXLModule();
 		virtual const string name()=0;
@@ -68,6 +68,8 @@ namespace PLCnext {
 		string getFirmwareDate();
 		string getHardwareVersion();
 		string getHardwareDate();
+		bool loadPdiInputProcessData();
+		bool loadPdiOutputProcessData();
 
 		enum Error
 		{
@@ -95,8 +97,8 @@ namespace PLCnext {
 	protected:
 		uint m_type;
 		bool m_missing;
-		uint inOffset;
-		uint outOffset;
+		uintptr_t m_inOffset;
+		uintptr_t m_outOffset;
 		vector<AXLChannel*> _channels;
 		void configChangeNotify();
 		bool setOutputsToFailState();

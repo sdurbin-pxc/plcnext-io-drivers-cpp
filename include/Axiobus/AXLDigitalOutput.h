@@ -22,7 +22,7 @@ namespace PLCnext
 	class AXLDigitalOutput : public AXLOutput
 	{
 	public:
-		AXLDigitalOutput();
+		AXLDigitalOutput(AXLModule* module);
 
 		virtual void setValue(bool value) = 0;
 		virtual bool getValue() = 0;

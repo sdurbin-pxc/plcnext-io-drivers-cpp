@@ -32,7 +32,7 @@ namespace PLCnext {
 		class Data_Channel : public AXLChannel
 		{
 		public:
-			Data_Channel(char* _pd, AXLF_HART_AI8* ai8, uint channelNum);
+			Data_Channel(char* _pd, AXLModule* module, uint channelNum);
 
 			enum class Channel_Select
 			{
@@ -69,13 +69,13 @@ namespace PLCnext {
 			// AXLChannel Overrides:
 
 			Variant getVariantValue();
+			ValueWithError getValueWithError() override;
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 			bool readConfiguration();
 
 		private:
 			int m_channelNum;
-			AXLF_HART_AI8* m_ai8;
 			bool m_enabled;
 			char* m_pd;
 			AXLEnumParameter* m_assignVariableEnum;
@@ -89,7 +89,7 @@ namespace PLCnext {
 		class AI_Channel : public AXLAnalogInput
 		{
 		public:
-			AI_Channel(char* _pd, AXLF_HART_AI8* ai8, uint channelNum);
+			AI_Channel(char* _pd, AXLModule* module, uint channelNum);
 			uint getValue(double &ret);
 
 
@@ -158,7 +158,8 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
@@ -168,7 +169,6 @@ namespace PLCnext {
 
 		private:
 			char* pd;
-			AXLF_HART_AI8* ai8;
 			//uint channelNum;
 			MeanValue meanValue;
 			MeasuringRange measuringRange;
@@ -188,7 +188,7 @@ namespace PLCnext {
 
 		};
 
-		AXLF_HART_AI8(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset);
+		AXLF_HART_AI8(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		AXLF_HART_AI8();
 		AI_Channel* aiChannel[8];
 		Data_Channel* dataChannel[8];

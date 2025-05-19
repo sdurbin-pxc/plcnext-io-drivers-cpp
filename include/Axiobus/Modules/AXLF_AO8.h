@@ -29,7 +29,7 @@ namespace PLCnext {
 		class AO8_Channel : public AXLAnalogOutput
 		{
 		public:
-			AO8_Channel(char* _pdIn, char* _pdOut, AXLF_AO8* AO8, uint _channelNum);
+			AO8_Channel(char* _pdIn, char* _pdOut, AXLModule* module, uint _channelNum);
 			bool setOutputRange(ushort range);
 			ushort getOutputRange();
 			uint setValue(double value);
@@ -62,7 +62,9 @@ namespace PLCnext {
 
 			// AXLOutput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
+
 			string setValueString(string);
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);

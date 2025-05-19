@@ -23,7 +23,7 @@ namespace PLCnext
 	class AXLAnalogOutput : public AXLOutput
 	{
 	public:
-		AXLAnalogOutput();
+		AXLAnalogOutput(AXLModule* module);
 
 		enum SubstituteBehavior
 		{

@@ -24,7 +24,7 @@ namespace PLCnext {
 	class AXLF_SE_Empty : public AXLModule
 	{
 	public:
-		AXLF_SE_Empty(Axiobus* _axc, ushort _slot);
+		AXLF_SE_Empty(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		const string name() override;
 		bool isPassive() override;
 	};

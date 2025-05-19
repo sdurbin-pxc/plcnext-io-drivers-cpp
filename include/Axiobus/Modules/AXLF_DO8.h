@@ -29,13 +29,14 @@ namespace PLCnext {
 		class DO8_Channel : public AXLDigitalOutput
 		{
 		public:
-			DO8_Channel(char* _pdOut, uint channel);
+			DO8_Channel(char* _pdOut, AXLModule* module, uint channel);
 			void setValue(bool value);
 			bool getValue();
 
 			// AXLOutput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
 			string setValueString(string);
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params) { return false; }
@@ -46,11 +47,9 @@ namespace PLCnext {
 
 		const string name() override;
 		DO8_Channel* channel[8];
-		AXLF_DO8(Axiobus* axc, ushort _slot, uintptr_t pdOutOffset);
+		AXLF_DO8(Axiobus* axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		void setValue(char value);
 		char getValue();
-	private:
-		char* pd;
 	};
 
 }

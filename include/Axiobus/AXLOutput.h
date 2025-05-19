@@ -23,7 +23,7 @@ namespace PLCnext
 	class AXLOutput : public AXLChannel
 	{
 	public:
-		AXLOutput();
+		AXLOutput(AXLModule* module);
 		virtual string setValueString(string) = 0;
 	};
 	 

@@ -23,7 +23,7 @@ namespace PLCnext
 	class AXLDigitalOutputModule : public AXLModule
 	{
 	public:
-		AXLDigitalOutputModule(Axiobus* _axc, ushort _slot, uint _type);
+		AXLDigitalOutputModule(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset, uint _type);
 
 		enum SubstituteBehavior
 		{

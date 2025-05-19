@@ -31,7 +31,7 @@ namespace PLCnext {
 		class AI4_U_Channel : public AXLAnalogInput
 		{
 		public:
-			AI4_U_Channel(char* _pd, AXLF_AI4_U* ai4u, uint channelNum);
+			AI4_U_Channel(char* _pd, AXLModule* module, uint channelNum);
 			uint getValue(double &ret);
 			bool setMeasuringRange(ushort measuringRange);
 			bool setFilter(ushort filter);
@@ -75,7 +75,9 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue();
+			Variant getVariantValue() override;
+			ValueWithError getValueWithError() override;
+
 			string getUnitsString();
 			bool executeFunction(int id, vector<Variant> params);
 
@@ -98,7 +100,7 @@ namespace PLCnext {
 			AXLEnumParameter* m_filterEnum;
 		};
 
-		AXLF_AI4_U(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset);
+		AXLF_AI4_U(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		AXLF_AI4_U();
 		AI4_U_Channel* channel[4];
 		const string name() override;

@@ -22,16 +22,11 @@ namespace PLCnext
 	class AXLDigitalInput : public AXLInput
 	{
 	public:
-		AXLDigitalInput() : AXLInput()
-		{
-			m_channelType = ChannelType::Digital;
-			m_rangeMaximum = 1.0;
-			m_rangeMinimum = 0.0;
-		}
+		AXLDigitalInput(AXLModule* module);
 
 		// AXLChannel Override
 
-		bool readConfiguration() { return true; }
+		bool readConfiguration() override;
 
 	};
 
