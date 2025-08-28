@@ -156,7 +156,7 @@ namespace PLCnext {
 
 		private:
 			char* pdIn;
-			char* pdOut;
+			//char* pdOut;
 			//AXLF_HART_AO4* AO4;
 			OutputRange outputRange;
 			HART_DataEnable m_hartEnable;
