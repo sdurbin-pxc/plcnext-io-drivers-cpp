@@ -26,6 +26,5 @@ namespace PLCnext {
 	public:
 		AXLF_Unknown(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);
 		const string name() override;
-		bool isPassive() override;
 	};
 }

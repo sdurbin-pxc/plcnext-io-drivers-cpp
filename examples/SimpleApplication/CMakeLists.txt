@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.5.0)
 
 project(AxcSimpleApp)
 
@@ -18,7 +18,7 @@ add_executable(
 )
 
 add_library(axiobus SHARED IMPORTED)
-set_property(TARGET axiobus PROPERTY IMPORTED_LOCATION ${AXL_DRIVER_CLASSES}/lib/shared/${LIBARCH}/libAxiobus.so.7)
+set_property(TARGET axiobus PROPERTY IMPORTED_LOCATION ${AXL_DRIVER_CLASSES}/lib/shared/${LIBARCH}/libAxiobus.so.8)
 
 target_link_libraries (axcSimpleApp.o axiobus)
 
