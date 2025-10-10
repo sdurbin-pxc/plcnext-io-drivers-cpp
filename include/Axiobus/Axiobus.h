@@ -42,6 +42,7 @@
 #include "Modules/AXLF_DI32.h"
 #include "Modules/AXLF_DI64.h"
 #include "Modules/AXLF_DI8DO8.h"
+#include "Modules/AXLF_DI16DO8.h"
 #include "Modules/AXLF_AI2AO2.h"
 #include "Modules/AXLF_UTH.h"
 #include "Modules/AXLF_RTD.h"
@@ -57,6 +58,7 @@
 #include "Modules/Function/AXLF_CNT.h"
 #include "Modules/HART/AXLF_HART_AI8.h"
 #include "Modules/HART/AXLF_HART_AO4.h"
+#include "Modules/AXLF_Unknown.h"
 #include "../Hardware/AxioServiceExecuter.hpp"
 #include "../Hardware/PdiResult.hpp"
 #include <thread>

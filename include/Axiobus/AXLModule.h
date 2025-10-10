@@ -70,6 +70,9 @@ namespace PLCnext {
 		string getHardwareDate();
 		bool loadPdiInputProcessData();
 		bool loadPdiOutputProcessData();
+		void setOutputProcessData(uint8_t* buffer, uint bufferOffset, uint outputDataOffset, uint length);
+		void getInputProcessData(uint8_t* buffer, uint bufferOffset, uint inputDataOffset, uint length);
+		uint getProcessDataLength();
 
 		enum Error
 		{
@@ -84,6 +87,7 @@ namespace PLCnext {
 		uint m_slot;
 		uint m_lastConfigCnt = 0;
 		uint m_currConfigCnt = 0;
+		uint m_processDataLength;
 		string m_firmwareVersion;
 		string m_firmwareDate;
 		string m_hardwareVersion;
