@@ -74,6 +74,13 @@ namespace PLCnext {
 		friend class AXLModule;
 	public:
 
+		// Check against getInitializationError();
+		enum InitError
+		{
+			NO_ERROR,
+			PDI_MUTEX_ERROR,
+			MODULE_SCAN_ERROR
+		};
 
 		// Select the process data interface. Deprecated, PLCNEXT interface removed.
 		// To work in conjunction with PLCnext Engineer, PLCNEXT must be chosen.
