@@ -23,8 +23,22 @@ namespace PLCnext
 	class AXLOutput : public AXLChannel
 	{
 	public:
+
+		enum SetValueError
+		{
+			NONE,
+			INACTIVE,
+			OUT_OF_RANGE,
+			INVALID_PARAMS,
+			INVALID_MODE,
+			MODULE_MISSING,
+			UNKNOWN
+		};
+
 		AXLOutput(AXLModule* module);
 		virtual string setValueString(string) = 0;
+		virtual SetValueError setVariantValue(AXLVariant) = 0;
+		virtual AXLVariant getSetpoint() = 0;
 	};
 	 
 }

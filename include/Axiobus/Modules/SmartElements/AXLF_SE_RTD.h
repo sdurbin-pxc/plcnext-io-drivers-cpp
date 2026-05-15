@@ -54,10 +54,12 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
+
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 

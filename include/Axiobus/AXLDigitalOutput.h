@@ -28,9 +28,13 @@ namespace PLCnext
 		virtual bool getValue() = 0;
 		virtual bool setFailState() override;
 
+
 		// AXLChannel Override
 
+		GenericError errorToGeneric(uint err) override;
+		SetValueError setVariantValue(AXLVariant value) override;
 		bool readConfiguration() override;
+		AXLVariant getSetpoint() override;
 
 	};
 

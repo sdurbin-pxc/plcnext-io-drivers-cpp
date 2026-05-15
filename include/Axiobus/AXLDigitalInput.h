@@ -27,7 +27,7 @@ namespace PLCnext
 		// AXLChannel Override
 
 		bool readConfiguration() override;
-
+		AXLChannel::GenericError errorToGeneric(uint err);
 	};
 
 }

@@ -30,7 +30,7 @@ namespace PLCnext {
 		{
 		public:
 			AO4_Channel(char* _pdIn, char* _pdOut, AXLModule* module, uint _channelNum);
-			uint setValue(double value);
+			SetValueError setValue(double value);
 			uint getValue(double &value);
 
 
@@ -38,7 +38,6 @@ namespace PLCnext {
 			{
 				NoError			= 0x0000,
 				UnknownError	= 0x0002,
-				InvalidOutput	= 0x0003,
 				ShortCircuit	= 0x8003, // Short - circuit
 				InvalidParams	= 0x8010, // Parameter table invalid
 				SupplyVoltage	= 0x8020, // Faulty supply voltage
@@ -47,12 +46,14 @@ namespace PLCnext {
 
 			// AXLOutput Overrides
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
+			SetValueError setVariantValue(AXLVariant value) override;
 
 			string setValueString(string);
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 
@@ -66,7 +67,7 @@ namespace PLCnext {
 
 		protected:
 
-			uint32_t convertValueToRaw(double value, uint16_t& converted);
+			AXLOutput::SetValueError convertValueToRaw(double value, uint16_t& converted);
 			uint32_t convertRawToValue(uint16_t value, double& ret);
 
 		};

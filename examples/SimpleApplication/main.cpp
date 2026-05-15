@@ -10,7 +10,7 @@ int main()
 
 	// Initialize the main Axioline bus class.
 
-	Axiobus axio = Axiobus(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
+	Axiobus axio(Axiobus::DIRECT, Axiobus::EXPLICIT);  // Initialize direct/explicit interface.
 
 	printf("Axio class instantiated.\n");
 

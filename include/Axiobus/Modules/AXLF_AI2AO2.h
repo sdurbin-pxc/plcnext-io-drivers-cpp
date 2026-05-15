@@ -35,7 +35,7 @@ namespace PLCnext {
 			AO2_Channel(char* _pdOut, AXLModule* module, uint _channelNum);
 			bool setOutputRange(ushort range);
 			ushort getOutputRange();
-			uint setValue(double value);
+			SetValueError setValue(double value);
 			uint getValue(double &value);
 
 			enum OutputRange : ushort
@@ -65,12 +65,14 @@ namespace PLCnext {
 
 			// AXLOutput Overrides
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
+			SetValueError setVariantValue(AXLVariant value) override;
 
 			string setValueString(string);
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 			bool readConfiguration();
@@ -88,7 +90,7 @@ namespace PLCnext {
 
 			// AXLAnalogOutput Overrides:
 
-			uint32_t convertValueToRaw(double value, uint16_t& converted);
+			SetValueError convertValueToRaw(double value, uint16_t& converted);
 			uint32_t convertRawToValue(uint16_t value, double& ret);
 		};
 
@@ -145,11 +147,12 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
 
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 			bool readConfiguration();

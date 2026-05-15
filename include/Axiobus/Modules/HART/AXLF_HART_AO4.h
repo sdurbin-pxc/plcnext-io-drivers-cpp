@@ -21,8 +21,8 @@ using namespace std;
 
 namespace PLCnext {
 
-	// DataSheet says 0xBOCA2. Needs correction.
 	const uint AXLF_MODULE_HART_AO4 = 0xB0CA3;
+	const uint AXLF_MODULE_HART_EX_IS_AO4 = 0xB0CA2;
 
 	class Axiobus;
 
@@ -65,10 +65,12 @@ namespace PLCnext {
 
 			// AXLChannel Overrides:
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
+
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 			bool readConfiguration();
 
 		private:
@@ -88,7 +90,7 @@ namespace PLCnext {
 			AO_Channel(char* _pdIn, char* _pdOut, AXLModule* module, uint channelNum, bool aoFeedback);
 
 			uint getValue(double &ret);
-			uint setValue(double value);
+			SetValueError setValue(double value);
 
 			enum class OutputRange {
 				mA_0_P20	= 4,
@@ -135,10 +137,12 @@ namespace PLCnext {
 
 			// AXLOutput Overrides
 
-			Variant getVariantValue();
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
+			SetValueError setVariantValue(AXLVariant value) override;
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 
@@ -149,7 +153,7 @@ namespace PLCnext {
 
 			// AXLAnalogOutput Overrides:
 
-			uint32_t convertValueToRaw(double value, uint16_t& converted);
+			SetValueError convertValueToRaw(double value, uint16_t& converted);
 			uint32_t convertRawToValue(uint16_t value, double& ret);
 
 

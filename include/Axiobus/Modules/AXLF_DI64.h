@@ -34,10 +34,10 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params) { return false; }
+			bool executeFunction(int id, vector<AXLVariant> params) { return false; }
 		private:
 			uint channel;
 			char* pdIn;

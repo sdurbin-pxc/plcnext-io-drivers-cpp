@@ -44,18 +44,37 @@ namespace PLCnext
 
 		struct ValueWithError
 		{
-			Variant value;
+			AXLVariant value;
 			uint32_t error;
+			uint32_t genericError;
+		};
+
+		enum GenericError
+		{
+			NONE,
+			INACTIVE,
+			INVALID_CONFIG,
+			POWER_SUPPLY,
+			HARDWARE_FAULT,
+			UNDER_RANGE,
+			OVER_RANGE,
+			OUT_OF_RANGE,
+			OPEN_CIRCUIT,
+			SHORT_CIRCUIT,
+			SENSOR_FAIL,
+			MISSING,
+			UNKNOWN
 		};
 
 		const ChannelDirection getChannelDirection();
 		const ChannelType getChannelType();
 		const vector<AXLFunction*>& getFunctions();
-		virtual Variant getVariantValue() = 0;
+		virtual AXLVariant getVariantValue() = 0;
 		virtual ValueWithError getValueWithError() = 0;
 		virtual string getUnitsString() = 0;
-		virtual bool executeFunction(int id, vector<Variant> params) = 0;
+		virtual bool executeFunction(int id, vector<AXLVariant> params) = 0;
 		virtual bool readConfiguration() = 0;
+		virtual GenericError errorToGeneric(uint error) = 0;
 		virtual ~AXLChannel();
 		bool configurationChanged();
 		virtual bool setFailState();

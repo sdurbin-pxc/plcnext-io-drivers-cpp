@@ -34,6 +34,7 @@
 #include "Modules/AXLF_AO4.h"
 #include "Modules/AXLF_AO8.h"
 #include "Modules/AXLF_DO8.h"
+#include "Modules/AXLF_DO4.h"
 #include "Modules/AXLF_DO16.h"
 #include "Modules/AXLF_DO32.h"
 #include "Modules/AXLF_DO64.h"
@@ -62,6 +63,8 @@
 #include "../Hardware/AxioServiceExecuter.hpp"
 #include "../Hardware/PdiResult.hpp"
 #include <thread>
+#include <iostream>
+#include <fstream>
 
 #define PROCESS_DATA_SIZE 1024
 
@@ -125,7 +128,7 @@ namespace PLCnext {
 		Axiobus(DataInterface, BusMode);
 
 		bool initialize();
-		const vector<AXLModule*>& getModules() const;
+		vector<AXLModule*>& getModules();
 		bool scanModules();
 		DiagnosticsInfo getDiagnosticsInfo();
 		int saveConfiguration(string filePath);
@@ -160,16 +163,12 @@ namespace PLCnext {
 		bool busOperational();
 
 		static string busErrorToString(ushort code);
-		// PLCnext Runtime Interop Parameters
-
-		void setAxioSampleRate(uint);
-		void setPdiRequestRate(uint);
 
 		double deviceTemperature();
 		
 		PdiResult pdiRead(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, std::vector<uint8_t>& data);
 		PdiResult pdiWrite(ushort slot, ushort subSlot, ushort readIndex, ushort readSubIndex, const std::vector<uint8_t>& data);
-
+		void log(string toLog);
 
 	private:
 
@@ -216,6 +215,8 @@ namespace PLCnext {
 		int m_mapSize;
 
 		static void configNotifyHandler(int sig, siginfo_t *si, void *ucontext);
+
+		std::ofstream logStream;
 	};
 
 }

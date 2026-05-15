@@ -24,6 +24,8 @@ namespace PLCnext {
 	const uint AXLF_MODULE_DI16 = 0xD6;
 	const uint AXLF_MODULE_DI16_4 = 0xD0;
 	const uint AXLF_MODULE_DI16_HS = 0xDB;
+	const uint AXLF_MODULE_DI16_NAM = 0xB0D01;
+	const uint AXLF_MODULE_EX_IS_DI16_NAM = 0xB0D00;
 
 	class AXLF_DI16 : public AXLModule
 	{
@@ -36,11 +38,11 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
 
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params) { return false; }
+			bool executeFunction(int id, vector<AXLVariant> params) { return false; }
 		private:
 			uint channel;
 			char* pdIn;

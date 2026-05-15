@@ -44,9 +44,9 @@ namespace PLCnext {
 			ushort getPulseWidth();
 
 			// Process Data Functions
-			uint setPwmOutput(double dutyFactorPercent, ushort frequency);
-			uint sendPulses(double dutyFactorPercent, ushort numberOfPulses);
-			uint setPushPullOut(bool value);
+			SetValueError setPwmOutput(double dutyFactorPercent, ushort frequency);
+			SetValueError sendPulses(double dutyFactorPercent, ushort numberOfPulses);
+			SetValueError setPushPullOut(bool value);
 
 			enum Mode {
 				PWM = 1,
@@ -60,12 +60,14 @@ namespace PLCnext {
 				DIV_BY_100 = 2
 			};
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
-
-			string setValueString(string);
+			GenericError errorToGeneric(uint err) override;
+			SetValueError setVariantValue(AXLVariant value) override;
+			string setValueString(string) override;
+			AXLVariant getSetpoint() override;
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 
@@ -88,6 +90,7 @@ namespace PLCnext {
 			AXLEnumParameter* m_modeEnum;
 			AXLEnumParameter* m_dividerEnum;
 			AXLIntegerParameter* m_pulseWidthParam;
+			double m_dutyFactorPercent;
 		};
 
 		AXLF_PWM(Axiobus* _axc, ushort _slot, uintptr_t pdInOffset, uintptr_t pdOutOffset);

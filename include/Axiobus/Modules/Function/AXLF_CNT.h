@@ -107,10 +107,12 @@ namespace PLCnext {
 				UpperCountLimit = 2 << 4,
 				BothLimits		= 3 << 4
 			};
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
+
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 

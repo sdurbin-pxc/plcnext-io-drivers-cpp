@@ -36,7 +36,7 @@ namespace PLCnext
 			ENUM
 		};
 		virtual Type getType() = 0;
-		virtual Variant getCurrentValue() = 0;
+		virtual AXLVariant getCurrentValue() = 0;
 		string name;
 		virtual ~AXLParameter() = default;
 	};
@@ -54,8 +54,8 @@ namespace PLCnext
 		Type getType() { return ENUM;  }
 		void addItem(string text, int value);
 		int getValue(string);
-		void setCurrentValue(Variant);
-		Variant getCurrentValue();
+		void setCurrentValue(AXLVariant);
+		AXLVariant getCurrentValue();
 		string getString(int);
 		const vector<string>& getStrings();
 		virtual ~AXLEnumParameter() = default;
@@ -73,8 +73,8 @@ namespace PLCnext
 		AXLIntegerParameter(string _name, long long val, long long min, long long max);
 		long long getMax();
 		long long getMin();
-		void setCurrentValue(Variant);
-		Variant getCurrentValue();
+		void setCurrentValue(AXLVariant);
+		AXLVariant getCurrentValue();
 		virtual ~AXLIntegerParameter() = default;
 	private:
 		long long m_currentValue;
@@ -89,8 +89,8 @@ namespace PLCnext
 		AXLRealParameter(string _name, double val, double min, double max);
 		double getMax();
 		double getMin();
-		void setCurrentValue(Variant);
-		Variant getCurrentValue();
+		void setCurrentValue(AXLVariant);
+		AXLVariant getCurrentValue();
 		virtual ~AXLRealParameter() = default;
 	private:
 		double m_currentValue;

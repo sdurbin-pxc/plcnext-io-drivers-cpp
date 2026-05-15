@@ -39,14 +39,14 @@ namespace PLCnext
 		SubstituteBehavior getSubstituteBehavior();
 		double getSubstituteValue();
 		bool setFailState();
-		double getSetpoint();
+		AXLVariant getSetpoint() override;
 	protected:
-		virtual uint setValue(double value) = 0;
+		virtual SetValueError setValue(double value) = 0;
 		virtual uint getValue(double &value) = 0;
 		bool readSubstituteBehavior();
 		SubstituteBehavior m_substituteBehavior;
 		double m_substituteValue;
-		virtual uint32_t convertValueToRaw(double value, uint16_t&) = 0;
+		virtual SetValueError convertValueToRaw(double value, uint16_t&) = 0;
 		virtual uint32_t convertRawToValue(uint16_t value, double& ret) = 0;
 		AXLEnumParameter* m_subBehaviorEnum;
 		AXLRealParameter* m_subValueParam;
@@ -54,7 +54,7 @@ namespace PLCnext
 		double m_nominalMax;
 		double m_nominalMin;
 		char* pdOut;
-		virtual bool executeFunction(int id, vector<Variant> params);
+		virtual bool executeFunction(int id, vector<AXLVariant> params);
 		int m_comboModuleChannelOffset;
 	};
 

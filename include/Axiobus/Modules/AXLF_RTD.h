@@ -22,6 +22,7 @@ namespace PLCnext {
 
 	const uint AXLF_MODULE_RTD4 = 0xA4;
 	const uint AXLF_MODULE_RTD8 = 0xA1;
+	const uint AXLF_MODULE_EX_IS_RTD8 = 0xB0A15;
 
 	class Axiobus;
 
@@ -120,10 +121,12 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
+
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 

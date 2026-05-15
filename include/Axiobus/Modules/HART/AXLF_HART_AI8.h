@@ -22,6 +22,9 @@ using namespace std;
 namespace PLCnext {
 
 	const uint AXLF_MODULE_HART_AI8 = 0xB0CA1;
+	const uint AXLF_MODULE_HART_AI8_P = 0xB0CA5;
+	const uint AXLF_MODULE_HART_EX_IS_AI8_P = 0xB0CA4;
+	const uint AXLF_MODULE_HART_EX_IS_AI8 = 0xB0CA0;
 
 	class Axiobus;
 
@@ -68,10 +71,12 @@ namespace PLCnext {
 
 			// AXLChannel Overrides:
 
-			Variant getVariantValue();
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err) override;
+
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 			bool readConfiguration();
 
 		private:
@@ -158,10 +163,11 @@ namespace PLCnext {
 
 			// AXLInput Overrides
 
-			Variant getVariantValue() override;
+			AXLVariant getVariantValue() override;
 			ValueWithError getValueWithError() override;
+			GenericError errorToGeneric(uint err);
 			string getUnitsString();
-			bool executeFunction(int id, vector<Variant> params);
+			bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 
