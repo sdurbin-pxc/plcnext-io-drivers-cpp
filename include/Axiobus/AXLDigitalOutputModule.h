@@ -39,6 +39,7 @@ namespace PLCnext
 	private:
 		void processDiagnostic(Diagnostics&);
 		SubstituteBehavior m_substituteBehavior;
+		AXLEnumParameter* m_substituteEnum;
 	};
 
 }

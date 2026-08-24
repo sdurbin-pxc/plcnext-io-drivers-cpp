@@ -17,6 +17,7 @@
 #include <vector>
 #include <string>
 #include "../Hardware/PdiResult.hpp"
+#include "AXLFunctional.h"
 
 using namespace std;
 
@@ -25,7 +26,8 @@ namespace PLCnext {
 	class Axiobus;
 	class AXLChannel;
 
-	class AXLModule {
+	class AXLModule : public AXLFunctional
+	{
 	public:
 
 		enum DiagnosticStatus
@@ -73,6 +75,9 @@ namespace PLCnext {
 		void setOutputProcessData(uint8_t* buffer, uint bufferOffset, uint outputDataOffset, uint length);
 		void getInputProcessData(uint8_t* buffer, uint bufferOffset, uint inputDataOffset, uint length);
 		uint getProcessDataLength();
+		uint getDeviceId();
+
+		//virtual bool executeFunction(int id, vector<AXLVariant> params) = 0;
 
 		enum Error
 		{
@@ -97,15 +102,16 @@ namespace PLCnext {
 		void readSerialNumber();
 		void readOrderNumber();
 		virtual bool isPassive();
-
 	protected:
 		uint m_type;
+		uint m_deviceId;
 		bool m_missing;
 		uintptr_t m_inOffset;
 		uintptr_t m_outOffset;
 		vector<AXLChannel*> _channels;
 		void configChangeNotify();
 		bool setOutputsToFailState();
+		vector<AXLFunction*> functions;
 	};
 
 }

@@ -14,14 +14,14 @@
 
 #include <string>
 #include "AXLVariant.h"
-#include "AXLFunction.h"
+#include "AXLFunctional.h"
 #include "AXLModule.h"
 
 using namespace std;
 
 namespace PLCnext
 {
-	class AXLChannel
+	class AXLChannel : public AXLFunctional
 	{
 	public:
 
@@ -68,11 +68,10 @@ namespace PLCnext
 
 		const ChannelDirection getChannelDirection();
 		const ChannelType getChannelType();
-		const vector<AXLFunction*>& getFunctions();
 		virtual AXLVariant getVariantValue() = 0;
 		virtual ValueWithError getValueWithError() = 0;
 		virtual string getUnitsString() = 0;
-		virtual bool executeFunction(int id, vector<AXLVariant> params) = 0;
+		//bool executeFunction(int id, vector<AXLVariant> params) override;
 		virtual bool readConfiguration() = 0;
 		virtual GenericError errorToGeneric(uint error) = 0;
 		virtual ~AXLChannel();
@@ -93,12 +92,10 @@ namespace PLCnext
 		void configChangeNotify();
 		ChannelDirection channelDirection;
 		ChannelType m_channelType;
-		vector<AXLFunction*> functions;
 		AXLModule* m_module;
 		uint channelNum;
 		double m_rangeMinimum;
 		double m_rangeMaximum;
-		uint m_functionCount;
 	};
 
 }

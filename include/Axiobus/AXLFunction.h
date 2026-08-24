@@ -17,7 +17,10 @@
 #include <vector>
 #include <cstdarg>
 #include "AXLVariant.h"
+#include <functional>
 
+#define AXL_FUNCTION(NAME, DESCRIPTION, PARAMS, BODY, ISCONFIG) \
+    addFunction(NAME, DESCRIPTION, PARAMS, [this](vector<AXLVariant>& args) -> AXLFunction::ReturnCode BODY, ISCONFIG)
 
 using namespace std;
 
@@ -25,6 +28,7 @@ using namespace std;
 namespace PLCnext
 {
 	class AXLChannel;
+	class AXLFunctional;
 
 	class AXLParameter
 	{
@@ -101,18 +105,31 @@ namespace PLCnext
 	class AXLFunction
 	{
 	public:
-		AXLChannel* owner;
-		string name;
-		string description;
-		vector<AXLParameter*> params;
-		AXLFunction(int _id, string _name, string _description, vector<AXLParameter*> params, AXLChannel* _owner, bool isConfiguration);
+
+		enum ReturnCode
+		{
+			SUCCESS,
+			INVALID_PARAMS,
+			FAIL
+		};
+
+		AXLFunction(int _id, string _name, string _description, vector<AXLParameter*> params, AXLFunctional* _owner, function<ReturnCode(vector<AXLVariant>& params)> execute, bool isConfiguration);
+
 		int getId();
+		string getName();
 		bool isConfiguration();
+		const vector<AXLParameter*>& getParams();
 		string getCamelCaseName();
+		ReturnCode execute(vector<AXLVariant>& arguments);
+
 		~AXLFunction();
 	protected:
-		int id;
+		int m_id;
 		bool m_isConfig;
-
+		std::function<ReturnCode(vector<AXLVariant>&)> m_functionCall;
+		AXLFunctional* m_owner;
+		string m_name;
+		string m_description;
+		vector<AXLParameter*> m_params;
 	};
 }

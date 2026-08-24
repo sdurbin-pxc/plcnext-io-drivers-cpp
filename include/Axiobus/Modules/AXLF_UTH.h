@@ -118,12 +118,11 @@ namespace PLCnext {
 			GenericError errorToGeneric(uint err) override;
 
 			string getUnitsString();
-			bool executeFunction(int id, vector<AXLVariant> params);
+			//bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 
 			bool readConfiguration();
-
 		private:
 			char* pdIn;
 			char* pdOut;
@@ -135,6 +134,7 @@ namespace PLCnext {
 			char filter;
 			string errorToString(uint);
 			ushort getCfgWord(ushort sensorType, ushort resolution, ushort coldJunction, ushort filter);
+			void calculateMinMax();
 
 			// Function enum pointers
 			AXLEnumParameter* m_filterEnum;
@@ -148,6 +148,10 @@ namespace PLCnext {
 		~AXLF_UTH();
 		UTH_Channel** channel;
 		const string name() override;
+
+		protected:
+			string m_name;
+
 	};
 
 	class AXLF_UTH8 : public AXLF_UTH

@@ -126,7 +126,8 @@ namespace PLCnext {
 			GenericError errorToGeneric(uint err) override;
 
 			string getUnitsString();
-			bool executeFunction(int id, vector<AXLVariant> params);
+
+			//bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 

@@ -72,7 +72,7 @@ namespace PLCnext {
 
 			string setValueString(string);
 			string getUnitsString();
-			bool executeFunction(int id, vector<AXLVariant> params);
+			//bool executeFunction(int id, vector<AXLVariant> params);
 
 			// AXLChannel Overrides
 			bool readConfiguration();

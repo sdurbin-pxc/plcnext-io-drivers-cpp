@@ -54,7 +54,7 @@ namespace PLCnext
 		double m_nominalMax;
 		double m_nominalMin;
 		char* pdOut;
-		virtual bool executeFunction(int id, vector<AXLVariant> params);
+		//virtual bool executeFunction(int id, vector<AXLVariant> params);
 		int m_comboModuleChannelOffset;
 	};
 
