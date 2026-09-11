@@ -46,6 +46,9 @@ namespace PLCnext {
 			ushort getFilter();
 			ushort getColdJunctionType();
 
+			float getAdjust();
+			bool setAdjust(float adjust_tempC);
+
 			enum SensorType {
 				K = 0,
 				J = 1,
@@ -132,6 +135,7 @@ namespace PLCnext {
 			char coldJunctionType;
 			char resolution;
 			char filter;
+			float adjust;
 			string errorToString(uint);
 			ushort getCfgWord(ushort sensorType, ushort resolution, ushort coldJunction, ushort filter);
 			void calculateMinMax();
